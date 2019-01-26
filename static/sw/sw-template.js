@@ -17,7 +17,7 @@ workbox.core.setCacheNameDetails({
   );
 
 workbox.routing.registerRoute(
-    /^https:\/\/.+\.(jpe?g|png|gif|svg)$/i,
+     new RegExp('/static/images/.*\.(jpe?g|png|gif|svg)$'),
     workbox.strategies.cacheFirst({
       cacheName: 'juet-pwa-image-cache',
       plugins: [

@@ -1,4 +1,4 @@
-importScripts("juet-manifest.41b960904ebf08bfc6e92fadc40fdbfb.js", "https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
+importScripts("juet-manifest.4887627fa3a9d9fc4af2bd537fcd53c9.js", "https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 self.__precacheManifest = [].concat(self.__precacheManifest || []);
 
@@ -19,7 +19,7 @@ workbox.core.setCacheNameDetails({
   );
 
 workbox.routing.registerRoute(
-    /^https:\/\/.+\.(jpe?g|png|gif|svg)$/i,
+     new RegExp('/static/images/.*\.(jpe?g|png|gif|svg)$'),
     workbox.strategies.cacheFirst({
       cacheName: 'juet-pwa-image-cache',
       plugins: [
