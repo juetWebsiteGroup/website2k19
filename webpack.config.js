@@ -9,7 +9,7 @@ const devMode = process.env.NODE_ENV !== 'development'
 const CleanWebpackPlugin = require('clean-webpack-plugin')
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const Dotenv = require('dotenv-webpack');
-
+const {InjectManifest} = require('workbox-webpack-plugin');
 //require("@babel/polyfill");
 
 var devConfig = {
@@ -118,10 +118,20 @@ var browserConfig = {
         ]
       },
     plugins:[
+        new InjectManifest({
+            swDest:'/views/sw.js',
+            swSrc:'static/sw/sw-template.js',
+            precacheManifestFilename:'views/juet-manifest.[manifestHash].js',
+            include:['/app-shell',/\.(js|jsx)$/,/\.(sa|sc|c)ss$/,/\.svg$/,/\.gif$/,/\.jpe?g$/,/\.png$/],
+            templatedUrls:{
+                '/app-shell':new Date().toString()
+            }
+        })
+        ,
         new webpack.DefinePlugin({
             __isBrowser__:'true'
         }),
-        new CleanWebpackPlugin(['build']),
+        new CleanWebpackPlugin(['build','views/sw.js','views/juet-manifest.[manifestHash].js']),
         new MiniCssExtractPlugin({
             filename:'/css/[name].css',
             chunkFilename: '/css/[id].css' 
@@ -167,10 +177,19 @@ var serverConfig = {
       ]
     },
     plugins: [
+        new InjectManifest({
+            swDest:'/views/sw.js',
+            swSrc:'static/sw/sw-template.js',
+            include:['/app-shell',/\.(js|jsx)$/,/\.css$/,/\.svg$/,/\.gif$/,/\.jpe?g$/,/\.png$/],
+            precacheManifestFilename:'views/juet-manifest.[manifestHash].js',
+            templatedUrls:{
+                '/app-shell':new Date().toString()
+            }
+        }),
       new webpack.DefinePlugin({
         __isBrowser__: "false"
       }),
-      new CleanWebpackPlugin(['server.js']),
+      new CleanWebpackPlugin(['server.js','views/sw.js','views/juet-manifest.[manifestHash].js']),
       new Dotenv()
     ]
   }
