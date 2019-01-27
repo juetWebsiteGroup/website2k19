@@ -227,6 +227,7 @@
     background-size: cover;
     background-clip: padding-box;
 }
+
 .photosContainer .item1:nth-child(3)
 {
     background:url('/static/images/juetLake1.jpg') no-repeat;
@@ -926,4 +927,9 @@
     {
         width: 100vw;
     }
+    .photosContainer .item1:nth-child(2)
+    {
+        background-position-y: 0px;
+    }
+   
 }
