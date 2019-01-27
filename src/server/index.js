@@ -36,8 +36,8 @@ app.use('/api/admission',admission)
 
 const juetStore = configureStore({})
 
-app.get("/service-worker.js", (req, res) => {
-  res.sendFile(path.resolve(__dirname, "views", "service-worker.js"));
+app.get("/sw.js", (req, res) => {
+  res.sendFile(path.resolve(__dirname,"sw.js"));
 });
 
 app.get("/*",(req,res)=>{

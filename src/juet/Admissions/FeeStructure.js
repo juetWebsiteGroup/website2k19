@@ -32,12 +32,37 @@ export default class FeeStructure extends React.Component
                 <AdmissionUpperLook UpperTitle={`Admissions ${new Date().getFullYear()}`} />
                 <div className="Admission__MainWindow">
                 <AdmissionInfoLook MainTitle={`Academic Fee Structure - ${new Date().getFullYear()}`}>
-                 {this.state.FeesData ?  <ul>
+                 <div className="Fees">
+                    
+                 {this.state.FeesData ?  <table className="FeeTable">
+                      <thead>
+                      <th scope="col" colSpan={2} >Programmes</th>
+                      <th scope="col">Tuition Fee</th>
+                      <th scope="col">Development Fee</th>
+                      <th scope="col">Caution Money (One-Time)*</th>
+                      </thead>
                       {this.state.FeesData.IndianStudent.Academic.map((data,i)=>{
-                          return (<li key={i}>{data.CourseName}</li>)
+                          return (<tr key={i}>
+                          <td colSpan={2}><h3>{data.CourseName}</h3></td>
+                          <td>{data.TuitionFee}</td>
+                          <td>{data.DevelopmentFee}</td>
+                          <td>{data.CautionMoney}</td>
+                          </tr>)
                       })}
-                  </ul> : null}
-                 
+                      
+                          <tr>
+                              <td colSpan={5}><h4>Hostel Charges {this.state.FeesData.IndianStudent.Hostel.Fee} INR {this.state.FeesData.IndianStudent.Hostel.isFood_Laundry ? "(Including Food,Laundry,etc..)" : "(Including Food etc..)"}</h4></td>
+                              </tr>
+                              <tr>
+                              <td colSpan={5}><h4>*Refundable</h4></td>
+                              </tr>
+                              <tr>
+                              <td colSpan={5}><h4>**Free Accommodation for Full Time Ph.D. Scholars</h4></td>
+                              </tr>
+                      
+                  </table> : null}
+
+                 </div>   
                 </AdmissionInfoLook>
                 <QuickAccess/>
                 </div>

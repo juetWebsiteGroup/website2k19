@@ -277,6 +277,62 @@
   background: linear-gradient(180deg, #1c8648, #096e35);
 }
 
+.Admission__MainWindow .Admission__InfoWindow .Fees {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Admission__MainWindow .Admission__InfoWindow .Fees .FeeTable {
+  border: 1px solid #ccc;
+  table-layout: fixed;
+  border-collapse: collapse;
+  width: 100%;
+  -webkit-box-shadow: 2px 5px 14px 3px #ccc;
+          box-shadow: 2px 5px 14px 3px #ccc;
+}
+
+.Admission__MainWindow .Admission__InfoWindow .Fees .FeeTable thead {
+  overflow: hidden;
+}
+
+.Admission__MainWindow .Admission__InfoWindow .Fees .FeeTable thead th {
+  text-align: center;
+  padding: 0.33em;
+  color: white;
+  letter-spacing: 0.66px;
+  font-size: 1.3vmax;
+  font-family: 'Abel',sans-serif;
+  background: -webkit-gradient(linear, left top, left bottom, from(#479ed8), to(#094e7c));
+  background: linear-gradient(180deg, #479ed8, #094e7c);
+}
+
+.Admission__MainWindow .Admission__InfoWindow .Fees .FeeTable tr, .Admission__MainWindow .Admission__InfoWindow .Fees .FeeTable td {
+  border: 1px dotted #ccc;
+  padding: 0.5em;
+  font-family: 'Abel',sans-serif;
+  text-align: left;
+  background: white;
+}
+
+.Admission__MainWindow .Admission__InfoWindow .Fees .FeeTable tr h3, .Admission__MainWindow .Admission__InfoWindow .Fees .FeeTable td h3 {
+  font-family: 'Abel',sans-serif;
+  font-size: 0.89rem;
+}
+
+.Admission__MainWindow .Admission__InfoWindow .Fees .FeeTable tr h4, .Admission__MainWindow .Admission__InfoWindow .Fees .FeeTable td h4 {
+  font-size: 0.79rem;
+  text-align: left;
+  color: #2b46b4;
+  font-weight: bold;
+}
+
 .Admission__MainWindow .Admission__InfoWindow .AdmissionProcedure ul {
   list-style: none;
 }
