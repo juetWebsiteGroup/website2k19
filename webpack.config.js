@@ -34,6 +34,10 @@ var devConfig = {
                 loader:"file-loader",
             },
             {
+                test : /\.(eot|otf|woff|woff2|ttf)(\?\S*)?$/,
+                loader: 'url-loader',
+            },
+            {
                
                 test: /\.(sa|sc|c)ss$/,
                 use: [
@@ -88,8 +92,11 @@ var browserConfig = {
                     name:"build/media/[name].[ext]",
                     publicPath:url => url.replace('/build',"")
                 }
-            }
-            ,
+            },
+            {
+                test : /\.(eot|otf|woff|woff2|ttf)(\?\S*)?$/,
+                loader: 'url-loader',
+            },
             {
                 test:/\.(js|jsx)$/,
                 exclude:/(node_modules)/,
@@ -149,6 +156,10 @@ var serverConfig = {
                 publicPath:url => url.replace('/build',"")
                 ,emit:false
             }
+        },
+        {
+            test : /\.(eot|otf|woff|woff2|ttf)(\?\S*)?$/,
+            loader: 'url-loader',
         },
         {
           test:/\.css$/,

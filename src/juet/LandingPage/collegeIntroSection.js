@@ -11,7 +11,7 @@ const SliderItem = (props) => {
                        iconMember = <Ionicon color="#ffffff" icon={data.iconOpt} fontSize="0.95rem"></Ionicon>
                     }
                     return (
-                        <div className="item1" title="JUET,Guna"><div className="TextContainer">
+                        <div className="item1"><div className="TextContainer">
                         <p className="TextTitle">{data.TextTitle}</p>
                         <p className="TextContent">{iconMember}{data.TextContent}</p>
                         </div>
@@ -71,16 +71,16 @@ class IntroSection extends Component
      return(
          <div className="college_introSection">
              <div className="photosContainer">
-                 <SliderItem TextTitle="University Main Entrance@Beautiful Campus" TextContent="Jaypee University of Engineering &amp; Technology, Guna" />
-                 <SliderItem TextTitle="Beautiful Campus , Lush Green Environment" TextContent="Jaypee University of Engineering &amp; Technology, Guna" />
-                 <SliderItem TextTitle="Celebration of 72nd Independence Day" iconOpt="md-calendar" TextContent="15th.Aug.18 Jaypee University of Engineering &amp; Technology, Guna" />
+                <SliderItem TextTitle="University Main Entrance@Beautiful Campus" TextContent="Jaypee University of Engineering &amp; Technology, Guna" />
+                 <SliderItem TextTitle="Beautiful Campus &amp; Lush Green Environment" TextContent="Pic Credit: Nameh Dhiman" />
+                 <SliderItem TextTitle="Lake Point" TextContent="Pic Credit: Nameh Dhiman" />
                  <SliderItem TextTitle="D'Equinox 2k19" iconOpt="md-calendar" TextContent="&nbsp; Coming Soon !!,A Cultural Fest by Jaypee University of Engineering &amp; Technology,Guna" />
 
-                 <div className="indicatePoints">
+                 {/* <div className="indicatePoints">
                      <span className="point1"></span>
                      <span className="point2"></span>
                      <span className="point3"></span>
-                 </div>
+                 </div> */}
              </div>
              <div className="LatestHappenings">
                  <div className="AdminRelated" title="Academics News">
