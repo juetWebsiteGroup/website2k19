@@ -3,6 +3,7 @@ import './styles/Admission.css'
 import QuickAccess from './QuickAccess';
 import AdmissionUpperLook from './AdmissionUpperLook';
 import AdmissionInfoLook from './AdmissionInfoLook';
+import {LoadingView} from '../LoadingView/Loading'
 
 import fetch from 'isomorphic-fetch'
 export default class FeeStructure extends React.Component
@@ -60,7 +61,7 @@ export default class FeeStructure extends React.Component
                               <td colSpan={5}><h4>**Free Accommodation for Full Time Ph.D. Scholars</h4></td>
                               </tr>
                       
-                  </table> : null}
+                  </table> : <LoadingView />}
 
                  </div>   
                 </AdmissionInfoLook>
