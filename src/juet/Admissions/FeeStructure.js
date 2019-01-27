@@ -22,7 +22,7 @@ export default class FeeStructure extends React.Component
     componentDidMount()
     {
         document.title="Fees - Jaypee University of Engineering and Technology, Guna"
-        fetch(`http://localhost:3000/api/admission/fees`)
+        fetch(`${process.env.FETCH_URL}/api/admission/fees`)
         .then(res => res.json())
         .then(data => this.setState({FeesData:data}))
     }

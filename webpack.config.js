@@ -121,7 +121,7 @@ var browserConfig = {
         new webpack.DefinePlugin({
             __isBrowser__:'true'
         }),
-        new CleanWebpackPlugin(['build',`${path.resolve(__dirname,'/views/sw.js')}`,`${path.resolve(__dirname,'juet-manifest.[manifestHash].js')}`]),
+        new CleanWebpackPlugin(['build',`${path.resolve(__dirname,'/views/sw.js')}`]),
         new MiniCssExtractPlugin({
             filename:'/css/[name].css',
             chunkFilename: '/css/[id].css' 

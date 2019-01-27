@@ -6,10 +6,16 @@ import AdmissionHome from './juet/Admissions/AdmissionMain'
 import AdmissionProcedure from './juet/Admissions/AdmissionProcedure'
 import FeeStructure from './juet/Admissions/FeeStructure'
 import EducationLoan from './juet/Admissions/EducationLoan'
+import {ErrorPageNotFound} from './juet/NotFound/NotFound.jsx'
 
 export const routes = [
     {
         path: "/",
+        component: BodyMainLandingPage,
+        exact: true
+    },
+    {
+        path:"/app-shell",
         component: BodyMainLandingPage,
         exact: true
     },
@@ -47,6 +53,9 @@ export const routes = [
         path:"/admissions/Fees",
         component:FeeStructure,
         exact:true,
-    }
+    },
+    {
+        component:ErrorPageNotFound
+     },
   ];
   
