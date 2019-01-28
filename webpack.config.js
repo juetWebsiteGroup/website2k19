@@ -150,7 +150,7 @@ var serverConfig = {
     target: 'node',
     externals: [nodeExternals()],
     output: {
-      path: path.resolve(__dirname,'build'),
+      path: path.resolve(__dirname),
       filename: "server.js",
       libraryTarget:"commonjs2"
     },
@@ -190,7 +190,7 @@ var serverConfig = {
       new webpack.DefinePlugin({
         __isBrowser__: "false"
       }),
-      new CleanWebpackPlugin(['build']),
+      new CleanWebpackPlugin(['server.js']),
       new Dotenv()
     ]
   }

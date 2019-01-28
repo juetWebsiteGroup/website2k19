@@ -7,10 +7,9 @@
     "node": "11.4.0",
     "npm": "6.4.1"
   },
-  "proxy": "http://localhost:3000/",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node build/server.js",
+    "start": "node server.js",
     "dev": "webpack-dev-server --hot --inline --mode=development ",
     "build-dev": "webpack --mode=development",
     "build": "webpack --mode=production"
