@@ -125,13 +125,22 @@ var browserConfig = {
         ]
       },
     plugins:[
+        new InjectManifest({
+            swDest:'sw.js',
+            swSrc:'static/sw/sw-template.js',
+            precacheManifestFilename:'juet-manifest.[manifestHash].js',
+           include:['/',/\.(js|jsx)$/,/\.(sa|sc|c)ss$/,/\.svg$/,/\.gif$/,/\.jpe?g$/,/\.png$/],
+           templatedUrls:{
+               '/':new Date().toString()
+           }
+       }),
         new webpack.DefinePlugin({
             __isBrowser__:'true'
         }),
-        new CleanWebpackPlugin(['build',`${path.resolve(__dirname,'/views/sw.js')}`]),
+        new CleanWebpackPlugin(['build',`${path.resolve(__dirname,'sw.js')}`]),
         new MiniCssExtractPlugin({
-            filename:'/css/[name].css',
-            chunkFilename: '/css/[id].css' 
+            filename:'[name].css',
+            chunkFilename: '[id].css' 
           }),
           new Dotenv()
     ]
@@ -141,7 +150,7 @@ var serverConfig = {
     target: 'node',
     externals: [nodeExternals()],
     output: {
-      path: __dirname,
+      path: path.resolve(__dirname,'build'),
       filename: "server.js",
       libraryTarget:"commonjs2"
     },
@@ -178,19 +187,10 @@ var serverConfig = {
       ]
     },
     plugins: [ 
-    new InjectManifest({
-             swDest:'/views/sw.js',
-             swSrc:'static/sw/sw-template.js',
-             precacheManifestFilename:'juet-manifest.[manifestHash].js',
-            include:['/app-shell',/\.(js|jsx)$/,/\.(sa|sc|c)ss$/,/\.svg$/,/\.gif$/,/\.jpe?g$/,/\.png$/],
-            templatedUrls:{
-                '/app-shell':new Date().toString()
-            }
-        }),
       new webpack.DefinePlugin({
         __isBrowser__: "false"
       }),
-      new CleanWebpackPlugin(['server.js']),
+      new CleanWebpackPlugin(['build']),
       new Dotenv()
     ]
   }

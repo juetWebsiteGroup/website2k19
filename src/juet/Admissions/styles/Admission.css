@@ -31,7 +31,7 @@
   background-attachment: fixed;
   background-size: cover;
   background-origin: padding-box;
-  background-position: center;
+  background-position-x: center;
   background-position-y: -320px;
   color: white;
 }
@@ -56,6 +56,13 @@
   letter-spacing: 3px;
   -webkit-animation: GLOW 3s cubic-bezier(0.215, 0.61, 0.355, 1) 0s infinite;
           animation: GLOW 3s cubic-bezier(0.215, 0.61, 0.355, 1) 0s infinite;
+}
+
+@media screen and (max-width: 1098px) {
+  .Admission__Upper {
+    background-position-x: center;
+    background-position-y: -10vh;
+  }
 }
 
 .Admission__MainWindow {

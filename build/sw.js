@@ -1,4 +1,4 @@
-importScripts("juet-manifest.7d1f5927c0ab2a56277e59be3acda3dd.js", "https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
+importScripts("juet-manifest.2ec9e44b3685d8e580c25c8c51497f58.js", "https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 self.__precacheManifest = [].concat(self.__precacheManifest || []);
 
@@ -17,7 +17,12 @@ workbox.core.setCacheNameDetails({
       cacheName: 'juet-pwa-api-cache'
     })
   );
-
+  workbox.routing.registerRoute(
+    new RegExp('/*.css'),
+    workbox.strategies.networkFirst({
+      cacheName: 'juet-pwa-css-cache'
+    })
+  );
 workbox.routing.registerRoute(
      new RegExp('/static/images/.*\.(jpe?g|png|gif|svg)$'),
     workbox.strategies.cacheFirst({
@@ -54,14 +59,16 @@ workbox.routing.registerRoute(
       ]
     })
   );
-workbox.clientsClaim();
-workbox.skipWaiting();
-
 // suppress warnings if revision is not provided
 workbox.precaching.suppressWarnings();
+
 
 // precahce and route asserts built by webpack
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
 // return app shell for all navigation requests
-workbox.routing.registerNavigationRoute('/app-shell');
+// workbox.routing.registerNavigationRoute('/');
+
+workbox.clientsClaim();
+workbox.skipWaiting();
+

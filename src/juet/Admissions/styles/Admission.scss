@@ -17,7 +17,7 @@
     background-attachment: fixed;
     background-size: cover;
     background-origin: padding-box;
-    background-position: center;
+    background-position-x: center;
     background-position-y: -320px;
     color:white;
 
@@ -45,6 +45,14 @@
     }
 }
 
+@media screen and (max-width:1098px)
+{
+    .Admission__Upper
+    {
+        background-position-x: center;
+        background-position-y: -10vh;
+    }
+}
 .Admission__MainWindow
 {
    background: #F9F9F9;

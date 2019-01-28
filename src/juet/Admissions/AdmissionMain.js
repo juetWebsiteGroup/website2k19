@@ -56,7 +56,7 @@ class AdmissionHome extends Component {
     }
     render() {
     return (
-        <section id="Admissions">
+        <div id="Admissions">
     
         <AdmissionUpperLook UpperTitle={`Admissions ${new Date().getFullYear()}`} />
          
@@ -71,7 +71,7 @@ class AdmissionHome extends Component {
         <QuickAccess />
         </div>
     
-    </section>
+    </div>
     )
   }
 }

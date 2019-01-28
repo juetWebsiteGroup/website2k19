@@ -27,18 +27,22 @@ app.use(cors())
 app.use(morgan())
 app.use(helmet())
 app.use(compression())
-app.use(express.static('build',{ maxage: '604800' }))
-app.use(express.static('views',{ maxage: '604800' }))
+app.use(express.static('build',{ maxage: '0' }))
+app.use(express.static('views',{ maxage: '31536000' }))
 app.use('/juet',express.static('build',{ maxage: '604800' }))
-app.use("/static",express.static('static',{ maxage: '604800' }))
+app.use("/static",express.static('static',{ maxage: '31536000' }))
 app.use('/api/faculty',faculty)
 app.use('/api/admission',admission)
 
 const juetStore = configureStore({})
 
-app.get("/sw.js", (req, res) => {
-  res.sendFile(path.resolve(__dirname,"sw.js"));
-});
+// app.get("/sw.js", (req, res) => {
+//   res.sendFile(path.resolve(__dirname,"sw.js"));
+// });
+
+// app.get('/app-shell',(req,res)=>{
+//   res.render('index',{RenderData:null,dataFromServer:null})
+// })
 
 app.get("/*",(req,res)=>{
 

@@ -3,10 +3,11 @@ import {Switch,Route,withRouter} from 'react-router-dom'
 import NavBarPackage from "./juet/header/navbarMain.jsx";
 import FooterMake from './juet/footer/footerMain.jsx';
 
-import {renderRoutes} from 'react-router-config'
+// import {renderRoutes} from 'react-router-config'
 import {routes} from './Routes.jsx'
 import './juet/LandingPage/styles/body.css';
 
+import {ErrorPageNotFound} from './juet/NotFound/NotFound.jsx'
 class IndexRender extends React.PureComponent{
     constructor(props)
     {
@@ -21,7 +22,7 @@ class IndexRender extends React.PureComponent{
               
                 <NavBarPackage/>
                 <Switch>
-                {routes.map(({ path, exact, component: C,childRoutes, ...rest }) => {
+                {routes.map(({ path, exact, component: C, ...rest }) => {
                   
                         return (
                             <Route
@@ -36,6 +37,7 @@ class IndexRender extends React.PureComponent{
                     
                 
                 })}
+                <Route component={ErrorPageNotFound}/>
                 </Switch>
                 <FooterMake />
                  

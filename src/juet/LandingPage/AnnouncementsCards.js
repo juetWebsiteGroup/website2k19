@@ -3,7 +3,7 @@ import React,{Component} from 'react';
 const GetCardsToShow = (props)=>{
     return(
         <div className="AnnouncementsCardNew">
-            <img src={props.CardImage} className="AnnouncementsCardPhoto"/>
+            <img src={props.CardImage} alt="Jaypee University of Engineering and Technology, Guna" className="AnnouncementsCardPhoto"/>
             <h3>{props.CardHeading}</h3>
             <div className="AnnouncementsNewText">
                 <p>{props.CardData}</p>

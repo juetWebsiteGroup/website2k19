@@ -212,7 +212,7 @@ class SecondNavbar extends Component {
                                     {
                                         this.state.dataContainerSubOptions.About.WebsiteTeam.map((data) => {
                                             return(
-                                                <li key={data.id}><a href={data.Link_to} target="_blank">{data.title}</a></li>
+                                                <li key={data.id}><a href={data.Link_to} rel="noreferrer" target="_blank">{data.title}</a></li>
                                             )
                                         })
                                     }
