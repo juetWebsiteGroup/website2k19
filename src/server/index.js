@@ -30,7 +30,7 @@ app.use(compression())
 app.use(express.static('build',{ maxage: '0' }))
 app.use(express.static('views',{ maxage: '31536000' }))
 app.use('/juet',express.static('build',{ maxage: '604800' }))
-app.use("/static",express.static('static',{ maxage: '31536000' }))
+app.use("/static",express.static('static',{ maxage: '2592000000' }))
 app.use('/api/faculty',faculty)
 app.use('/api/admission',admission)
 

@@ -1,4 +1,4 @@
-@import '../../common_sass/_common';
+@import '../../common_sass/common';
 
 @keyframes GLOW 
 {
@@ -12,13 +12,13 @@
 .Admission__Upper
 {
     width: 100%;
-    height: 45vh;
-    background: url(/static/images/juetLake2.jpg) no-repeat;
+    height: 60vh;
+    background: url(/static/images/Programmes.jpg) no-repeat;
     background-attachment: fixed;
     background-size: cover;
     background-origin: padding-box;
     background-position-x: center;
-    background-position-y: -320px;
+    background-position-y:-20vh;
     color:white;
 
     .container
@@ -26,7 +26,7 @@
         background: rgba(1,1,1,0.45);
         height: inherit;
         position: relative;
-
+        @include gridMaker(repeat(auto-fit,minmax(250px,1fr)),auto-fit,1em);
         label
         {
             padding: 1em;
@@ -40,6 +40,76 @@
                 text-transform: uppercase;
                 letter-spacing: 3px;
                 animation: GLOW 3s cubic-bezier(0.215, 0.610, 0.355, 1) 0s infinite;
+            }
+        }
+        .Admission__news
+        {
+            background: rgba(7,39,64,.65);
+            width: 30vw;
+            position: absolute;
+            right: 0;
+            border-radius: 0.2em;
+            box-shadow:1px 1px 10px 0px white;
+            top:25%;
+            @include AlignCenter;
+            height: 30vh;
+            box-sizing: border-box;
+            ul
+            {
+                list-style: none;
+                padding:1em;
+                width: 100%;
+                position: relative;
+                margin-left: 1em;
+                li
+                {
+                    margin-bottom: 1.5vh;
+                    width: 70%;
+                    text-align: left;
+                    padding: 0.3em;
+                    font-size: 2.3vmin;
+                    cursor: pointer;
+                    border-radius: 0.3em;
+                    letter-spacing: 0.6px;
+                    transition: all cubic-bezier(0.215, 0.610, 0.355, 1) 0.43s;
+                    a
+                    {
+                        color: inherit;
+                        text-decoration: none;
+                    }
+
+                    &:hover
+                    {
+                        background: #b11131;
+                        padding-left: 0.6em;
+                        transition: all cubic-bezier(0.215, 0.610, 0.355, 1) 0.43s;
+                    }
+                }
+            }
+
+            @media screen and (max-width:768px) {
+                &
+                {
+                        position: initial;
+                        margin-bottom: 5em;
+                        width: 65vw;
+
+                        ul
+                        {
+                            li
+                            {
+                                font-size: 3vmin;
+                            }
+                        }
+                }
+            }
+        }
+
+        @media screen and (max-width:768px) {
+            &
+            {
+              @include AlignCenter;
+              
             }
         }
     }
@@ -386,4 +456,169 @@
             align-items: flex-start;
         }
     }
+}
+
+/*header*/
+
+#AdmissionsHeader
+{
+    padding: 0.3em;
+    background: transparent;
+    .AdmissionNavbar
+    {
+        @include gridMaker(2fr 4fr,auto-fit,0.4em);
+    
+        .TitleHeader
+        {
+           @include AlignCenter;
+           flex-direction: row;
+           margin-left: 2em;
+            img
+            {
+                @include responsive_image(20%);
+            
+            }
+            .Headerline
+            {
+                padding: 0.04em;
+                background: #b6b6b6;
+                height: 13vh;
+                margin-left: 1em;
+                letter-spacing: 0.56px;
+            }
+            label
+            {
+                box-sizing: border-box;
+                margin-left: 0.5em;
+                width: 100%;
+                font-size: 2.3vmax;
+                color: #6f6f6f;
+                font-family: 'Playfair Display', serif;
+            }
+        }
+          ul
+          {
+              list-style: none;
+              @include AlignEnd;
+              margin-right: 2em;
+              li
+              {
+                  text-align: center;
+                  font-size: 1.28vmax;
+                  padding: 0.25em;
+                  color: #6f6f6f;
+                  cursor: pointer;
+                  background: inherit;
+                  margin-right: 0.55em;
+                  box-sizing: border-box;
+                  letter-spacing: 0.56px;
+                  border-radius: 0.3em;
+                  transition: background cubic-bezier(0.215, 0.610, 0.355, 1) 0.43s;
+                  a
+                  {
+                      color:inherit;
+                      text-decoration: none;
+                  }
+                  &:hover
+                  {
+                      background: #094e7c;
+                      color: white;
+                      transition: all cubic-bezier(0.215, 0.610, 0.355, 1) 0.43s;
+                  }
+              }
+          }
+
+          @media screen and (max-width:601px){
+                &
+                {
+                    all:unset;
+                    display: flex;
+                    flex-direction: column;
+                    position: relative;
+                    img
+                    {
+                        all:unset;
+                        width: 16% !important;
+                    }
+                    .TitleHeader
+                    {
+                        @include AlignCenter;
+                        flex-direction: column;
+                        margin: 0 auto;
+
+                        label
+                        {
+                            text-align: center;
+                            font-size:3vmax;
+                            margin:0;
+                        }
+                    }
+                    .Headerline
+                    {
+                        display: none;
+                    }
+                    ul
+                    {
+                        @include AlignCenter;
+                        flex-direction: column;
+                        margin:0 auto;
+                        position: absolute;
+                        padding: 0.3em;
+                        bottom: -8.91em;
+                        background: white;
+                        z-index: 104;
+                        width:100%;
+                        transform: scale(1,0);
+                        li
+                        {
+                            margin-right: 0;
+                            margin-bottom: 1em;
+                            margin-top:1.4em;
+                        }
+                    }
+                }              
+          }
+    }
+}
+
+
+#Admission__Footer
+{
+      padding: 1em;
+      background:url(/static/images/bg6.jpg);
+      color:white;
+      @include AlignCenterTop;
+      
+      .socialLinksFooter
+      {
+         @include AlignCenter;
+         margin-bottom: 0.6em;
+         span
+         {
+             margin-right: 0.66em;
+             cursor: pointer;
+             a
+             {
+                 color: inherit;
+                 text-decoration: none;
+             }
+         }
+      }
+      p
+      {
+          margin-bottom: 0.7em;
+          text-align: center;
+           
+          &:nth-child(2)
+          {
+              font-size: 14px;
+              width: 100%;
+          }
+          &:nth-child(3)
+          {
+              font-size: 10px;
+          }
+      }
+
+
 }

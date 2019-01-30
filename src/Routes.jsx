@@ -9,28 +9,28 @@ import EducationLoan from './juet/Admissions/EducationLoan'
 
 
 export const routes = [
+    // {
+    //     path: "/",
+    //     component: BodyMainLandingPage,
+    //     exact: true
+    // },
+    // {
+    //     path: "/About",
+    //     component: About,
+    //     exact: true
+    // },
+    // {
+    //     path: "/faculty",
+    //     component: FacultyListAll,
+    //     exact: true
+    // },
+    // {
+    //    path:"/faculty/:dept",
+    //    component:FacultyDepartmentProfile,
+    //    exact:true
+    // },
     {
-        path: "/",
-        component: BodyMainLandingPage,
-        exact: true
-    },
-    {
-        path: "/About",
-        component: About,
-        exact: true
-    },
-    {
-        path: "/faculty",
-        component: FacultyListAll,
-        exact: true
-    },
-    {
-       path:"/faculty/:dept",
-       component:FacultyDepartmentProfile,
-       exact:true
-    },
-    {
-        path:"/admissions",
+        path:"/",
         component:AdmissionHome,
         exact:true,
     },

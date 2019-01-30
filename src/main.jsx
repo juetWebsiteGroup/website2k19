@@ -3,6 +3,8 @@ import {Switch,Route,withRouter} from 'react-router-dom'
 import NavBarPackage from "./juet/header/navbarMain.jsx";
 import FooterMake from './juet/footer/footerMain.jsx';
 
+import {AdmissionNavbar} from './juet/Admissions/tempAdm/AdmissionNavbar'
+import {AdmissionFooter} from './juet/Admissions/tempAdm/AdmissionFooter'
 // import {renderRoutes} from 'react-router-config'
 import {routes} from './Routes.jsx'
 import './juet/LandingPage/styles/body.css';
@@ -20,7 +22,8 @@ class IndexRender extends React.PureComponent{
         return (
             <div>
               
-                <NavBarPackage/>
+                {/* <NavBarPackage/> */}
+                <AdmissionNavbar />
                 <Switch>
                 {routes.map(({ path, exact, component: C, ...rest }) => {
                   
@@ -39,7 +42,8 @@ class IndexRender extends React.PureComponent{
                 })}
                 <Route component={ErrorPageNotFound}/>
                 </Switch>
-                <FooterMake />
+                <AdmissionFooter />
+                {/* <FooterMake /> */}
                  
             </div>
         )

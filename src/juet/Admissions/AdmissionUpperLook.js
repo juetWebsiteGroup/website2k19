@@ -12,6 +12,14 @@ export default class AdmissionUpperLook extends Component {
                     <label className="Admission__Title">
                             <h1>{this.props.UpperTitle}</h1>
                      </label>
+                     <div className="Admission__news">
+                     <ul>
+                         <li>Admission Intake 2018</li>
+                         <li>Placements 2019</li>
+                         <li>Student Facilities</li>
+                         <li>Student Activities</li>
+                     </ul>
+                 </div>
             </div>
         </div>
     )

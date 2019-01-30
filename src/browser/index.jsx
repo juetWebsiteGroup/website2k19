@@ -9,7 +9,7 @@ import configureStore from '../redux/configureStore'
 
 webfont.load({
     google:{
-        families:['Lato','Dosis','Courgette','Alegreya Sans','Abel','sans-serif','cursive']
+        families:['Lato','Dosis','Courgette','Alegreya Sans','Abel','Playfair Display','sans-serif','cursive']
     },
     timeout:2000
     })

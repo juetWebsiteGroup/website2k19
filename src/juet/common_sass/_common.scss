@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Lato', sans-serif;
+    scroll-behavior: smooth;
 }
 @mixin container($pad,$mar,$w,$h) {
     padding: $pad;
@@ -38,3 +39,17 @@
      justify-content: center;
      align-items: flex-start;
 }
+
+@mixin  AlignCenterEnd {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@mixin  AlignEnd {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
