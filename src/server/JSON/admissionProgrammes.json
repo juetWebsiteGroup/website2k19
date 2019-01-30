@@ -1,6 +1,7 @@
 {
     "BTech":{
            "UpperTitle":"B.Tech - Admission",
+           "id":"Engineering",
            "SubCategories":[
                {
                "quota":"B.Tech. Programme [ JEE Rank Based ]",
@@ -34,6 +35,7 @@
     },
     "MTech":{
         "UpperTitle":"M.Tech - Admission",
+        "id":"Mtech",
         "SubCategories":[
             {
             "quota":"M.Tech. Programme [ GATE Score Based ]",

@@ -10,10 +10,10 @@ export const AdmissionNavbar = (props) => {
                      <label>Admissions 2019</label>
             </div>
             <ul>
-               <li><a href="#Engineering">B.Tech. Admission</a></li>
-               <li>M.Tech. Admission</li>
-               <li>B.Sc. &amp; M.Sc.</li>
-               <li>Ph.D.</li>
+               <li><a href="/#Engineering">B.Tech. Admission</a></li>
+               <li><a href="/#Mtech">M.Tech. Admission</a></li>
+               <li><a href="/#Sciences">B.Sc. &amp; M.Sc.</a></li>
+               <li><a href="/#PhD">Ph.D.</a></li>
             </ul>
         </nav>
     </section>
