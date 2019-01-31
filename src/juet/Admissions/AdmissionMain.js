@@ -58,7 +58,7 @@ class AdmissionHome extends Component {
     return (
         <div id="Admissions">
     
-        <AdmissionUpperLook UpperTitle={`Bringing Together Talented and Innovative Minds.`} />
+        <AdmissionUpperLook UpperTitle={`"Bringing Together Talented and Innovative Minds".`} />
          
                 <div className="Admission__MainWindow">
                 <AdmissionInfoLook MainTitle={`Programmes Offered - ${new Date().getFullYear()}`} >

@@ -429,6 +429,50 @@
           }
       }
 
+      .FeeInstruction
+      {
+          display: flex;
+          flex-direction: column;
+
+          .__Title
+          {
+              color:#2b46b4;
+              font-weight: bold;
+              font-family: "Abel",sans-serif;
+              letter-spacing: 0.55px;
+              margin-bottom: 0.8em;
+          }
+
+          p
+          {
+              font-family: "Abel",sans-serif;
+              color: #464646;
+              font-size:1.15rem;
+          .__ul1
+          {
+              list-style: none;
+              padding: 1em;
+              margin-top:0.05em;
+              margin-bottom: 0.55em; 
+              li{
+                font-family: "Abel",sans-serif;
+                margin-bottom: 0.1em;
+            }
+          }
+          .__ul2
+          {
+              list-style: circle;
+              padding: 1em;
+              margin-top:0.05em;
+              margin-bottom: 0.55em;
+              
+              li{
+                font-family: "Abel",sans-serif;
+                margin-bottom: 0.1em;
+              }
+          }
+        }
+      }
        .AdmissionProcedure
        {
           ul

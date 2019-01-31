@@ -501,6 +501,54 @@
   font-weight: bold;
 }
 
+.Admission__MainWindow .Admission__InfoWindow .FeeInstruction {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.Admission__MainWindow .Admission__InfoWindow .FeeInstruction .__Title {
+  color: #2b46b4;
+  font-weight: bold;
+  font-family: "Abel",sans-serif;
+  letter-spacing: 0.55px;
+  margin-bottom: 0.8em;
+}
+
+.Admission__MainWindow .Admission__InfoWindow .FeeInstruction p {
+  font-family: "Abel",sans-serif;
+  color: #464646;
+  font-size: 1.15rem;
+}
+
+.Admission__MainWindow .Admission__InfoWindow .FeeInstruction p .__ul1 {
+  list-style: none;
+  padding: 1em;
+  margin-top: 0.05em;
+  margin-bottom: 0.55em;
+}
+
+.Admission__MainWindow .Admission__InfoWindow .FeeInstruction p .__ul1 li {
+  font-family: "Abel",sans-serif;
+  margin-bottom: 0.1em;
+}
+
+.Admission__MainWindow .Admission__InfoWindow .FeeInstruction p .__ul2 {
+  list-style: circle;
+  padding: 1em;
+  margin-top: 0.05em;
+  margin-bottom: 0.55em;
+}
+
+.Admission__MainWindow .Admission__InfoWindow .FeeInstruction p .__ul2 li {
+  font-family: "Abel",sans-serif;
+  margin-bottom: 0.1em;
+}
+
 .Admission__MainWindow .Admission__InfoWindow .AdmissionProcedure ul {
   list-style: none;
 }

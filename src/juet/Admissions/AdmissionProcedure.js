@@ -30,7 +30,7 @@ class AdmissionProcedure extends React.Component
     return (
         <section id="Admissions">
     
-    <AdmissionUpperLook UpperTitle={`Bringing Together Talented and Innovative Minds.`} />
+    <AdmissionUpperLook UpperTitle={`"Bringing Together Talented and Innovative Minds".`} />
          
         <div className="Admission__MainWindow">
            <AdmissionInfoLook MainTitle="Admission Procedure" >

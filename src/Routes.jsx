@@ -7,6 +7,8 @@ import AdmissionProcedure from './juet/Admissions/AdmissionProcedure'
 import FeeStructure from './juet/Admissions/FeeStructure'
 import EducationLoan from './juet/Admissions/EducationLoan'
 import AdmissionIntake from './juet/Admissions/AdmissionIntake'
+import FeeInstruction from "./juet/Admissions/FeeInstruction";
+import Scholarship from './juet/Admissions/Scholarship'
 
 export const routes = [
     // {
@@ -50,8 +52,18 @@ export const routes = [
         exact:true,
     },
     {
+        path:"/admissions/FeeInstruction",
+        component:FeeInstruction,
+        exact:true,
+    },
+    {
         path:"/admissions/Intake",
         component:AdmissionIntake,
+        exact:true,
+    },
+    {
+        path:"/admissions/Scholarship",
+        component:Scholarship,
         exact:true,
     }
 
