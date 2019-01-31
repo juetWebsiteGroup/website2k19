@@ -1,6 +1,7 @@
 const feesJSON = require('../JSON/feeDetails.json')
 const admProcedures = require('../JSON/admissionProcedure.json')
 const admProgrammes = require('../JSON/admissionProgrammes.json')
+const intakeData = require('../JSON/admissionIntake.json')
 const router = require("express").Router()
 
 router.get('/:id',(req,res)=>{
@@ -16,6 +17,10 @@ router.get('/:id',(req,res)=>{
    else if(id === "programmes")
    {
        res.send(admProgrammes)
+   }
+   else if(id === "Intake")
+   {
+       res.send(intakeData)
    }
 })
 
