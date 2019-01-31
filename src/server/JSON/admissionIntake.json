@@ -1,0 +1,35 @@
+{
+    "BTech":{
+                "Title":"B.Tech Programme",
+                "IntakeProgramme":[
+                                    {"id":"CHE","branch":"Chemical Engineering","Total":30,"JEE":15,"Board":15},
+                                    {"id":"CE","branch":"Civil Engineering","Total":90,"JEE":45,"Board":45},
+                                    {"id":"CSE","branch":"Computer Science & Engineering","Total":300,"JEE":150,"Board":150},
+                                    {"id":"ECE","branch":"Electronics & Communication Engineering","Total":60,"JEE":15,"Board":30},
+                                    {"id":"MEC","branch":"Mechanical Engineering","Total":120,"JEE":60,"Board":60}
+                                  ]
+            },
+    "MTech":{
+                "Title":"M.Tech Programme",
+                "IntakeProgramme":[
+                                    {"id":"CHE","branch":"Chemical Engineering","Total":5,"JEE":null,"Board":null},
+                                    {"id":"CE","branch":"Civil Engineering","Total":10,"JEE":null,"Board":null},
+                                    {"id":"CSE","branch":"Computer Science & Engineering","Total":10,"JEE":null,"Board":null},
+                                    {"id":"ECE","branch":"Electronics & Communication Engineering","Total":10,"JEE":null,"Board":null},
+                                    {"id":"MEC","branch":"Mechanical Engineering","Total":10,"JEE":null,"Board":null}
+                                  ]
+            },
+    "PhD":{
+                "Title":"Ph.D. Programme",
+                "Intake":30
+            },
+    "Msc":{
+                "Title":"M.Sc. Programme",
+                "Intake":30
+          },   
+    "Bsc":{
+                "Title":"B.Sc. (Hons.) Programme",
+                "Intake":30
+            }            
+
+}
