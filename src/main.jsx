@@ -22,8 +22,8 @@ class IndexRender extends React.PureComponent{
         return (
             <div>
               
-                {/* <NavBarPackage/> */}
-                <AdmissionNavbar />
+                <NavBarPackage/>
+                {/* <AdmissionNavbar /> */}
                 <Switch>
                 {routes.map(({ path, exact, component: C, ...rest }) => {
                   
@@ -42,8 +42,8 @@ class IndexRender extends React.PureComponent{
                 })}
                 <Route component={ErrorPageNotFound}/>
                 </Switch>
-                <AdmissionFooter />
-                {/* <FooterMake /> */}
+                {/* <AdmissionFooter /> */}
+                <FooterMake />
                  
             </div>
         )

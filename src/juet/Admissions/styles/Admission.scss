@@ -197,7 +197,7 @@
            padding: 1em;
            background: inherit;
            box-sizing: border-box;
-           @include gridMaker(repeat(auto-fit,minmax(250px,1fr)),minmax(400px,1fr),2.5em);
+           @include gridMaker(repeat(3,1fr),minmax(400px,1fr),2.5em);
            .__card
            {
                width: 100%;
@@ -250,6 +250,9 @@
                 }
                 .__cardDetails
                 {
+                    height: 18vh;
+                    width: 95%;
+                    overflow-y: scroll;
                     ul
                     {
                         list-style: none;
@@ -306,7 +309,20 @@
                     }
                 }
            }
-
+           @media screen and (max-width:801px) and (min-width:610px) {
+               &
+               {
+                   display: grid;
+                   grid-template-columns: repeat(2,1fr);
+               }
+           }
+           @media screen and (max-width:609px){
+            &
+            {
+                display: grid;
+                grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+            }
+        }
        }
       .Fees
       {

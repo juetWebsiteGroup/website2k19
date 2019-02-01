@@ -240,8 +240,8 @@
           box-sizing: border-box;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: minmax(400px, 1fr);
   grid-gap: 2.5em;
 }
@@ -314,6 +314,12 @@
   text-align: left;
 }
 
+.Admission__MainWindow .Admission__InfoWindow .AdmissionApplication .__card .__cardDetails {
+  height: 18vh;
+  width: 95%;
+  overflow-y: scroll;
+}
+
 .Admission__MainWindow .Admission__InfoWindow .AdmissionApplication .__card .__cardDetails ul {
   list-style: none;
   padding: 1em;
@@ -374,6 +380,24 @@
   transition: transform cubic-bezier(0.445, 0.05, 0.55, 0.95) 0.44s, -webkit-transform cubic-bezier(0.445, 0.05, 0.55, 0.95) 0.44s;
   background: -webkit-gradient(linear, left top, left bottom, from(#1c8648), to(#096e35));
   background: linear-gradient(180deg, #1c8648, #096e35);
+}
+
+@media screen and (max-width: 801px) and (min-width: 610px) {
+  .Admission__MainWindow .Admission__InfoWindow .AdmissionApplication {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 609px) {
+  .Admission__MainWindow .Admission__InfoWindow .AdmissionApplication {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
 }
 
 .Admission__MainWindow .Admission__InfoWindow .Fees {

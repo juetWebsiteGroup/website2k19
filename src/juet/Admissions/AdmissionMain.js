@@ -32,7 +32,7 @@ const ProgrammesOfferedAdmission = (props) => {
                   )
                       
                   })}
-               
+    
              </div>  
         </div>
        
