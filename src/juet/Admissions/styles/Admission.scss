@@ -327,12 +327,14 @@
       .Fees
       {
         @include AlignCenter;
+        flex-direction: column;
         .FeeTable
         {
           border:1px solid #ccc;
           table-layout: fixed;
           border-collapse: collapse;
           width: 100%;
+          margin-bottom:1em;
           box-shadow: 2px 5px 14px 3px #ccc;
           thead
           {
@@ -374,6 +376,47 @@
         }
       }
       
+      .Scholarships
+      {
+         display: flex;
+         flex-direction: column;   
+        
+         .container
+         {
+             li
+             {
+                 margin-bottom: 0.5em;
+                 font-weight: bold;
+                 color:#4e4e4e;
+                 font-family: 'Abel',sans-serif;
+                 h3,h4
+                 {
+                     color:#2b46b4;
+                     text-transform: uppercase;
+                     margin-top:0.5em;
+                 }
+                 p
+                 {
+                     text-align: justify;
+                     padding: 0.5em;
+                     font-weight: bold;
+                     margin-bottom: 0.6em;
+                     font-family: 'Abel',sans-serif;
+                 }
+                 ul
+                 {
+                     padding: 0.7em;
+
+                     li
+                     {
+                         margin-bottom: 0.4em;
+                         font-weight: bold;
+                     }
+                 }
+             }
+         }
+      }
+
       .Intake
       {
           .container
@@ -586,8 +629,8 @@
 
 @media screen and (max-width:777px) {
     .Admission__MainWindow{
-        display: grid;
-        grid-template-columns: none;
+        display: flex;
+        flex-direction: column-reverse;
         .Admission__QuickAccess
         {
             border:none;

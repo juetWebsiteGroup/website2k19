@@ -410,6 +410,10 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .Admission__MainWindow .Admission__InfoWindow .Fees .FeeTable {
@@ -417,6 +421,7 @@
   table-layout: fixed;
   border-collapse: collapse;
   width: 100%;
+  margin-bottom: 1em;
   -webkit-box-shadow: 2px 5px 14px 3px #ccc;
           box-shadow: 2px 5px 14px 3px #ccc;
 }
@@ -453,6 +458,46 @@
   font-size: 0.79rem;
   text-align: left;
   color: #2b46b4;
+  font-weight: bold;
+}
+
+.Admission__MainWindow .Admission__InfoWindow .Scholarships {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.Admission__MainWindow .Admission__InfoWindow .Scholarships .container li {
+  margin-bottom: 0.5em;
+  font-weight: bold;
+  color: #4e4e4e;
+  font-family: 'Abel',sans-serif;
+}
+
+.Admission__MainWindow .Admission__InfoWindow .Scholarships .container li h3, .Admission__MainWindow .Admission__InfoWindow .Scholarships .container li h4 {
+  color: #2b46b4;
+  text-transform: uppercase;
+  margin-top: 0.5em;
+}
+
+.Admission__MainWindow .Admission__InfoWindow .Scholarships .container li p {
+  text-align: justify;
+  padding: 0.5em;
+  font-weight: bold;
+  margin-bottom: 0.6em;
+  font-family: 'Abel',sans-serif;
+}
+
+.Admission__MainWindow .Admission__InfoWindow .Scholarships .container li ul {
+  padding: 0.7em;
+}
+
+.Admission__MainWindow .Admission__InfoWindow .Scholarships .container li ul li {
+  margin-bottom: 0.4em;
   font-weight: bold;
 }
 
@@ -660,10 +705,13 @@
 
 @media screen and (max-width: 777px) {
   .Admission__MainWindow {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: none;
-        grid-template-columns: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
   .Admission__MainWindow .Admission__QuickAccess {
     border: none;

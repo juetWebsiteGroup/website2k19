@@ -3,38 +3,38 @@
                 "Academic":[
                         {
                             "CourseName":"B.Tech",
-                            "TuitionFee":"78500",
-                            "DevelopmentFee":"14000",
-                            "CautionMoney":"10000"
+                            "TuitionFee":"78500 INR",
+                            "DevelopmentFee":"14000 INR",
+                            "CautionMoney":"10000 INR"
                         },
                         {
                             "CourseName":"M.Tech",
-                            "TuitionFee":"40500",
-                            "DevelopmentFee":"7000",
-                            "CautionMoney":"5000"
+                            "TuitionFee":"40500 INR",
+                            "DevelopmentFee":"7000 INR",
+                            "CautionMoney":"5000 INR"
                         },
                         {
                             "CourseName":"Ph.D. (Full-Time)**",
-                            "TuitionFee":"17000",
-                            "DevelopmentFee":"3000",
-                            "CautionMoney":"5000"
+                            "TuitionFee":"17000 INR",
+                            "DevelopmentFee":"3000 INR",
+                            "CautionMoney":"5000 INR"
                         },{
                             "CourseName":"Ph.D. (Sponsored Candidate)",
-                            "TuitionFee":"20000",
+                            "TuitionFee":"20000 INR",
                             "DevelopmentFee":null,
-                            "CautionMoney":"5000"
+                            "CautionMoney":"5000 INR"
                         },
                         {
                             "CourseName":"B.Sc./B.Sc. (Hons.)",
-                            "TuitionFee":"20000",
-                            "DevelopmentFee":"5000",
-                            "CautionMoney":"5000"
+                            "TuitionFee":"20000 INR",
+                            "DevelopmentFee":"5000 INR",
+                            "CautionMoney":"5000 INR"
                         },
                         {
                             "CourseName":"M.Sc.",
-                            "TuitionFee":"78500",
+                            "TuitionFee":"78500 INR",
                             "DevelopmentFee":null,
-                            "CautionMoney":"5000"
+                            "CautionMoney":"5000 INR"
                         }
                         ],
                 "Hostel":{

@@ -63,6 +63,26 @@ export default class FeeStructure extends React.Component
                       
                   </table> : <LoadingView />}
 
+                  {this.state.FeesData ?  <table className="FeeTable">
+                      <thead>
+                      <th scope="col" colSpan={2} >Programme</th>
+                      <th scope="col">Tuition Fee Per Year</th>
+                      <th scope="col">Development Fee - Yearly</th>
+                      </thead>
+                      {this.state.FeesData.NRIStudent.Academic.map((data,i)=>{
+                          return (<tr key={i}>
+                          <td colSpan={2}><h3>{data.CourseName}</h3></td>
+                          <td>{data.TuitionFee}</td>
+                          <td>{data.DevelopmentFee}</td>
+                          </tr>)
+                      })}
+                      
+                          <tr>
+                              <td colSpan={4}><h4>Hostel Charges {this.state.FeesData.NRIStudent.Hostel.Fee} {this.state.FeesData.IndianStudent.Hostel.isFood_Laundry ? "(Including Food,Laundry,etc..)" : "(Including Food etc..)"}</h4></td>
+                              </tr>
+                              
+                  </table> : <LoadingView />}
+                  
                  </div>   
                 </AdmissionInfoLook>
                 <QuickAccess/>
