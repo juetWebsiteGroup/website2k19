@@ -11,31 +11,36 @@ import FeeInstruction from "./juet/Admissions/FeeInstruction";
 import Scholarship from './juet/Admissions/Scholarship'
 
 export const routes = [
+    // {
+    //     path: "/",
+    //     component: BodyMainLandingPage,
+    //     exact: true
+    // },
+    // {
+    //     path: "/About",
+    //     component: About,
+    //     exact: true
+    // },
+    // {
+    //     path: "/faculty",
+    //     component: FacultyListAll,
+    //     exact: true
+    // },
+    // {
+    //    path:"/faculty/:dept",
+    //    component:FacultyDepartmentProfile,
+    //    exact:true
+    // },
     {
-        path: "/",
-        component: BodyMainLandingPage,
-        exact: true
-    },
-    {
-        path: "/About",
-        component: About,
-        exact: true
-    },
-    {
-        path: "/faculty",
-        component: FacultyListAll,
-        exact: true
-    },
-    {
-       path:"/faculty/:dept",
-       component:FacultyDepartmentProfile,
-       exact:true
-    },
-    {
-        path:"/admissions",
+        path:"/",
         component:AdmissionHome,
         exact:true,
     },
+    // {
+    //     path:"/admissions",
+    //     component:AdmissionHome,
+    //     exact:true,
+    // },
     {
         path:"/admissions/Procedure",
         component:AdmissionProcedure,
