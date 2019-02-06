@@ -7,5 +7,5 @@ export const AboutUpperLook = (props) => {
              <div className="Title">{props.Title}</div>
            </div>
         </div>
-    )
+    ) 
 }
