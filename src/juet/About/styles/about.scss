@@ -1,0 +1,132 @@
+@import '../../common_sass/common';
+
+#About
+{
+    display: flex;
+    flex-direction: column;
+
+    .line
+    {
+        padding: 0.03em;
+        width:99%;
+        background: #d3d3d3;
+        margin-bottom: 1em;
+    }
+    .AboutUpperLook
+    {
+
+    }
+     
+    .AboutMain
+    {
+        @include gridMaker(3.5fr 1fr,minmax(200px,1fr),1em);
+        background: #f9f9f9;
+        padding: 2em;
+      
+        .AboutusContainer
+        {
+             h2
+             {
+                font-family: 'Abel',sans-serif;
+                color:#182c61;
+                text-align: left;
+                font-size:5.5vmin;
+                letter-spacing: 0.8px;  
+             }
+             p
+             {
+                 margin: 0.5em 0 0.5em 0;
+                 text-align: justify;
+                 font-family: 'Abel',sans-serif;
+                 line-height: 28px;
+                 color: #4e4e4e;
+                 font-weight: 700;
+             }
+
+             ul
+             {
+                 list-style:circle;
+                 padding: 1em;
+                 box-sizing: border-box;
+
+                 li
+                 {
+                     font-family: 'Abel',sans-serif;
+                     font-weight: 700;
+                     margin-bottom: 0.5em;
+                     text-align: left;
+                     color:#4e4e4e;
+                 }
+             }
+        }
+
+        .About__QuickAccess
+        {
+            display: flex;
+            flex-direction: column;
+            padding: 0 1em 1em 1em;
+            align-items: flex-start;
+            justify-content: flex-start;
+            border-left: .06rem solid #d3d3d3;
+            h3
+            {
+                font-size: 3.5vmin;
+                font-family: 'Abel',sans-serif;
+                color:#182c61;
+                padding: .2em .2em .2em .5em;
+                border-left: .22em solid #ffa502;
+                margin-bottom: 0.3em;
+            }
+
+            ul
+            {
+                list-style: none;
+                box-sizing: border-box;
+               
+                li
+                {
+                    padding-left: 1em;
+                    margin-bottom: .96em;
+                    cursor: pointer;
+                    font-weight: 700;
+                    font-size: .89rem;
+                    color: #3742fa;
+
+                    &
+                    {
+                        a
+                        {
+                            text-decoration: none;
+                            color:inherit;
+                        }
+                    }
+                }
+
+            }
+            @media screen and (max-width:777px) {
+
+                    &
+                    {
+                        border:none;
+                        display: flex;
+                        justify-content:flex-start;
+                        align-items: flex-start;
+
+                        h3
+                        {
+                            font-size: 4.2vmin;
+                        }
+                    }
+                }
+            }
+
+            @media screen and (max-width:777px) {
+                &{
+                   display: flex;
+                flex-direction: column-reverse;
+                }
+            }
+        }
+      
+    
+}
