@@ -1,6 +1,9 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
+import {AboutUpperLook} from './AboutUpperLook'
 import {QuickAccess} from './QuickAccess'
+
+import './styles/about.css';
 
 const Aboutus = (props) => {
     return (
@@ -17,9 +20,9 @@ export default class AboutMain extends React.Component
    {
        return(
            <section id="About">
-                    <div className="AboutUpper">
-                    
-                    </div>
+
+                    <AboutUpperLook Title="About University" />
+
                     <div className="AboutMain">
                        <Aboutus>
                            <h2>About us</h2>
@@ -44,7 +47,7 @@ export default class AboutMain extends React.Component
                        </Aboutus>
 
                        <QuickAccess />
-                       
+
                     </div>
 
            </section>
