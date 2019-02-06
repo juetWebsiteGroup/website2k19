@@ -37,7 +37,7 @@ class SecondNavbar extends Component {
         this.setState(()=>{return {
             dataContainer: [
                 {id: 'NavUL2_1', Link_to: '/', title: 'Home', is_SubOpt: false},
-                {id: 'NavUL2_2', Link_to: '', title: 'About', is_SubOpt: true},
+                {id: 'NavUL2_2', Link_to: '/About', title: 'About', is_SubOpt: true},
                 {id: 'NavUL2_3', Link_to: '/admissions', title: 'Admission', is_SubOpt: false},
                 {id: 'NavUL2_4', Link_to: '', title: 'Academics', is_SubOpt: true},
                 {id: 'NavUL2_5', Link_to: '', title: 'Placement', is_SubOpt: false},
@@ -49,11 +49,11 @@ class SecondNavbar extends Component {
                         University: [
                             {id: 'SubNavOptions1_1', Link_to: '/About', title: 'About us'},
                             {id: 'SubNavOptions1_2', Link_to: '/MissionVision', title: 'Mision & Vision'},
-                            {id: 'SubNavOptions1_3', Link_to: '/jaypeeGroup', title: 'Jaypee Group'},
+                            {id: 'SubNavOptions1_3', Link_to: '/JPGroup', title: 'Jaypee Group'},
                             {id: 'SubNavOptions1_4', Link_to: '/ChancellorMessage', title: 'Message From Chancellor'},
                             {id: 'SubNavOptions1_5', Link_to: '/JSS', title: 'JSS'},
                             {id: 'SubNavOptions1_6', Link_to: '/faculty', title: 'Faculty'},
-                            {id: 'SubNavOptions1_7', Link_to: '/staff', title: 'Staff'},
+                            {id: 'SubNavOptions1_7', Link_to: '/Staff', title: 'Staff'},
                             {id: 'SubNavOptions1_8', Link_to: '/sisterInstitutes', title: 'Sister Institutes'}
                         ],
                 Administration: [
@@ -146,7 +146,7 @@ class SecondNavbar extends Component {
                 <nav>
                     <ul className="NavUL">
                         <li><Link to='/'>Home</Link></li>
-                        <li><Link to="">About</Link>
+                        <li><Link to="/About">About</Link>
                             <div className="SubNavOptions">
                                 <ul className="SubNavOptionsUL">
                                     <li><h1>University</h1><br/><span className="line"></span></li>
@@ -262,8 +262,8 @@ class SecondNavbar extends Component {
 
                             </div>
                         </li>
-                        <li><a href="">Placement</a></li>
-                        <li><a href="">Facilities</a></li>
+                        <li><Link to="">Placement</Link></li>
+                        <li><Link to="">Facilities</Link></li>
                     </ul>
 
                 </nav>

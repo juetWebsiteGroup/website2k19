@@ -33,7 +33,7 @@ const DisplayDepartmentFaculties = (props)=> {
             })}
     </div>);
 };
-class FacultyDepartmentProfile extends Component
+class FacultyDepartmentProfile extends React.PureComponent
 {
     constructor(props)
     {
