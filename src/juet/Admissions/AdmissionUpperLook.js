@@ -15,9 +15,9 @@ export default class AdmissionUpperLook extends Component {
                      <div className="Admission__news">
                      <ul>
                          <li><Link to="/admissions/Intake">Admission Intake 2019</Link></li>
-                         <li>Placements 2019</li>
-                         <li>Student Facilities</li>
-                         <li>Student Activities</li>
+                         <li><a href="https://www.juet.ac.in/TandP/Placement2019.php" target="_blank">Placements 2019</a></li>
+                         <li><a href="https://www.juet.ac.in/Facilities/Hostel.php" target="_blank">Student Facilities</a></li>
+                         <li><a href="https://www.juet.ac.in/StudentsActivities/StudentsActivities.php" target="_blank">Student Activities</a></li>
                      </ul>
                  </div>
             </div>
