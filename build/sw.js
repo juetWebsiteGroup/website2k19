@@ -1,4 +1,4 @@
-importScripts("/juet-manifest.9b97ad04d2b14b4c5087d69dd4ecd295.js", "https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
+importScripts("/juet-manifest.ffd43351df9b568b107f56d1361bdac5.js", "https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 self.__precacheManifest = [].concat(self.__precacheManifest || []);
 

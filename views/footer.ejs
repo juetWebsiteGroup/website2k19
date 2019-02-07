@@ -1,5 +1,8 @@
-<script src="/vendor.bundle.js"></script>
-
+<script src="/juetVendor.bundle.js"></script>
+<% var rx = new RegExp(/\w.js$|jsx$/); Bundles.map((result)=>{%>
+<% if(rx.test(result.file.toString())){%>
+    <script src="/<%-result.file %>"></script>
+<%}})%>
 <script src="/juet_bundle.js" defer></script>
 </body>
 </html>

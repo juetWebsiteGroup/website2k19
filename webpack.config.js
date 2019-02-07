@@ -122,7 +122,7 @@ var browserConfig = {
             cacheGroups: {
               commons: {
                 test: /[\\/]node_modules[\\/]/,
-                name: "vendor",
+                name: "juetVendor",
                 chunks: "all"
               }
             }
@@ -155,7 +155,7 @@ var browserConfig = {
         new CleanWebpackPlugin(['build',`${path.resolve(__dirname,'sw.js')}`]),
         new MiniCssExtractPlugin({
             filename:'[name].css',
-            chunkFilename: '[id].css' 
+            // chunkFilename: '[id].css' 
           }),
           new Dotenv()
     ]
