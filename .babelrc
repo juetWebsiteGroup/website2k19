@@ -8,6 +8,9 @@
           }
         ],
         [
+          "react-loadable/babel"
+        ],
+        [
           "@babel/plugin-syntax-dynamic-import"
         ]
       ]

@@ -12,7 +12,8 @@
     "start": "node server.js",
     "dev": "webpack-dev-server --hot --inline --mode=development ",
     "build-dev": "webpack --mode=development",
-    "build": "webpack --mode=production"
+    "build": "webpack --mode=production",
+    "build-server":"webpack --mode=production --config webpack.Server.js"
   },
   "browserslist": [
     "last 2 version",
@@ -50,6 +51,7 @@
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "react-ionicons": "^2.1.6",
+    "react-loadable": "^5.5.0",
     "react-redux": "^6.0.0",
     "react-router-config": "^4.4.0-beta.6",
     "react-router-dom": "^4.3.1",

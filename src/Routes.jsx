@@ -1,7 +1,8 @@
+import Loadable from 'react-loadable'
+
 import BodyMainLandingPage from "./juet/LandingPage/bodyMain.jsx";
 import AboutMain from './juet/About/AboutMain'
-import FacultyListAll from './juet/faculty/FacultyListAll'
-import FacultyDepartmentProfile from './juet/faculty/FacultyListDepartmentWise'
+// import FacultyDepartmentProfile from './juet/faculty/FacultyListDepartmentWise'
 import AdmissionHome from './juet/Admissions/AdmissionMain'
 import AdmissionProcedure from './juet/Admissions/AdmissionProcedure'
 import FeeStructure from './juet/Admissions/FeeStructure'
@@ -9,6 +10,18 @@ import EducationLoan from './juet/Admissions/EducationLoan'
 import AdmissionIntake from './juet/Admissions/AdmissionIntake'
 import FeeInstruction from "./juet/Admissions/FeeInstruction";
 import Scholarship from './juet/Admissions/Scholarship'
+
+import {LoadingView} from './juet/LoadingView/Loading'
+
+const FacultyListAll_Async = Loadable({
+    loader:() => import('./juet/faculty/FacultyListAll'),
+    loading:LoadingView
+})
+
+const FacultyDepartmentProfile_Async = Loadable({
+    loader:() => import('./juet/faculty/FacultyListDepartmentWise'),
+    loading:LoadingView
+})
 
 export const routes = [
     {
@@ -23,12 +36,12 @@ export const routes = [
     },
     {
         path: "/faculty",
-        component: FacultyListAll,
+        component: FacultyListAll_Async,
         exact: true
     },
     {
        path:"/faculty/:dept",
-       component:FacultyDepartmentProfile,
+       component:FacultyDepartmentProfile_Async,
        exact:true
     },
     // {

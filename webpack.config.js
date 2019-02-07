@@ -9,6 +9,7 @@ const devMode = process.env.NODE_ENV !== 'development'
 const CleanWebpackPlugin = require('clean-webpack-plugin')
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const Dotenv = require('dotenv-webpack');
+const {ReactLoadablePlugin} = require('react-loadable/webpack')
 const {InjectManifest,GenerateSW} = require('workbox-webpack-plugin');
 //require("@babel/polyfill");
 
@@ -76,6 +77,7 @@ var browserConfig = {
     output:{
         path:path.resolve(__dirname,'build'),
         filename:'juet_bundle.js',
+        chunkFilename: '[name].bundle.js'
     },
     devtool: false,
     performance: {
@@ -115,6 +117,15 @@ var browserConfig = {
         ]
     },
     optimization: {
+        splitChunks: {
+            cacheGroups: {
+              commons: {
+                test: /[\\/]node_modules[\\/]/,
+                name: "vendor",
+                chunks: "all"
+              }
+            }
+          },
         minimizer: [
           new UglifyJsPlugin({
             cache: true,
@@ -125,6 +136,9 @@ var browserConfig = {
         ]
       },
     plugins:[
+            new ReactLoadablePlugin({
+              filename: './build/react-loadable.json',
+            }),
         new InjectManifest({
             swDest:'sw.js',
             swSrc:'static/sw/sw-template.js',
@@ -145,54 +159,6 @@ var browserConfig = {
           new Dotenv()
     ]
 }
-var serverConfig = {
-    entry: ['./src/server/index.js'],
-    target: 'node',
-    externals: [nodeExternals()],
-    output: {
-      path: path.resolve(__dirname),
-      filename: "server.js",
-      libraryTarget:"commonjs2"
-    },
-    devtool: false,
-    module: {
-      rules: [
-        {
-            test:[/\.svg$/,/\.gif$/,/\.jpe?g$/,/\.png$/],
-            loader:"file-loader",
-            options:{
-                name:"build/media/[name].[ext]",
-                publicPath:url => url.replace('/build',"")
-                ,emit:false
-            }
-        },
-        {
-            test : /\.(eot|otf|woff|woff2|ttf)(\?\S*)?$/,
-            loader: 'url-loader',
-        },
-        {
-          test:/\.css$/,
-          use:[
-              {
-                  loader:"postcss-loader",
-                  options:{sourceMap:true,ident:'postcss',plugins:[require('autoprefixer')()]}
-              }
-          ]
-        },
-        {   
-            test: /\.(js|jsx)$/,
-            exclude:/(node_modules)/,
-            use: 'babel-loader' 
-        }
-      ]
-    },
-    plugins: [ 
-      new webpack.DefinePlugin({
-        __isBrowser__: "false"
-      }),
-      new CleanWebpackPlugin(['server.js']),
-      new Dotenv()
-    ]
-  }
 
-  module.exports = devMode ? [browserConfig,serverConfig] : [devConfig]
+
+  module.exports = devMode ? [browserConfig] : [devConfig]

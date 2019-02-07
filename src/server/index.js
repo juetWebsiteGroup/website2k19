@@ -1,4 +1,8 @@
 import express from 'express'
+
+import Loadable from 'react-loadable'
+import {getBundles} from 'react-loadable/webpack'
+import stats from '../../build/react-loadable.json'
 import path from 'path'
 import cors from 'cors'
 import morgan from 'morgan'
@@ -36,14 +40,6 @@ app.use('/api/admission',admission)
 
 const juetStore = configureStore({})
 
-// app.get("/sw.js", (req, res) => {
-//   res.sendFile(path.resolve(__dirname,"sw.js"));
-// });
-
-// app.get('/app-shell',(req,res)=>{
-//   res.render('index',{RenderData:null,dataFromServer:null})
-// })
-
 app.get("/*",(req,res)=>{
 
     const branch = matchRoutes(routes, req.url);
@@ -52,25 +48,24 @@ app.get("/*",(req,res)=>{
       return fetchData instanceof Function ? fetchData(juetStore) : Promise.resolve(null)
     });
 
-   /* const actions = matchRoutes(routes,req.path)
-     .map(({route})=>route.component.fetchData instanceof Function ? route.component.fetchData(juetStore) : null )
-     .map(async actions => await Promise.all(
-        (actions || []).map(p => p && new Promise(resolve => p.then(resolve).catch(resolve)))
-        )
-      )
-      await Promise.all(actions);*/
+
       return Promise.all(promises).then((data)=>{
 
         const context = {};
+        let modules = []
         const ServerRenderData = ReactDOMServer.renderToString(
+          <Loadable.Capture report={moduleName => modules.push(moduleName)}>
                   <Provider store={juetStore}>
                   <Router location={req.url} context={context} >
                   <IndexRender />
                   </Router>
                   </Provider>
+          </Loadable.Capture>
                    )
-  
-         res.render('index',{RenderData:ServerRenderData,dataFromServer:serialize(juetStore.getState())})
+
+         let bundles = getBundles(stats,modules)
+
+         res.render('index',{RenderData:ServerRenderData,Bundles:bundles,dataFromServer:serialize(juetStore.getState())})
 
       })
      
@@ -78,7 +73,9 @@ app.get("/*",(req,res)=>{
 })
 
 const PORT = process.env.PORT || 3000
-app.listen(PORT,(err)=>{
+
+Loadable.preloadAll().then(()=>{
+  app.listen(PORT,(err)=>{
     if(err)
      {
          console.log(err)
@@ -86,3 +83,5 @@ app.listen(PORT,(err)=>{
 
      console.log('Server Started at PORT_NUMBER:'+PORT)
 } )
+})
+

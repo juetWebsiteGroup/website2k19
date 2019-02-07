@@ -7,6 +7,8 @@ import window from 'global'
 import {Provider} from 'react-redux'
 import configureStore from '../redux/configureStore'
 
+import Loadable from 'react-loadable'
+
 webfont.load({
     google:{
         families:['Lato','Dosis','Courgette','Alegreya Sans','Abel','Playfair Display','sans-serif','cursive']
@@ -19,10 +21,12 @@ delete window.__DATA_FROM_SERVER__;
 
 const juetStore = configureStore(state)
 
-ReactDOM.hydrate(
- <Provider store={juetStore}>
- <Router>
-    <IndexRender />
-</Router>
- </Provider>   
-,document.getElementById('juetroot'))
+Loadable.preloadReady().then(()=>{
+    ReactDOM.hydrate(
+        <Provider store={juetStore}>
+        <Router>
+           <IndexRender />
+       </Router>
+        </Provider>   
+       ,document.getElementById('juetroot'))
+})
