@@ -4,109 +4,109 @@
       "id": "",
       "name": null,
       "file": "main.css",
-      "publicPath": "main.css"
+      "publicPath": "/main.css"
     },
     {
       "id": "",
       "name": null,
       "file": "main.css",
-      "publicPath": "main.css"
+      "publicPath": "/main.css"
     },
     {
       "id": "",
       "name": null,
       "file": "main.css",
-      "publicPath": "main.css"
+      "publicPath": "/main.css"
     },
     {
       "id": "",
       "name": null,
       "file": "main.css",
-      "publicPath": "main.css"
+      "publicPath": "/main.css"
     },
     {
       "id": "",
       "name": null,
       "file": "main.css",
-      "publicPath": "main.css"
+      "publicPath": "/main.css"
     },
     {
       "id": "",
       "name": null,
       "file": "main.css",
-      "publicPath": "main.css"
+      "publicPath": "/main.css"
     },
     {
       "id": 48,
       "name": null,
       "file": "main.css",
-      "publicPath": "main.css"
+      "publicPath": "/main.css"
     },
     {
       "id": "",
       "name": null,
       "file": "juet_bundle.js",
-      "publicPath": "juet_bundle.js"
+      "publicPath": "/juet_bundle.js"
     },
     {
       "id": "",
       "name": null,
       "file": "juet_bundle.js",
-      "publicPath": "juet_bundle.js"
+      "publicPath": "/juet_bundle.js"
     },
     {
       "id": "",
       "name": null,
       "file": "juet_bundle.js",
-      "publicPath": "juet_bundle.js"
+      "publicPath": "/juet_bundle.js"
     },
     {
       "id": "",
       "name": null,
       "file": "juet_bundle.js",
-      "publicPath": "juet_bundle.js"
+      "publicPath": "/juet_bundle.js"
     },
     {
       "id": "",
       "name": null,
       "file": "juet_bundle.js",
-      "publicPath": "juet_bundle.js"
+      "publicPath": "/juet_bundle.js"
     },
     {
       "id": "",
       "name": null,
       "file": "juet_bundle.js",
-      "publicPath": "juet_bundle.js"
+      "publicPath": "/juet_bundle.js"
     },
     {
       "id": 48,
       "name": null,
       "file": "juet_bundle.js",
-      "publicPath": "juet_bundle.js"
+      "publicPath": "/juet_bundle.js"
     },
     {
       "id": "",
       "name": null,
       "file": "2.css",
-      "publicPath": "2.css"
+      "publicPath": "/2.css"
     },
     {
       "id": "",
       "name": null,
       "file": "2.bundle.js",
-      "publicPath": "2.bundle.js"
+      "publicPath": "/2.bundle.js"
     },
     {
       "id": "",
       "name": null,
       "file": "3.css",
-      "publicPath": "3.css"
+      "publicPath": "/3.css"
     },
     {
       "id": "",
       "name": null,
       "file": "3.bundle.js",
-      "publicPath": "3.bundle.js"
+      "publicPath": "/3.bundle.js"
     }
   ],
   "./juet/LoadingView/Loading": [
@@ -114,13 +114,13 @@
       "id": 6,
       "name": "./src/juet/LoadingView/Loading.js",
       "file": "main.css",
-      "publicPath": "main.css"
+      "publicPath": "/main.css"
     },
     {
       "id": 6,
       "name": "./src/juet/LoadingView/Loading.js",
       "file": "juet_bundle.js",
-      "publicPath": "juet_bundle.js"
+      "publicPath": "/juet_bundle.js"
     }
   ],
   "../actions/actionTypes": [
@@ -128,13 +128,13 @@
       "id": 8,
       "name": "./src/redux/actions/actionTypes.js",
       "file": "main.css",
-      "publicPath": "main.css"
+      "publicPath": "/main.css"
     },
     {
       "id": 8,
       "name": "./src/redux/actions/actionTypes.js",
       "file": "juet_bundle.js",
-      "publicPath": "juet_bundle.js"
+      "publicPath": "/juet_bundle.js"
     }
   ],
   "./styles/Admission.css": [
@@ -142,13 +142,13 @@
       "id": 10,
       "name": "./src/juet/Admissions/styles/Admission.css",
       "file": "main.css",
-      "publicPath": "main.css"
+      "publicPath": "/main.css"
     },
     {
       "id": 10,
       "name": "./src/juet/Admissions/styles/Admission.css",
       "file": "juet_bundle.js",
-      "publicPath": "juet_bundle.js"
+      "publicPath": "/juet_bundle.js"
     }
   ],
   "./styles/header.css": [
@@ -156,13 +156,13 @@
       "id": 53,
       "name": "./src/juet/header/styles/header.css",
       "file": "main.css",
-      "publicPath": "main.css"
+      "publicPath": "/main.css"
     },
     {
       "id": 53,
       "name": "./src/juet/header/styles/header.css",
       "file": "juet_bundle.js",
-      "publicPath": "juet_bundle.js"
+      "publicPath": "/juet_bundle.js"
     }
   ],
   "./styles/footer.css": [
@@ -170,13 +170,13 @@
       "id": 76,
       "name": "./src/juet/footer/styles/footer.css",
       "file": "main.css",
-      "publicPath": "main.css"
+      "publicPath": "/main.css"
     },
     {
       "id": 76,
       "name": "./src/juet/footer/styles/footer.css",
       "file": "juet_bundle.js",
-      "publicPath": "juet_bundle.js"
+      "publicPath": "/juet_bundle.js"
     }
   ],
   "./styles/about.css": [
@@ -184,13 +184,13 @@
       "id": 77,
       "name": "./src/juet/About/styles/about.css",
       "file": "main.css",
-      "publicPath": "main.css"
+      "publicPath": "/main.css"
     },
     {
       "id": 77,
       "name": "./src/juet/About/styles/about.css",
       "file": "juet_bundle.js",
-      "publicPath": "juet_bundle.js"
+      "publicPath": "/juet_bundle.js"
     }
   ],
   "./juet/LandingPage/styles/body.css": [
@@ -198,13 +198,13 @@
       "id": 81,
       "name": "./src/juet/LandingPage/styles/body.css",
       "file": "main.css",
-      "publicPath": "main.css"
+      "publicPath": "/main.css"
     },
     {
       "id": 81,
       "name": "./src/juet/LandingPage/styles/body.css",
       "file": "juet_bundle.js",
-      "publicPath": "juet_bundle.js"
+      "publicPath": "/juet_bundle.js"
     }
   ],
   "./styles/NotFound.css": [
@@ -212,13 +212,13 @@
       "id": 82,
       "name": "./src/juet/NotFound/styles/NotFound.css",
       "file": "main.css",
-      "publicPath": "main.css"
+      "publicPath": "/main.css"
     },
     {
       "id": 82,
       "name": "./src/juet/NotFound/styles/NotFound.css",
       "file": "juet_bundle.js",
-      "publicPath": "juet_bundle.js"
+      "publicPath": "/juet_bundle.js"
     }
   ],
   "./src/browser/index.jsx": [
@@ -226,13 +226,13 @@
       "id": 84,
       "name": "./src/browser/index.jsx",
       "file": "main.css",
-      "publicPath": "main.css"
+      "publicPath": "/main.css"
     },
     {
       "id": 84,
       "name": "./src/browser/index.jsx",
       "file": "juet_bundle.js",
-      "publicPath": "juet_bundle.js"
+      "publicPath": "/juet_bundle.js"
     }
   ],
   "react": [
@@ -240,13 +240,13 @@
       "id": 0,
       "name": "./node_modules/react/index.js",
       "file": "vendor.bundle.js",
-      "publicPath": "vendor.bundle.js"
+      "publicPath": "/vendor.bundle.js"
     },
     {
       "id": 54,
       "name": "./node_modules/react-ionicons/node_modules/react/react.js",
       "file": "vendor.bundle.js",
-      "publicPath": "vendor.bundle.js"
+      "publicPath": "/vendor.bundle.js"
     }
   ],
   "prop-types": [
@@ -254,13 +254,13 @@
       "id": 1,
       "name": "./node_modules/prop-types/index.js",
       "file": "vendor.bundle.js",
-      "publicPath": "vendor.bundle.js"
+      "publicPath": "/vendor.bundle.js"
     },
     {
       "id": 67,
       "name": "./node_modules/react-ionicons/node_modules/prop-types/index.js",
       "file": "vendor.bundle.js",
-      "publicPath": "vendor.bundle.js"
+      "publicPath": "/vendor.bundle.js"
     }
   ],
   "invariant": [
@@ -268,7 +268,7 @@
       "id": 2,
       "name": "./node_modules/invariant/browser.js",
       "file": "vendor.bundle.js",
-      "publicPath": "vendor.bundle.js"
+      "publicPath": "/vendor.bundle.js"
     }
   ],
   "warning": [
@@ -276,13 +276,13 @@
       "id": 3,
       "name": "./node_modules/history/node_modules/warning/browser.js",
       "file": "vendor.bundle.js",
-      "publicPath": "vendor.bundle.js"
+      "publicPath": "/vendor.bundle.js"
     },
     {
       "id": 5,
       "name": "./node_modules/warning/warning.js",
       "file": "vendor.bundle.js",
-      "publicPath": "vendor.bundle.js"
+      "publicPath": "/vendor.bundle.js"
     }
   ],
   "react-ionicons": [
@@ -290,7 +290,7 @@
       "id": 4,
       "name": "./node_modules/react-ionicons/lib/index.js",
       "file": "vendor.bundle.js",
-      "publicPath": "vendor.bundle.js"
+      "publicPath": "/vendor.bundle.js"
     }
   ],
   "fbjs/lib/warning": [
@@ -298,7 +298,7 @@
       "id": 9,
       "name": "./node_modules/fbjs/lib/warning.js",
       "file": "vendor.bundle.js",
-      "publicPath": "vendor.bundle.js"
+      "publicPath": "/vendor.bundle.js"
     }
   ],
   "object-assign": [
@@ -306,7 +306,7 @@
       "id": 11,
       "name": "./node_modules/object-assign/index.js",
       "file": "vendor.bundle.js",
-      "publicPath": "vendor.bundle.js"
+      "publicPath": "/vendor.bundle.js"
     }
   ],
   "fbjs/lib/invariant": [
@@ -314,7 +314,7 @@
       "id": 12,
       "name": "./node_modules/fbjs/lib/invariant.js",
       "file": "vendor.bundle.js",
-      "publicPath": "vendor.bundle.js"
+      "publicPath": "/vendor.bundle.js"
     }
   ],
   "./ReactElement": [
@@ -322,7 +322,7 @@
       "id": 13,
       "name": "./node_modules/react-ionicons/node_modules/react/lib/ReactElement.js",
       "file": "vendor.bundle.js",
-      "publicPath": "vendor.bundle.js"
+      "publicPath": "/vendor.bundle.js"
     }
   ],
   "isomorphic-fetch": [
@@ -330,7 +330,7 @@
       "id": 14,
       "name": "./node_modules/isomorphic-fetch/fetch-npm-browserify.js",
       "file": "vendor.bundle.js",
-      "publicPath": "vendor.bundle.js"
+      "publicPath": "/vendor.bundle.js"
     }
   ],
   "react-redux": [
@@ -338,7 +338,7 @@
       "id": 15,
       "name": "./node_modules/react-redux/es/index.js",
       "file": "vendor.bundle.js",
-      "publicPath": "vendor.bundle.js"
+      "publicPath": "/vendor.bundle.js"
     }
   ],
   "redux": [
@@ -346,7 +346,7 @@
       "id": 16,
       "name": "./node_modules/redux/es/redux.js",
       "file": "vendor.bundle.js",
-      "publicPath": "vendor.bundle.js"
+      "publicPath": "/vendor.bundle.js"
     }
   ],
   "./reactProdInvariant": [
@@ -354,7 +354,7 @@
       "id": 17,
       "name": "./node_modules/react-ionicons/node_modules/react/lib/reactProdInvariant.js",
       "file": "vendor.bundle.js",
-      "publicPath": "vendor.bundle.js"
+      "publicPath": "/vendor.bundle.js"
     }
   ],
   "react-loadable": [
@@ -362,7 +362,7 @@
       "id": 18,
       "name": "./node_modules/react-loadable/lib/index.js",
       "file": "vendor.bundle.js",
-      "publicPath": "vendor.bundle.js"
+      "publicPath": "/vendor.bundle.js"
     }
   ],
   "is-plain-object": [
@@ -370,7 +370,7 @@
       "id": 19,
       "name": "./node_modules/is-plain-object/index.js",
       "file": "vendor.bundle.js",
-      "publicPath": "vendor.bundle.js"
+      "publicPath": "/vendor.bundle.js"
     }
   ],
   "jquery": [
@@ -378,7 +378,7 @@
       "id": 20,
       "name": "./node_modules/jquery/dist/jquery.js",
       "file": "vendor.bundle.js",
-      "publicPath": "vendor.bundle.js"
+      "publicPath": "/vendor.bundle.js"
     }
   ],
   "./../webpack/buildin/global.js": [
@@ -386,7 +386,7 @@
       "id": 21,
       "name": "./node_modules/webpack/buildin/global.js",
       "file": "vendor.bundle.js",
-      "publicPath": "vendor.bundle.js"
+      "publicPath": "/vendor.bundle.js"
     }
   ],
   "fbjs/lib/emptyFunction": [
@@ -394,7 +394,7 @@
       "id": 22,
       "name": "./node_modules/fbjs/lib/emptyFunction.js",
       "file": "vendor.bundle.js",
-      "publicPath": "vendor.bundle.js"
+      "publicPath": "/vendor.bundle.js"
     }
   ],
   "react-router/es/matchPath": [
@@ -402,7 +402,7 @@
       "id": 23,
       "name": "./node_modules/react-router/es/matchPath.js",
       "file": "vendor.bundle.js",
-      "publicPath": "vendor.bundle.js"
+      "publicPath": "/vendor.bundle.js"
     }
   ],
   "react-router/es/Route": [
@@ -410,7 +410,7 @@
       "id": 24,
       "name": "./node_modules/react-router/es/Route.js",
       "file": "vendor.bundle.js",
-      "publicPath": "vendor.bundle.js"
+      "publicPath": "/vendor.bundle.js"
     }
   ],
   "history": [
@@ -418,7 +418,7 @@
       "id": 25,
       "name": "./node_modules/history/es/index.js",
       "file": "vendor.bundle.js",
-      "publicPath": "vendor.bundle.js"
+      "publicPath": "/vendor.bundle.js"
     }
   ],
   "./ReactComponent": [
@@ -426,7 +426,7 @@
       "id": 26,
       "name": "./node_modules/react-ionicons/node_modules/react/lib/ReactComponent.js",
       "file": "vendor.bundle.js",
-      "publicPath": "vendor.bundle.js"
+      "publicPath": "/vendor.bundle.js"
     }
   ],
   "./ReactNoopUpdateQueue": [
@@ -434,7 +434,7 @@
       "id": 27,
       "name": "./node_modules/react-ionicons/node_modules/react/lib/ReactNoopUpdateQueue.js",
       "file": "vendor.bundle.js",
-      "publicPath": "vendor.bundle.js"
+      "publicPath": "/vendor.bundle.js"
     }
   ],
   "fbjs/lib/emptyObject": [
@@ -442,7 +442,7 @@
       "id": 28,
       "name": "./node_modules/fbjs/lib/emptyObject.js",
       "file": "vendor.bundle.js",
-      "publicPath": "vendor.bundle.js"
+      "publicPath": "/vendor.bundle.js"
     }
   ],
   "hoist-non-react-statics": [
@@ -450,19 +450,19 @@
       "id": 29,
       "name": "./node_modules/react-redux/node_modules/hoist-non-react-statics/dist/hoist-non-react-statics.cjs.js",
       "file": "vendor.bundle.js",
-      "publicPath": "vendor.bundle.js"
+      "publicPath": "/vendor.bundle.js"
     },
     {
       "id": 41,
       "name": "./node_modules/hoist-non-react-statics/index.js",
       "file": "vendor.bundle.js",
-      "publicPath": "vendor.bundle.js"
+      "publicPath": "/vendor.bundle.js"
     },
     {
       "id": 44,
       "name": "./node_modules/react-router/node_modules/hoist-non-react-statics/dist/hoist-non-react-statics.cjs.js",
       "file": "vendor.bundle.js",
-      "publicPath": "vendor.bundle.js"
+      "publicPath": "/vendor.bundle.js"
     }
   ],
   "symbol-observable": [
@@ -470,7 +470,7 @@
       "id": 30,
       "name": "./node_modules/symbol-observable/es/index.js",
       "file": "vendor.bundle.js",
-      "publicPath": "vendor.bundle.js"
+      "publicPath": "/vendor.bundle.js"
     }
   ],
   "global": [
@@ -478,7 +478,7 @@
       "id": 31,
       "name": "./node_modules/global/window.js",
       "file": "vendor.bundle.js",
-      "publicPath": "vendor.bundle.js"
+      "publicPath": "/vendor.bundle.js"
     }
   ],
   "./ReactCurrentOwner": [
@@ -486,7 +486,7 @@
       "id": 32,
       "name": "./node_modules/react-ionicons/node_modules/react/lib/ReactCurrentOwner.js",
       "file": "vendor.bundle.js",
-      "publicPath": "vendor.bundle.js"
+      "publicPath": "/vendor.bundle.js"
     }
   ],
   "./canDefineProperty": [
@@ -494,7 +494,7 @@
       "id": 33,
       "name": "./node_modules/react-ionicons/node_modules/react/lib/canDefineProperty.js",
       "file": "vendor.bundle.js",
-      "publicPath": "vendor.bundle.js"
+      "publicPath": "/vendor.bundle.js"
     }
   ],
   "./ReactElementSymbol": [
@@ -502,7 +502,7 @@
       "id": 34,
       "name": "./node_modules/react-ionicons/node_modules/react/lib/ReactElementSymbol.js",
       "file": "vendor.bundle.js",
-      "publicPath": "vendor.bundle.js"
+      "publicPath": "/vendor.bundle.js"
     }
   ],
   "./getIteratorFn": [
@@ -510,7 +510,7 @@
       "id": 35,
       "name": "./node_modules/react-ionicons/node_modules/react/lib/getIteratorFn.js",
       "file": "vendor.bundle.js",
-      "publicPath": "vendor.bundle.js"
+      "publicPath": "/vendor.bundle.js"
     }
   ],
   "./ReactPropTypeLocationNames": [
@@ -518,7 +518,7 @@
       "id": 36,
       "name": "./node_modules/react-ionicons/node_modules/react/lib/ReactPropTypeLocationNames.js",
       "file": "vendor.bundle.js",
-      "publicPath": "vendor.bundle.js"
+      "publicPath": "/vendor.bundle.js"
     }
   ],
   "react-is": [
@@ -526,7 +526,7 @@
       "id": 37,
       "name": "./node_modules/react-is/index.js",
       "file": "vendor.bundle.js",
-      "publicPath": "vendor.bundle.js"
+      "publicPath": "/vendor.bundle.js"
     }
   ],
   "react-dom": [
@@ -534,7 +534,7 @@
       "id": 38,
       "name": "./node_modules/react-dom/index.js",
       "file": "vendor.bundle.js",
-      "publicPath": "vendor.bundle.js"
+      "publicPath": "/vendor.bundle.js"
     }
   ],
   "stylis": [
@@ -542,7 +542,7 @@
       "id": 39,
       "name": "./node_modules/stylis/stylis.js",
       "file": "vendor.bundle.js",
-      "publicPath": "vendor.bundle.js"
+      "publicPath": "/vendor.bundle.js"
     }
   ],
   "is-function": [
@@ -550,7 +550,7 @@
       "id": 40,
       "name": "./node_modules/is-function/index.js",
       "file": "vendor.bundle.js",
-      "publicPath": "vendor.bundle.js"
+      "publicPath": "/vendor.bundle.js"
     }
   ],
   "./ponyfill.js": [
@@ -558,7 +558,7 @@
       "id": 42,
       "name": "./node_modules/symbol-observable/es/ponyfill.js",
       "file": "vendor.bundle.js",
-      "publicPath": "vendor.bundle.js"
+      "publicPath": "/vendor.bundle.js"
     }
   ],
   "path-to-regexp": [
@@ -566,7 +566,7 @@
       "id": 43,
       "name": "./node_modules/react-router/node_modules/path-to-regexp/index.js",
       "file": "vendor.bundle.js",
-      "publicPath": "vendor.bundle.js"
+      "publicPath": "/vendor.bundle.js"
     }
   ],
   "webfontloader": [
@@ -574,7 +574,7 @@
       "id": 45,
       "name": "./node_modules/webfontloader/webfontloader.js",
       "file": "vendor.bundle.js",
-      "publicPath": "vendor.bundle.js"
+      "publicPath": "/vendor.bundle.js"
     }
   ],
   "redux-thunk": [
@@ -582,7 +582,7 @@
       "id": 46,
       "name": "./node_modules/redux-thunk/es/index.js",
       "file": "vendor.bundle.js",
-      "publicPath": "vendor.bundle.js"
+      "publicPath": "/vendor.bundle.js"
     }
   ],
   "redux-logger": [
@@ -590,7 +590,7 @@
       "id": 47,
       "name": "./node_modules/redux-logger/dist/redux-logger.js",
       "file": "vendor.bundle.js",
-      "publicPath": "vendor.bundle.js"
+      "publicPath": "/vendor.bundle.js"
     }
   ],
   "./cjs/react.production.min.js": [
@@ -598,7 +598,7 @@
       "id": 49,
       "name": "./node_modules/react/cjs/react.production.min.js",
       "file": "vendor.bundle.js",
-      "publicPath": "vendor.bundle.js"
+      "publicPath": "/vendor.bundle.js"
     }
   ],
   "./cjs/react-dom.production.min.js": [
@@ -606,7 +606,7 @@
       "id": 50,
       "name": "./node_modules/react-dom/cjs/react-dom.production.min.js",
       "file": "vendor.bundle.js",
-      "publicPath": "vendor.bundle.js"
+      "publicPath": "/vendor.bundle.js"
     }
   ],
   "scheduler": [
@@ -614,7 +614,7 @@
       "id": 51,
       "name": "./node_modules/scheduler/index.js",
       "file": "vendor.bundle.js",
-      "publicPath": "vendor.bundle.js"
+      "publicPath": "/vendor.bundle.js"
     }
   ],
   "./cjs/scheduler.production.min.js": [
@@ -622,7 +622,7 @@
       "id": 52,
       "name": "./node_modules/scheduler/cjs/scheduler.production.min.js",
       "file": "vendor.bundle.js",
-      "publicPath": "vendor.bundle.js"
+      "publicPath": "/vendor.bundle.js"
     }
   ],
   "./lib/React": [
@@ -630,7 +630,7 @@
       "id": 55,
       "name": "./node_modules/react-ionicons/node_modules/react/lib/React.js",
       "file": "vendor.bundle.js",
-      "publicPath": "vendor.bundle.js"
+      "publicPath": "/vendor.bundle.js"
     }
   ],
   "./ReactChildren": [
@@ -638,7 +638,7 @@
       "id": 56,
       "name": "./node_modules/react-ionicons/node_modules/react/lib/ReactChildren.js",
       "file": "vendor.bundle.js",
-      "publicPath": "vendor.bundle.js"
+      "publicPath": "/vendor.bundle.js"
     }
   ],
   "./PooledClass": [
@@ -646,7 +646,7 @@
       "id": 57,
       "name": "./node_modules/react-ionicons/node_modules/react/lib/PooledClass.js",
       "file": "vendor.bundle.js",
-      "publicPath": "vendor.bundle.js"
+      "publicPath": "/vendor.bundle.js"
     }
   ],
   "./traverseAllChildren": [
@@ -654,7 +654,7 @@
       "id": 58,
       "name": "./node_modules/react-ionicons/node_modules/react/lib/traverseAllChildren.js",
       "file": "vendor.bundle.js",
-      "publicPath": "vendor.bundle.js"
+      "publicPath": "/vendor.bundle.js"
     }
   ],
   "./KeyEscapeUtils": [
@@ -662,7 +662,7 @@
       "id": 59,
       "name": "./node_modules/react-ionicons/node_modules/react/lib/KeyEscapeUtils.js",
       "file": "vendor.bundle.js",
-      "publicPath": "vendor.bundle.js"
+      "publicPath": "/vendor.bundle.js"
     }
   ],
   "./ReactPureComponent": [
@@ -670,7 +670,7 @@
       "id": 60,
       "name": "./node_modules/react-ionicons/node_modules/react/lib/ReactPureComponent.js",
       "file": "vendor.bundle.js",
-      "publicPath": "vendor.bundle.js"
+      "publicPath": "/vendor.bundle.js"
     }
   ],
   "./ReactClass": [
@@ -678,7 +678,7 @@
       "id": 61,
       "name": "./node_modules/react-ionicons/node_modules/react/lib/ReactClass.js",
       "file": "vendor.bundle.js",
-      "publicPath": "vendor.bundle.js"
+      "publicPath": "/vendor.bundle.js"
     }
   ],
   "./ReactDOMFactories": [
@@ -686,7 +686,7 @@
       "id": 62,
       "name": "./node_modules/react-ionicons/node_modules/react/lib/ReactDOMFactories.js",
       "file": "vendor.bundle.js",
-      "publicPath": "vendor.bundle.js"
+      "publicPath": "/vendor.bundle.js"
     }
   ],
   "./ReactPropTypes": [
@@ -694,7 +694,7 @@
       "id": 63,
       "name": "./node_modules/react-ionicons/node_modules/react/lib/ReactPropTypes.js",
       "file": "vendor.bundle.js",
-      "publicPath": "vendor.bundle.js"
+      "publicPath": "/vendor.bundle.js"
     }
   ],
   "./ReactPropTypesSecret": [
@@ -702,7 +702,7 @@
       "id": 64,
       "name": "./node_modules/react-ionicons/node_modules/react/lib/ReactPropTypesSecret.js",
       "file": "vendor.bundle.js",
-      "publicPath": "vendor.bundle.js"
+      "publicPath": "/vendor.bundle.js"
     }
   ],
   "./ReactVersion": [
@@ -710,7 +710,7 @@
       "id": 65,
       "name": "./node_modules/react-ionicons/node_modules/react/lib/ReactVersion.js",
       "file": "vendor.bundle.js",
-      "publicPath": "vendor.bundle.js"
+      "publicPath": "/vendor.bundle.js"
     }
   ],
   "./onlyChild": [
@@ -718,7 +718,7 @@
       "id": 66,
       "name": "./node_modules/react-ionicons/node_modules/react/lib/onlyChild.js",
       "file": "vendor.bundle.js",
-      "publicPath": "vendor.bundle.js"
+      "publicPath": "/vendor.bundle.js"
     }
   ],
   "./factoryWithThrowingShims": [
@@ -726,13 +726,13 @@
       "id": 68,
       "name": "./node_modules/react-ionicons/node_modules/prop-types/factoryWithThrowingShims.js",
       "file": "vendor.bundle.js",
-      "publicPath": "vendor.bundle.js"
+      "publicPath": "/vendor.bundle.js"
     },
     {
       "id": 74,
       "name": "./node_modules/prop-types/factoryWithThrowingShims.js",
       "file": "vendor.bundle.js",
-      "publicPath": "vendor.bundle.js"
+      "publicPath": "/vendor.bundle.js"
     }
   ],
   "./lib/ReactPropTypesSecret": [
@@ -740,13 +740,13 @@
       "id": 69,
       "name": "./node_modules/react-ionicons/node_modules/prop-types/lib/ReactPropTypesSecret.js",
       "file": "vendor.bundle.js",
-      "publicPath": "vendor.bundle.js"
+      "publicPath": "/vendor.bundle.js"
     },
     {
       "id": 75,
       "name": "./node_modules/prop-types/lib/ReactPropTypesSecret.js",
       "file": "vendor.bundle.js",
-      "publicPath": "vendor.bundle.js"
+      "publicPath": "/vendor.bundle.js"
     }
   ],
   "./icons.js": [
@@ -754,7 +754,7 @@
       "id": 70,
       "name": "./node_modules/react-ionicons/lib/icons.js",
       "file": "vendor.bundle.js",
-      "publicPath": "vendor.bundle.js"
+      "publicPath": "/vendor.bundle.js"
     }
   ],
   "./SVG": [
@@ -762,7 +762,7 @@
       "id": 71,
       "name": "./node_modules/react-ionicons/lib/SVG.js",
       "file": "vendor.bundle.js",
-      "publicPath": "vendor.bundle.js"
+      "publicPath": "/vendor.bundle.js"
     }
   ],
   "styled-components": [
@@ -770,7 +770,7 @@
       "id": 72,
       "name": "./node_modules/styled-components/dist/styled-components.es.js",
       "file": "vendor.bundle.js",
-      "publicPath": "vendor.bundle.js"
+      "publicPath": "/vendor.bundle.js"
     }
   ],
   "isobject": [
@@ -778,7 +778,7 @@
       "id": 73,
       "name": "./node_modules/is-plain-object/node_modules/isobject/index.js",
       "file": "vendor.bundle.js",
-      "publicPath": "vendor.bundle.js"
+      "publicPath": "/vendor.bundle.js"
     }
   ],
   "./cjs/react-is.production.min.js": [
@@ -786,7 +786,7 @@
       "id": 78,
       "name": "./node_modules/react-is/cjs/react-is.production.min.js",
       "file": "vendor.bundle.js",
-      "publicPath": "vendor.bundle.js"
+      "publicPath": "/vendor.bundle.js"
     }
   ],
   "./../../webpack/buildin/harmony-module.js": [
@@ -794,7 +794,7 @@
       "id": 79,
       "name": "./node_modules/webpack/buildin/harmony-module.js",
       "file": "vendor.bundle.js",
-      "publicPath": "vendor.bundle.js"
+      "publicPath": "/vendor.bundle.js"
     }
   ],
   "whatwg-fetch": [
@@ -802,7 +802,7 @@
       "id": 80,
       "name": "./node_modules/whatwg-fetch/fetch.js",
       "file": "vendor.bundle.js",
-      "publicPath": "vendor.bundle.js"
+      "publicPath": "/vendor.bundle.js"
     }
   ],
   "isarray": [
@@ -810,7 +810,7 @@
       "id": 83,
       "name": "./node_modules/react-router/node_modules/isarray/index.js",
       "file": "vendor.bundle.js",
-      "publicPath": "vendor.bundle.js"
+      "publicPath": "/vendor.bundle.js"
     }
   ],
   "./Link": [
@@ -818,7 +818,7 @@
       "id": 87,
       "name": "./node_modules/react-router-dom/es/Link.js",
       "file": "vendor.bundle.js",
-      "publicPath": "vendor.bundle.js"
+      "publicPath": "/vendor.bundle.js"
     }
   ],
   "./Route": [
@@ -826,7 +826,7 @@
       "id": 88,
       "name": "./node_modules/react-router-dom/es/Route.js",
       "file": "vendor.bundle.js",
-      "publicPath": "vendor.bundle.js"
+      "publicPath": "/vendor.bundle.js"
     }
   ],
   "./BrowserRouter": [
@@ -834,7 +834,7 @@
       "id": 89,
       "name": "./node_modules/react-router-dom/es/BrowserRouter.js",
       "file": "vendor.bundle.js",
-      "publicPath": "vendor.bundle.js"
+      "publicPath": "/vendor.bundle.js"
     }
   ],
   "./withRouter": [
@@ -842,7 +842,7 @@
       "id": 90,
       "name": "./node_modules/react-router-dom/es/withRouter.js",
       "file": "vendor.bundle.js",
-      "publicPath": "vendor.bundle.js"
+      "publicPath": "/vendor.bundle.js"
     }
   ],
   "./Switch": [
@@ -850,7 +850,7 @@
       "id": 91,
       "name": "./node_modules/react-router-dom/es/Switch.js",
       "file": "vendor.bundle.js",
-      "publicPath": "vendor.bundle.js"
+      "publicPath": "/vendor.bundle.js"
     }
   ],
   "./juet/faculty/FacultyListAll": [
@@ -858,13 +858,13 @@
       "id": 86,
       "name": "./src/juet/faculty/FacultyListAll.js",
       "file": "2.css",
-      "publicPath": "2.css"
+      "publicPath": "/2.css"
     },
     {
       "id": 86,
       "name": "./src/juet/faculty/FacultyListAll.js",
       "file": "2.bundle.js",
-      "publicPath": "2.bundle.js"
+      "publicPath": "/2.bundle.js"
     }
   ],
   "./styles/faculty.css": [
@@ -872,25 +872,25 @@
       "id": 92,
       "name": "./src/juet/faculty/styles/faculty.css",
       "file": "2.css",
-      "publicPath": "2.css"
+      "publicPath": "/2.css"
     },
     {
       "id": 92,
       "name": "./src/juet/faculty/styles/faculty.css",
       "file": "2.bundle.js",
-      "publicPath": "2.bundle.js"
+      "publicPath": "/2.bundle.js"
     },
     {
       "id": 92,
       "name": "./src/juet/faculty/styles/faculty.css",
       "file": "3.css",
-      "publicPath": "3.css"
+      "publicPath": "/3.css"
     },
     {
       "id": 92,
       "name": "./src/juet/faculty/styles/faculty.css",
       "file": "3.bundle.js",
-      "publicPath": "3.bundle.js"
+      "publicPath": "/3.bundle.js"
     }
   ],
   "./juet/faculty/FacultyListDepartmentWise": [
@@ -898,13 +898,13 @@
       "id": 85,
       "name": "./src/juet/faculty/FacultyListDepartmentWise.js",
       "file": "3.css",
-      "publicPath": "3.css"
+      "publicPath": "/3.css"
     },
     {
       "id": 85,
       "name": "./src/juet/faculty/FacultyListDepartmentWise.js",
       "file": "3.bundle.js",
-      "publicPath": "3.bundle.js"
+      "publicPath": "/3.bundle.js"
     }
   ]
 }

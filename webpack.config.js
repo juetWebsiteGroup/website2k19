@@ -77,6 +77,7 @@ var browserConfig = {
     output:{
         path:path.resolve(__dirname,'build'),
         filename:'juet_bundle.js',
+        publicPath:'/',
         chunkFilename: '[name].bundle.js'
     },
     devtool: false,
