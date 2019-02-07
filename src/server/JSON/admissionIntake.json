@@ -5,7 +5,7 @@
                                     {"id":"CHE","branch":"Chemical Engineering","Total":30,"JEE":15,"Board":15},
                                     {"id":"CE","branch":"Civil Engineering","Total":90,"JEE":45,"Board":45},
                                     {"id":"CSE","branch":"Computer Science & Engineering","Total":300,"JEE":150,"Board":150},
-                                    {"id":"ECE","branch":"Electronics & Communication Engineering","Total":60,"JEE":15,"Board":30},
+                                    {"id":"ECE","branch":"Electronics & Communication Engineering","Total":60,"JEE":30,"Board":30},
                                     {"id":"MEC","branch":"Mechanical Engineering","Total":120,"JEE":60,"Board":60}
                                   ]
             },

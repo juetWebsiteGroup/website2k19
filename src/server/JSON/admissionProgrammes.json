@@ -7,27 +7,31 @@
                "quota":"B.Tech. Programme [ JEE Rank Based ]",
                "imagePath":"/static/images/rd.jpg",
                "otherLinks":[
-                             {"title":"Important Dates","LinkTo":"/"},
-                             {"title":"Download Offline Application Form","LinkTo":"/"},
-                             {"title":"Download Brochure","LinkTo":"/"}
+                            {"title":"Admission Advertisement","LinkTo":"/static/images/BTechAdmission2019.JPG"},
+							{"title":"Apply Online","LinkTo":"/"},
+							{"title":"Download Offline Application Form","LinkTo":"/"},
+							{"title":"Important Dates","LinkTo":"/"}
                             ]
                 },
                 {
                     "quota":"B.Tech. Programme [ 10+2 Merit Based ]",
                     "imagePath":"/static/images/isf.jpg",
                     "otherLinks":[
-                                  {"title":"Important Dates","LinkTo":"/"},
-                                  {"title":"Download Offline Application Form","LinkTo":"/"},
-                                  {"title":"Download Brochure","LinkTo":"/"}
+                                {"title":"Admission Advertisement","LinkTo":""},
+								{"title":"Admission Procedure & Instructions","LinkTo":"/"},
+								{"title":"Apply Online","LinkTo":"/"},
+								{"title":"Download Offline Application Form","LinkTo":"/"},
+								{"title":"Important Dates","LinkTo":"/"}
                                  ]
                 },
                 {
                     "quota":"B.Tech. Programme [ Merit Based Lateral Entry in 2nd Year ]",
                     "imagePath":"/static/images/programmes.jpg",
                     "otherLinks":[
-                                  {"title":"Important Dates","LinkTo":"/"},
-                                  {"title":"Download Offline Application Form","LinkTo":"/"},
-                                  {"title":"Download Brochure","LinkTo":"/"}
+                                {"title":"Admission Advertisement","LinkTo":"/"},
+								{"title":"Admission Procedure & Instructions","LinkTo":"/"},
+								{"title":"Download Offline Application Form","LinkTo":"/"},
+								{"title":"Important Dates","LinkTo":"/"}
                                  ]
                 }
                            ],
@@ -41,25 +45,74 @@
             "quota":"M.Tech. Programme [ GATE Score Based ]",
             "imagePath":"/static/images/mtech.jpg",
             "otherLinks":[
-                          {"title":"Important Dates","LinkTo":"/"},
-                          {"title":"Download Offline Application Form","LinkTo":"/"},
-                          {"title":"Download Brochure","LinkTo":"/"}
+                          {"title":"Download Brochure","LinkTo":"/"},
+                          {"title":"Admission Procedure","LinkTo":"/"},
+						   {"title":"Apply Online","LinkTo":"/"},
+                          {"title":"Download Application Form","LinkTo":"/"}
                          ]
              },
              {
                  "quota":"M.Tech. Programme [ PGET Based ]",
                  "imagePath":"/static/images/isf.jpg",
                  "otherLinks":[
-                               {"title":"Important Dates","LinkTo":"/"},
-                               {"title":"Download Offline Application Form","LinkTo":"/"},
-                               {"title":"Format PGET","LinkTo":"/"},
-                               {"title":"PGET Syllabus for M.Tech.","LinkTo":"/"}
+								{"title":"Download Brochure","LinkTo":"/"},
+								{"title":"Admission Procedure","LinkTo":"/"},
+								{"title":"Apply Online","LinkTo":"/"},
+								{"title":"Download Application Form","LinkTo":"/"},
+								{"title":"Format PGET","LinkTo":"/"},
+								{"title":"PGET Syllabus","LinkTo":"/"}
                               ]
              }
-                        ],
+            ],
+			"ApplyOnlineLink":"/"
+			},
+			
+    "PhD":{
+				"UpperTitle":"Ph.D. - Admission",
+				"id":"PhD",
+				"SubCategories":[
+									{	 "quota":"Ph.D. Programme [ GATE/ NET/ SLET/ UGC/ CSIR(JRF) Based ]",
+										 "imagePath":"/static/images/isf.jpg",
+										 "otherLinks":[
+													   {"title":"Important Dates","LinkTo":"/"},
+													   {"title":"Download Offline Application Form","LinkTo":"/"},
+													   {"title":"Format PGET","LinkTo":"/"},
+													   {"title":"PGET Syllabus for M.Tech.","LinkTo":"/"}
+													  ]
+									 }
+				      
+								],
            "ApplyOnlineLink":"/"
         },
-    "PhD":{},
-    "BSc":{},
+    "BSc":{
+				"UpperTitle":"B.Sc.(Hons.)/M.Sc. - Admission",
+				"id":"BSc",
+				"SubCategories":[
+									{	 "quota":"B.Sc.(Hons.) [ Mathematics / Physics / Chemistry ]",
+										 "imagePath":"/static/images/isf.jpg",
+										 "otherLinks":[
+													   
+													   {"title":"Admission Advertisement","LinkTo":"/"},
+													   {"title":"Download Offline Application Form","LinkTo":"/"},
+													   {"title":"Important Dates","LinkTo":"/"}
+													  
+													  ]
+									},
+									{	 "quota":"M.Sc. [ Mathematics / Physics / Chemistry ]",
+										 "imagePath":"/static/images/isf.jpg",
+										 "otherLinks":[
+													   
+													   {"title":"Admission Advertisement","LinkTo":"/"},
+													   {"title":"Download Offline Application Form","LinkTo":"/"},
+													   {"title":"Important Dates","LinkTo":"/"},
+													    {"title":"Visit Department","LinkTo":"/"}
+													  
+													  ]
+									}
+									
+				      
+								],
+           "ApplyOnlineLink":"/"
+		 },
     "MSc":{}
 }
