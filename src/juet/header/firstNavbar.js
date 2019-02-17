@@ -36,7 +36,7 @@ class FirstNavbar extends Component {
         if(this.state.showStatus)
         {
             return (
-                <div className="upper_nav">
+                <header className="upper_nav">
                     <nav>
                         {this.get_UpperNavList()}
                     </nav>
@@ -54,7 +54,7 @@ class FirstNavbar extends Component {
                             <Ionicon color="#ffffff" fontSize="2.21rem" icon="logo-linkedin"></Ionicon>
                         </li>
                     </ul>
-                </div>
+                </header>
             );
         }
 

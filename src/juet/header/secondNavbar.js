@@ -137,7 +137,7 @@ class SecondNavbar extends Component {
     }
     render() {
         return (
-           <div>
+           <header>
                <input type="checkbox" id="nav_toggle"/>
                <label htmlFor = "nav_toggle" title="Click to Show Menu" className="nav_button"><div className="outer_shape"><div className="inner_shape"></div>
                </div></label>
@@ -267,7 +267,7 @@ class SecondNavbar extends Component {
                     </ul>
 
                 </nav>
-            </div></div>
+            </div></header>
 
     );
     }

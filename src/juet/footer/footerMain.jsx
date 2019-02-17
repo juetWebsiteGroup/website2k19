@@ -12,12 +12,12 @@ class FooterMake extends Component
 render()
 {
     return(
-        <section id="footer">
+        <footer id="footer">
                 <FooterAddDisclosures />
                 <FooterAddImpLinks />
                 <FooterAddImpLinks />
                 <FooterAddContact />
-        </section>
+        </footer>
     )
 }
 }

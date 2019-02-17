@@ -13,7 +13,7 @@ export default class FeeInstruction extends React.PureComponent {
     render()
     {
         return (
-            <div>
+            <>
             <AdmissionUpperLook UpperTitle={`"Bringing Together Talented and Innovative Minds".`} />
             <div className="Admission__MainWindow">
             <AdmissionInfoLook MainTitle={`Fee Instruction`}>
@@ -44,7 +44,7 @@ export default class FeeInstruction extends React.PureComponent {
             </AdmissionInfoLook>
             <QuickAccess/>
             </div>
-            </div>
+            </>
         )
     }
 

@@ -29,7 +29,7 @@ export default class FeeStructure extends React.Component
        render()
        {
         return (
-            <div>
+            <>
              <AdmissionUpperLook UpperTitle={`"Bringing Together Talented and Innovative Minds".`} />
                 <div className="Admission__MainWindow">
                 <AdmissionInfoLook MainTitle={`Academic Fee Structure - ${new Date().getFullYear()}`}>
@@ -87,7 +87,7 @@ export default class FeeStructure extends React.Component
                 </AdmissionInfoLook>
                 <QuickAccess/>
                 </div>
-            </div>
+            </>
         )
        }    
 }

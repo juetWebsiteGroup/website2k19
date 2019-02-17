@@ -21,7 +21,7 @@ export default class EducationLoan extends React.Component
        render()
        {
         return (
-            <div>
+            <>
                  <AdmissionUpperLook UpperTitle={`"Bringing Together Talented and Innovative Minds".`} />
                 <div className="Admission__MainWindow">
                 <AdmissionInfoLook MainTitle={`Education Loan from Bank for Higher Studies`}>
@@ -40,7 +40,7 @@ export default class EducationLoan extends React.Component
                 </AdmissionInfoLook>
                 <QuickAccess/>
                 </div>
-            </div>
+            </>
         )
        }    
 }

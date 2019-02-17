@@ -52,7 +52,7 @@ var serverConfig = {
       new webpack.DefinePlugin({
         __isBrowser__: "false"
       }),
-      new CleanWebpackPlugin('*.server.js'),
+      new CleanWebpackPlugin(['*.server.js','server.js']),
       new Dotenv()
     ]
   }

@@ -2,7 +2,7 @@ import React from 'react'
 
 export const AdmissionNavbar = (props) => {
     return (
-        <section id="AdmissionsHeader">
+        <header id="AdmissionsHeader">
         <nav className="AdmissionNavbar">
             <div className="TitleHeader">
                     <img src="/static/images/juet_trans1.jpg" alt="JUET,Guna" />
@@ -16,6 +16,6 @@ export const AdmissionNavbar = (props) => {
                <li><a href="/#PhD">Ph.D.</a></li>
             </ul>
         </nav>
-    </section>
+    </header>
     )
 }
