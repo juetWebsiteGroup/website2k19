@@ -21,7 +21,7 @@ export default class AboutMain extends React.Component
        return(
            <section id="About">
 
-                    <AboutUpperLook Title="About University" />
+                    {/* <AboutUpperLook Title="About University" /> */}
 
                     <div className="AboutMain">
                        <Aboutus>

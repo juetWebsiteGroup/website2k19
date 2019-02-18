@@ -7,7 +7,7 @@
       "publicPath": "/juetVendor.bundle.js"
     },
     {
-      "id": 54,
+      "id": 52,
       "name": "./node_modules/react-ionicons/node_modules/react/react.js",
       "file": "juetVendor.bundle.js",
       "publicPath": "/juetVendor.bundle.js"
@@ -21,7 +21,7 @@
       "publicPath": "/juetVendor.bundle.js"
     },
     {
-      "id": 67,
+      "id": 65,
       "name": "./node_modules/react-ionicons/node_modules/prop-types/index.js",
       "file": "juetVendor.bundle.js",
       "publicPath": "/juetVendor.bundle.js"
@@ -57,9 +57,17 @@
       "publicPath": "/juetVendor.bundle.js"
     }
   ],
+  "react-loadable": [
+    {
+      "id": 6,
+      "name": "./node_modules/react-loadable/lib/index.js",
+      "file": "juetVendor.bundle.js",
+      "publicPath": "/juetVendor.bundle.js"
+    }
+  ],
   "fbjs/lib/warning": [
     {
-      "id": 9,
+      "id": 8,
       "name": "./node_modules/fbjs/lib/warning.js",
       "file": "juetVendor.bundle.js",
       "publicPath": "/juetVendor.bundle.js"
@@ -67,7 +75,7 @@
   ],
   "object-assign": [
     {
-      "id": 11,
+      "id": 9,
       "name": "./node_modules/object-assign/index.js",
       "file": "juetVendor.bundle.js",
       "publicPath": "/juetVendor.bundle.js"
@@ -75,7 +83,7 @@
   ],
   "fbjs/lib/invariant": [
     {
-      "id": 12,
+      "id": 10,
       "name": "./node_modules/fbjs/lib/invariant.js",
       "file": "juetVendor.bundle.js",
       "publicPath": "/juetVendor.bundle.js"
@@ -83,31 +91,15 @@
   ],
   "./ReactElement": [
     {
-      "id": 13,
+      "id": 11,
       "name": "./node_modules/react-ionicons/node_modules/react/lib/ReactElement.js",
-      "file": "juetVendor.bundle.js",
-      "publicPath": "/juetVendor.bundle.js"
-    }
-  ],
-  "isomorphic-fetch": [
-    {
-      "id": 14,
-      "name": "./node_modules/isomorphic-fetch/fetch-npm-browserify.js",
-      "file": "juetVendor.bundle.js",
-      "publicPath": "/juetVendor.bundle.js"
-    }
-  ],
-  "react-redux": [
-    {
-      "id": 15,
-      "name": "./node_modules/react-redux/es/index.js",
       "file": "juetVendor.bundle.js",
       "publicPath": "/juetVendor.bundle.js"
     }
   ],
   "redux": [
     {
-      "id": 16,
+      "id": 12,
       "name": "./node_modules/redux/es/redux.js",
       "file": "juetVendor.bundle.js",
       "publicPath": "/juetVendor.bundle.js"
@@ -115,23 +107,15 @@
   ],
   "./reactProdInvariant": [
     {
-      "id": 17,
+      "id": 13,
       "name": "./node_modules/react-ionicons/node_modules/react/lib/reactProdInvariant.js",
-      "file": "juetVendor.bundle.js",
-      "publicPath": "/juetVendor.bundle.js"
-    }
-  ],
-  "react-loadable": [
-    {
-      "id": 18,
-      "name": "./node_modules/react-loadable/lib/index.js",
       "file": "juetVendor.bundle.js",
       "publicPath": "/juetVendor.bundle.js"
     }
   ],
   "is-plain-object": [
     {
-      "id": 19,
+      "id": 15,
       "name": "./node_modules/is-plain-object/index.js",
       "file": "juetVendor.bundle.js",
       "publicPath": "/juetVendor.bundle.js"
@@ -139,7 +123,7 @@
   ],
   "jquery": [
     {
-      "id": 20,
+      "id": 16,
       "name": "./node_modules/jquery/dist/jquery.js",
       "file": "juetVendor.bundle.js",
       "publicPath": "/juetVendor.bundle.js"
@@ -147,7 +131,7 @@
   ],
   "./../webpack/buildin/global.js": [
     {
-      "id": 21,
+      "id": 18,
       "name": "./node_modules/webpack/buildin/global.js",
       "file": "juetVendor.bundle.js",
       "publicPath": "/juetVendor.bundle.js"
@@ -155,7 +139,7 @@
   ],
   "fbjs/lib/emptyFunction": [
     {
-      "id": 22,
+      "id": 19,
       "name": "./node_modules/fbjs/lib/emptyFunction.js",
       "file": "juetVendor.bundle.js",
       "publicPath": "/juetVendor.bundle.js"
@@ -163,7 +147,7 @@
   ],
   "react-router/es/matchPath": [
     {
-      "id": 23,
+      "id": 20,
       "name": "./node_modules/react-router/es/matchPath.js",
       "file": "juetVendor.bundle.js",
       "publicPath": "/juetVendor.bundle.js"
@@ -171,7 +155,7 @@
   ],
   "react-router/es/Route": [
     {
-      "id": 24,
+      "id": 21,
       "name": "./node_modules/react-router/es/Route.js",
       "file": "juetVendor.bundle.js",
       "publicPath": "/juetVendor.bundle.js"
@@ -179,7 +163,7 @@
   ],
   "history": [
     {
-      "id": 25,
+      "id": 22,
       "name": "./node_modules/history/es/index.js",
       "file": "juetVendor.bundle.js",
       "publicPath": "/juetVendor.bundle.js"
@@ -187,7 +171,7 @@
   ],
   "./ReactComponent": [
     {
-      "id": 26,
+      "id": 23,
       "name": "./node_modules/react-ionicons/node_modules/react/lib/ReactComponent.js",
       "file": "juetVendor.bundle.js",
       "publicPath": "/juetVendor.bundle.js"
@@ -195,7 +179,7 @@
   ],
   "./ReactNoopUpdateQueue": [
     {
-      "id": 27,
+      "id": 24,
       "name": "./node_modules/react-ionicons/node_modules/react/lib/ReactNoopUpdateQueue.js",
       "file": "juetVendor.bundle.js",
       "publicPath": "/juetVendor.bundle.js"
@@ -203,27 +187,35 @@
   ],
   "fbjs/lib/emptyObject": [
     {
-      "id": 28,
+      "id": 25,
       "name": "./node_modules/fbjs/lib/emptyObject.js",
+      "file": "juetVendor.bundle.js",
+      "publicPath": "/juetVendor.bundle.js"
+    }
+  ],
+  "global": [
+    {
+      "id": 26,
+      "name": "./node_modules/global/window.js",
       "file": "juetVendor.bundle.js",
       "publicPath": "/juetVendor.bundle.js"
     }
   ],
   "hoist-non-react-statics": [
     {
-      "id": 29,
+      "id": 27,
       "name": "./node_modules/react-redux/node_modules/hoist-non-react-statics/dist/hoist-non-react-statics.cjs.js",
       "file": "juetVendor.bundle.js",
       "publicPath": "/juetVendor.bundle.js"
     },
     {
-      "id": 41,
+      "id": 39,
       "name": "./node_modules/hoist-non-react-statics/index.js",
       "file": "juetVendor.bundle.js",
       "publicPath": "/juetVendor.bundle.js"
     },
     {
-      "id": 44,
+      "id": 41,
       "name": "./node_modules/react-router/node_modules/hoist-non-react-statics/dist/hoist-non-react-statics.cjs.js",
       "file": "juetVendor.bundle.js",
       "publicPath": "/juetVendor.bundle.js"
@@ -231,23 +223,23 @@
   ],
   "symbol-observable": [
     {
-      "id": 30,
+      "id": 28,
       "name": "./node_modules/symbol-observable/es/index.js",
       "file": "juetVendor.bundle.js",
       "publicPath": "/juetVendor.bundle.js"
     }
   ],
-  "global": [
+  "react-redux": [
     {
-      "id": 31,
-      "name": "./node_modules/global/window.js",
+      "id": 29,
+      "name": "./node_modules/react-redux/es/index.js",
       "file": "juetVendor.bundle.js",
       "publicPath": "/juetVendor.bundle.js"
     }
   ],
   "./ReactCurrentOwner": [
     {
-      "id": 32,
+      "id": 30,
       "name": "./node_modules/react-ionicons/node_modules/react/lib/ReactCurrentOwner.js",
       "file": "juetVendor.bundle.js",
       "publicPath": "/juetVendor.bundle.js"
@@ -255,7 +247,7 @@
   ],
   "./canDefineProperty": [
     {
-      "id": 33,
+      "id": 31,
       "name": "./node_modules/react-ionicons/node_modules/react/lib/canDefineProperty.js",
       "file": "juetVendor.bundle.js",
       "publicPath": "/juetVendor.bundle.js"
@@ -263,7 +255,7 @@
   ],
   "./ReactElementSymbol": [
     {
-      "id": 34,
+      "id": 32,
       "name": "./node_modules/react-ionicons/node_modules/react/lib/ReactElementSymbol.js",
       "file": "juetVendor.bundle.js",
       "publicPath": "/juetVendor.bundle.js"
@@ -271,7 +263,7 @@
   ],
   "./getIteratorFn": [
     {
-      "id": 35,
+      "id": 33,
       "name": "./node_modules/react-ionicons/node_modules/react/lib/getIteratorFn.js",
       "file": "juetVendor.bundle.js",
       "publicPath": "/juetVendor.bundle.js"
@@ -279,7 +271,7 @@
   ],
   "./ReactPropTypeLocationNames": [
     {
-      "id": 36,
+      "id": 34,
       "name": "./node_modules/react-ionicons/node_modules/react/lib/ReactPropTypeLocationNames.js",
       "file": "juetVendor.bundle.js",
       "publicPath": "/juetVendor.bundle.js"
@@ -287,7 +279,7 @@
   ],
   "react-is": [
     {
-      "id": 37,
+      "id": 35,
       "name": "./node_modules/react-is/index.js",
       "file": "juetVendor.bundle.js",
       "publicPath": "/juetVendor.bundle.js"
@@ -295,7 +287,7 @@
   ],
   "react-dom": [
     {
-      "id": 38,
+      "id": 36,
       "name": "./node_modules/react-dom/index.js",
       "file": "juetVendor.bundle.js",
       "publicPath": "/juetVendor.bundle.js"
@@ -303,7 +295,7 @@
   ],
   "stylis": [
     {
-      "id": 39,
+      "id": 37,
       "name": "./node_modules/stylis/stylis.js",
       "file": "juetVendor.bundle.js",
       "publicPath": "/juetVendor.bundle.js"
@@ -311,23 +303,15 @@
   ],
   "is-function": [
     {
-      "id": 40,
+      "id": 38,
       "name": "./node_modules/is-function/index.js",
-      "file": "juetVendor.bundle.js",
-      "publicPath": "/juetVendor.bundle.js"
-    }
-  ],
-  "./ponyfill.js": [
-    {
-      "id": 42,
-      "name": "./node_modules/symbol-observable/es/ponyfill.js",
       "file": "juetVendor.bundle.js",
       "publicPath": "/juetVendor.bundle.js"
     }
   ],
   "path-to-regexp": [
     {
-      "id": 43,
+      "id": 40,
       "name": "./node_modules/react-router/node_modules/path-to-regexp/index.js",
       "file": "juetVendor.bundle.js",
       "publicPath": "/juetVendor.bundle.js"
@@ -335,15 +319,23 @@
   ],
   "webfontloader": [
     {
-      "id": 45,
+      "id": 42,
       "name": "./node_modules/webfontloader/webfontloader.js",
+      "file": "juetVendor.bundle.js",
+      "publicPath": "/juetVendor.bundle.js"
+    }
+  ],
+  "./ponyfill.js": [
+    {
+      "id": 43,
+      "name": "./node_modules/symbol-observable/es/ponyfill.js",
       "file": "juetVendor.bundle.js",
       "publicPath": "/juetVendor.bundle.js"
     }
   ],
   "redux-thunk": [
     {
-      "id": 46,
+      "id": 44,
       "name": "./node_modules/redux-thunk/es/index.js",
       "file": "juetVendor.bundle.js",
       "publicPath": "/juetVendor.bundle.js"
@@ -351,7 +343,7 @@
   ],
   "redux-logger": [
     {
-      "id": 47,
+      "id": 45,
       "name": "./node_modules/redux-logger/dist/redux-logger.js",
       "file": "juetVendor.bundle.js",
       "publicPath": "/juetVendor.bundle.js"
@@ -359,7 +351,7 @@
   ],
   "./cjs/react.production.min.js": [
     {
-      "id": 49,
+      "id": 47,
       "name": "./node_modules/react/cjs/react.production.min.js",
       "file": "juetVendor.bundle.js",
       "publicPath": "/juetVendor.bundle.js"
@@ -367,7 +359,7 @@
   ],
   "./cjs/react-dom.production.min.js": [
     {
-      "id": 50,
+      "id": 48,
       "name": "./node_modules/react-dom/cjs/react-dom.production.min.js",
       "file": "juetVendor.bundle.js",
       "publicPath": "/juetVendor.bundle.js"
@@ -375,7 +367,7 @@
   ],
   "scheduler": [
     {
-      "id": 51,
+      "id": 49,
       "name": "./node_modules/scheduler/index.js",
       "file": "juetVendor.bundle.js",
       "publicPath": "/juetVendor.bundle.js"
@@ -383,7 +375,7 @@
   ],
   "./cjs/scheduler.production.min.js": [
     {
-      "id": 52,
+      "id": 50,
       "name": "./node_modules/scheduler/cjs/scheduler.production.min.js",
       "file": "juetVendor.bundle.js",
       "publicPath": "/juetVendor.bundle.js"
@@ -391,7 +383,7 @@
   ],
   "./lib/React": [
     {
-      "id": 55,
+      "id": 53,
       "name": "./node_modules/react-ionicons/node_modules/react/lib/React.js",
       "file": "juetVendor.bundle.js",
       "publicPath": "/juetVendor.bundle.js"
@@ -399,7 +391,7 @@
   ],
   "./ReactChildren": [
     {
-      "id": 56,
+      "id": 54,
       "name": "./node_modules/react-ionicons/node_modules/react/lib/ReactChildren.js",
       "file": "juetVendor.bundle.js",
       "publicPath": "/juetVendor.bundle.js"
@@ -407,7 +399,7 @@
   ],
   "./PooledClass": [
     {
-      "id": 57,
+      "id": 55,
       "name": "./node_modules/react-ionicons/node_modules/react/lib/PooledClass.js",
       "file": "juetVendor.bundle.js",
       "publicPath": "/juetVendor.bundle.js"
@@ -415,7 +407,7 @@
   ],
   "./traverseAllChildren": [
     {
-      "id": 58,
+      "id": 56,
       "name": "./node_modules/react-ionicons/node_modules/react/lib/traverseAllChildren.js",
       "file": "juetVendor.bundle.js",
       "publicPath": "/juetVendor.bundle.js"
@@ -423,7 +415,7 @@
   ],
   "./KeyEscapeUtils": [
     {
-      "id": 59,
+      "id": 57,
       "name": "./node_modules/react-ionicons/node_modules/react/lib/KeyEscapeUtils.js",
       "file": "juetVendor.bundle.js",
       "publicPath": "/juetVendor.bundle.js"
@@ -431,7 +423,7 @@
   ],
   "./ReactPureComponent": [
     {
-      "id": 60,
+      "id": 58,
       "name": "./node_modules/react-ionicons/node_modules/react/lib/ReactPureComponent.js",
       "file": "juetVendor.bundle.js",
       "publicPath": "/juetVendor.bundle.js"
@@ -439,7 +431,7 @@
   ],
   "./ReactClass": [
     {
-      "id": 61,
+      "id": 59,
       "name": "./node_modules/react-ionicons/node_modules/react/lib/ReactClass.js",
       "file": "juetVendor.bundle.js",
       "publicPath": "/juetVendor.bundle.js"
@@ -447,7 +439,7 @@
   ],
   "./ReactDOMFactories": [
     {
-      "id": 62,
+      "id": 60,
       "name": "./node_modules/react-ionicons/node_modules/react/lib/ReactDOMFactories.js",
       "file": "juetVendor.bundle.js",
       "publicPath": "/juetVendor.bundle.js"
@@ -455,7 +447,7 @@
   ],
   "./ReactPropTypes": [
     {
-      "id": 63,
+      "id": 61,
       "name": "./node_modules/react-ionicons/node_modules/react/lib/ReactPropTypes.js",
       "file": "juetVendor.bundle.js",
       "publicPath": "/juetVendor.bundle.js"
@@ -463,7 +455,7 @@
   ],
   "./ReactPropTypesSecret": [
     {
-      "id": 64,
+      "id": 62,
       "name": "./node_modules/react-ionicons/node_modules/react/lib/ReactPropTypesSecret.js",
       "file": "juetVendor.bundle.js",
       "publicPath": "/juetVendor.bundle.js"
@@ -471,7 +463,7 @@
   ],
   "./ReactVersion": [
     {
-      "id": 65,
+      "id": 63,
       "name": "./node_modules/react-ionicons/node_modules/react/lib/ReactVersion.js",
       "file": "juetVendor.bundle.js",
       "publicPath": "/juetVendor.bundle.js"
@@ -479,7 +471,7 @@
   ],
   "./onlyChild": [
     {
-      "id": 66,
+      "id": 64,
       "name": "./node_modules/react-ionicons/node_modules/react/lib/onlyChild.js",
       "file": "juetVendor.bundle.js",
       "publicPath": "/juetVendor.bundle.js"
@@ -487,13 +479,13 @@
   ],
   "./factoryWithThrowingShims": [
     {
-      "id": 68,
+      "id": 66,
       "name": "./node_modules/react-ionicons/node_modules/prop-types/factoryWithThrowingShims.js",
       "file": "juetVendor.bundle.js",
       "publicPath": "/juetVendor.bundle.js"
     },
     {
-      "id": 74,
+      "id": 72,
       "name": "./node_modules/prop-types/factoryWithThrowingShims.js",
       "file": "juetVendor.bundle.js",
       "publicPath": "/juetVendor.bundle.js"
@@ -501,13 +493,13 @@
   ],
   "./lib/ReactPropTypesSecret": [
     {
-      "id": 69,
+      "id": 67,
       "name": "./node_modules/react-ionicons/node_modules/prop-types/lib/ReactPropTypesSecret.js",
       "file": "juetVendor.bundle.js",
       "publicPath": "/juetVendor.bundle.js"
     },
     {
-      "id": 75,
+      "id": 73,
       "name": "./node_modules/prop-types/lib/ReactPropTypesSecret.js",
       "file": "juetVendor.bundle.js",
       "publicPath": "/juetVendor.bundle.js"
@@ -515,7 +507,7 @@
   ],
   "./icons.js": [
     {
-      "id": 70,
+      "id": 68,
       "name": "./node_modules/react-ionicons/lib/icons.js",
       "file": "juetVendor.bundle.js",
       "publicPath": "/juetVendor.bundle.js"
@@ -523,7 +515,7 @@
   ],
   "./SVG": [
     {
-      "id": 71,
+      "id": 69,
       "name": "./node_modules/react-ionicons/lib/SVG.js",
       "file": "juetVendor.bundle.js",
       "publicPath": "/juetVendor.bundle.js"
@@ -531,7 +523,7 @@
   ],
   "styled-components": [
     {
-      "id": 72,
+      "id": 70,
       "name": "./node_modules/styled-components/dist/styled-components.es.js",
       "file": "juetVendor.bundle.js",
       "publicPath": "/juetVendor.bundle.js"
@@ -539,8 +531,16 @@
   ],
   "isobject": [
     {
-      "id": 73,
+      "id": 71,
       "name": "./node_modules/is-plain-object/node_modules/isobject/index.js",
+      "file": "juetVendor.bundle.js",
+      "publicPath": "/juetVendor.bundle.js"
+    }
+  ],
+  "isarray": [
+    {
+      "id": 77,
+      "name": "./node_modules/react-router/node_modules/isarray/index.js",
       "file": "juetVendor.bundle.js",
       "publicPath": "/juetVendor.bundle.js"
     }
@@ -569,17 +569,17 @@
       "publicPath": "/juetVendor.bundle.js"
     }
   ],
-  "isarray": [
+  "isomorphic-fetch": [
     {
-      "id": 83,
-      "name": "./node_modules/react-router/node_modules/isarray/index.js",
+      "id": 82,
+      "name": "./node_modules/isomorphic-fetch/fetch-npm-browserify.js",
       "file": "juetVendor.bundle.js",
       "publicPath": "/juetVendor.bundle.js"
     }
   ],
   "./Link": [
     {
-      "id": 87,
+      "id": 93,
       "name": "./node_modules/react-router-dom/es/Link.js",
       "file": "juetVendor.bundle.js",
       "publicPath": "/juetVendor.bundle.js"
@@ -587,7 +587,7 @@
   ],
   "./Route": [
     {
-      "id": 88,
+      "id": 94,
       "name": "./node_modules/react-router-dom/es/Route.js",
       "file": "juetVendor.bundle.js",
       "publicPath": "/juetVendor.bundle.js"
@@ -595,7 +595,7 @@
   ],
   "./BrowserRouter": [
     {
-      "id": 89,
+      "id": 95,
       "name": "./node_modules/react-router-dom/es/BrowserRouter.js",
       "file": "juetVendor.bundle.js",
       "publicPath": "/juetVendor.bundle.js"
@@ -603,7 +603,7 @@
   ],
   "./withRouter": [
     {
-      "id": 90,
+      "id": 96,
       "name": "./node_modules/react-router-dom/es/withRouter.js",
       "file": "juetVendor.bundle.js",
       "publicPath": "/juetVendor.bundle.js"
@@ -611,7 +611,7 @@
   ],
   "./Switch": [
     {
-      "id": 91,
+      "id": 97,
       "name": "./node_modules/react-router-dom/es/Switch.js",
       "file": "juetVendor.bundle.js",
       "publicPath": "/juetVendor.bundle.js"
@@ -621,8 +621,14 @@
     {
       "id": "",
       "name": null,
-      "file": "main.css",
-      "publicPath": "/main.css"
+      "file": "1.css",
+      "publicPath": "/1.css"
+    },
+    {
+      "id": "",
+      "name": null,
+      "file": "1.bundle.js",
+      "publicPath": "/1.bundle.js"
     },
     {
       "id": "",
@@ -649,13 +655,7 @@
       "publicPath": "/main.css"
     },
     {
-      "id": "",
-      "name": null,
-      "file": "main.css",
-      "publicPath": "/main.css"
-    },
-    {
-      "id": 48,
+      "id": 46,
       "name": null,
       "file": "main.css",
       "publicPath": "/main.css"
@@ -685,34 +685,10 @@
       "publicPath": "/juet_bundle.js"
     },
     {
-      "id": "",
+      "id": 46,
       "name": null,
       "file": "juet_bundle.js",
       "publicPath": "/juet_bundle.js"
-    },
-    {
-      "id": "",
-      "name": null,
-      "file": "juet_bundle.js",
-      "publicPath": "/juet_bundle.js"
-    },
-    {
-      "id": 48,
-      "name": null,
-      "file": "juet_bundle.js",
-      "publicPath": "/juet_bundle.js"
-    },
-    {
-      "id": "",
-      "name": null,
-      "file": "2.css",
-      "publicPath": "/2.css"
-    },
-    {
-      "id": "",
-      "name": null,
-      "file": "2.bundle.js",
-      "publicPath": "/2.bundle.js"
     },
     {
       "id": "",
@@ -725,17 +701,97 @@
       "name": null,
       "file": "3.bundle.js",
       "publicPath": "/3.bundle.js"
+    },
+    {
+      "id": "",
+      "name": null,
+      "file": "4.css",
+      "publicPath": "/4.css"
+    },
+    {
+      "id": "",
+      "name": null,
+      "file": "4.bundle.js",
+      "publicPath": "/4.bundle.js"
+    },
+    {
+      "id": "",
+      "name": null,
+      "file": "5.css",
+      "publicPath": "/5.css"
+    },
+    {
+      "id": "",
+      "name": null,
+      "file": "5.bundle.js",
+      "publicPath": "/5.bundle.js"
+    }
+  ],
+  "./styles/Admission.css": [
+    {
+      "id": 98,
+      "name": "./src/juet/Admissions/styles/Admission.css",
+      "file": "1.css",
+      "publicPath": "/1.css"
+    },
+    {
+      "id": 98,
+      "name": "./src/juet/Admissions/styles/Admission.css",
+      "file": "1.bundle.js",
+      "publicPath": "/1.bundle.js"
+    }
+  ],
+  "./AdmissionUpperLook": [
+    {
+      "id": 99,
+      "name": "./src/juet/Admissions/AdmissionUpperLook.js",
+      "file": "1.css",
+      "publicPath": "/1.css"
+    },
+    {
+      "id": 99,
+      "name": "./src/juet/Admissions/AdmissionUpperLook.js",
+      "file": "1.bundle.js",
+      "publicPath": "/1.bundle.js"
+    }
+  ],
+  "./QuickAccess": [
+    {
+      "id": 100,
+      "name": "./src/juet/Admissions/QuickAccess.js",
+      "file": "1.css",
+      "publicPath": "/1.css"
+    },
+    {
+      "id": 100,
+      "name": "./src/juet/Admissions/QuickAccess.js",
+      "file": "1.bundle.js",
+      "publicPath": "/1.bundle.js"
+    }
+  ],
+  "./AdmissionInfoLook": [
+    {
+      "id": 101,
+      "name": "./src/juet/Admissions/AdmissionInfoLook.js",
+      "file": "1.css",
+      "publicPath": "/1.css"
+    },
+    {
+      "id": 101,
+      "name": "./src/juet/Admissions/AdmissionInfoLook.js",
+      "file": "1.bundle.js",
+      "publicPath": "/1.bundle.js"
     }
   ],
   "./juet/LoadingView/Loading": [
     {
-      "id": 6,
+      "id": 7,
       "name": "./src/juet/LoadingView/Loading.js",
       "file": "main.css",
       "publicPath": "/main.css"
     },
     {
-      "id": 6,
+      "id": 7,
       "name": "./src/juet/LoadingView/Loading.js",
       "file": "juet_bundle.js",
       "publicPath": "/juet_bundle.js"
@@ -743,41 +799,27 @@
   ],
   "../actions/actionTypes": [
     {
-      "id": 8,
+      "id": 14,
       "name": "./src/redux/actions/actionTypes.js",
       "file": "main.css",
       "publicPath": "/main.css"
     },
     {
-      "id": 8,
+      "id": 14,
       "name": "./src/redux/actions/actionTypes.js",
-      "file": "juet_bundle.js",
-      "publicPath": "/juet_bundle.js"
-    }
-  ],
-  "./styles/Admission.css": [
-    {
-      "id": 10,
-      "name": "./src/juet/Admissions/styles/Admission.css",
-      "file": "main.css",
-      "publicPath": "/main.css"
-    },
-    {
-      "id": 10,
-      "name": "./src/juet/Admissions/styles/Admission.css",
       "file": "juet_bundle.js",
       "publicPath": "/juet_bundle.js"
     }
   ],
   "./styles/header.css": [
     {
-      "id": 53,
+      "id": 51,
       "name": "./src/juet/header/styles/header.css",
       "file": "main.css",
       "publicPath": "/main.css"
     },
     {
-      "id": 53,
+      "id": 51,
       "name": "./src/juet/header/styles/header.css",
       "file": "juet_bundle.js",
       "publicPath": "/juet_bundle.js"
@@ -785,41 +827,27 @@
   ],
   "./styles/footer.css": [
     {
-      "id": 76,
+      "id": 74,
       "name": "./src/juet/footer/styles/footer.css",
       "file": "main.css",
       "publicPath": "/main.css"
     },
     {
-      "id": 76,
+      "id": 74,
       "name": "./src/juet/footer/styles/footer.css",
-      "file": "juet_bundle.js",
-      "publicPath": "/juet_bundle.js"
-    }
-  ],
-  "./styles/about.css": [
-    {
-      "id": 77,
-      "name": "./src/juet/About/styles/about.css",
-      "file": "main.css",
-      "publicPath": "/main.css"
-    },
-    {
-      "id": 77,
-      "name": "./src/juet/About/styles/about.css",
       "file": "juet_bundle.js",
       "publicPath": "/juet_bundle.js"
     }
   ],
   "./juet/LandingPage/styles/body.css": [
     {
-      "id": 81,
+      "id": 75,
       "name": "./src/juet/LandingPage/styles/body.css",
       "file": "main.css",
       "publicPath": "/main.css"
     },
     {
-      "id": 81,
+      "id": 75,
       "name": "./src/juet/LandingPage/styles/body.css",
       "file": "juet_bundle.js",
       "publicPath": "/juet_bundle.js"
@@ -827,13 +855,13 @@
   ],
   "./styles/NotFound.css": [
     {
-      "id": 82,
+      "id": 76,
       "name": "./src/juet/NotFound/styles/NotFound.css",
       "file": "main.css",
       "publicPath": "/main.css"
     },
     {
-      "id": 82,
+      "id": 76,
       "name": "./src/juet/NotFound/styles/NotFound.css",
       "file": "juet_bundle.js",
       "publicPath": "/juet_bundle.js"
@@ -841,70 +869,154 @@
   ],
   "./src/browser/index.jsx": [
     {
-      "id": 84,
+      "id": 81,
       "name": "./src/browser/index.jsx",
       "file": "main.css",
       "publicPath": "/main.css"
     },
     {
-      "id": 84,
+      "id": 81,
       "name": "./src/browser/index.jsx",
       "file": "juet_bundle.js",
       "publicPath": "/juet_bundle.js"
     }
   ],
-  "./juet/faculty/FacultyListAll": [
+  "./juet/About/AboutMain": [
     {
-      "id": 86,
-      "name": "./src/juet/faculty/FacultyListAll.js",
-      "file": "2.css",
-      "publicPath": "/2.css"
+      "id": 89,
+      "name": "./src/juet/About/AboutMain.js",
+      "file": "3.css",
+      "publicPath": "/3.css"
     },
     {
-      "id": 86,
+      "id": 89,
+      "name": "./src/juet/About/AboutMain.js",
+      "file": "3.bundle.js",
+      "publicPath": "/3.bundle.js"
+    }
+  ],
+  "./styles/about.css": [
+    {
+      "id": 103,
+      "name": "./src/juet/About/styles/about.css",
+      "file": "3.css",
+      "publicPath": "/3.css"
+    },
+    {
+      "id": 103,
+      "name": "./src/juet/About/styles/about.css",
+      "file": "3.bundle.js",
+      "publicPath": "/3.bundle.js"
+    }
+  ],
+  "./juet/faculty/FacultyListAll": [
+    {
+      "id": 90,
       "name": "./src/juet/faculty/FacultyListAll.js",
-      "file": "2.bundle.js",
-      "publicPath": "/2.bundle.js"
+      "file": "4.css",
+      "publicPath": "/4.css"
+    },
+    {
+      "id": 90,
+      "name": "./src/juet/faculty/FacultyListAll.js",
+      "file": "4.bundle.js",
+      "publicPath": "/4.bundle.js"
     }
   ],
   "./styles/faculty.css": [
     {
-      "id": 92,
+      "id": 102,
       "name": "./src/juet/faculty/styles/faculty.css",
-      "file": "2.css",
-      "publicPath": "/2.css"
+      "file": "4.css",
+      "publicPath": "/4.css"
     },
     {
-      "id": 92,
+      "id": 102,
       "name": "./src/juet/faculty/styles/faculty.css",
-      "file": "2.bundle.js",
-      "publicPath": "/2.bundle.js"
+      "file": "4.bundle.js",
+      "publicPath": "/4.bundle.js"
     },
     {
-      "id": 92,
+      "id": 102,
       "name": "./src/juet/faculty/styles/faculty.css",
-      "file": "3.css",
-      "publicPath": "/3.css"
+      "file": "5.css",
+      "publicPath": "/5.css"
     },
     {
-      "id": 92,
+      "id": 102,
       "name": "./src/juet/faculty/styles/faculty.css",
-      "file": "3.bundle.js",
-      "publicPath": "/3.bundle.js"
+      "file": "5.bundle.js",
+      "publicPath": "/5.bundle.js"
     }
   ],
   "./juet/faculty/FacultyListDepartmentWise": [
     {
-      "id": 85,
+      "id": 88,
       "name": "./src/juet/faculty/FacultyListDepartmentWise.js",
-      "file": "3.css",
-      "publicPath": "/3.css"
+      "file": "5.css",
+      "publicPath": "/5.css"
     },
     {
-      "id": 85,
+      "id": 88,
       "name": "./src/juet/faculty/FacultyListDepartmentWise.js",
-      "file": "3.bundle.js",
-      "publicPath": "/3.bundle.js"
+      "file": "5.bundle.js",
+      "publicPath": "/5.bundle.js"
+    }
+  ],
+  "./juet/Admissions/AdmissionIntake": [
+    {
+      "id": 86,
+      "name": "./src/juet/Admissions/AdmissionIntake.js",
+      "file": "6.bundle.js",
+      "publicPath": "/6.bundle.js"
+    }
+  ],
+  "./juet/Admissions/AdmissionMain": [
+    {
+      "id": 92,
+      "name": "./src/juet/Admissions/AdmissionMain.js",
+      "file": "7.bundle.js",
+      "publicPath": "/7.bundle.js"
+    }
+  ],
+  "./juet/Admissions/AdmissionProcedure": [
+    {
+      "id": 91,
+      "name": "./src/juet/Admissions/AdmissionProcedure.js",
+      "file": "8.bundle.js",
+      "publicPath": "/8.bundle.js"
+    }
+  ],
+  "./juet/Admissions/EducationLoan": [
+    {
+      "id": 87,
+      "name": "./src/juet/Admissions/EducationLoan.js",
+      "file": "9.bundle.js",
+      "publicPath": "/9.bundle.js"
+    }
+  ],
+  "./juet/Admissions/FeeInstruction": [
+    {
+      "id": 83,
+      "name": "./src/juet/Admissions/FeeInstruction.js",
+      "file": "10.bundle.js",
+      "publicPath": "/10.bundle.js"
+    }
+  ],
+  "./juet/Admissions/FeeStructure": [
+    {
+      "id": 85,
+      "name": "./src/juet/Admissions/FeeStructure.js",
+      "file": "11.bundle.js",
+      "publicPath": "/11.bundle.js"
+    }
+  ],
+  "./juet/Admissions/Scholarship": [
+    {
+      "id": 84,
+      "name": "./src/juet/Admissions/Scholarship.js",
+      "file": "12.bundle.js",
+      "publicPath": "/12.bundle.js"
     }
   ]
 }

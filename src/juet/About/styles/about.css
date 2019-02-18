@@ -33,6 +33,9 @@
   grid-gap: 1em;
   background: #f9f9f9;
   padding: 2em;
+  position: relative;
+  overflow: hidden;
+  z-index: 100;
 }
 
 #About .AboutMain .AboutusContainer h2 {
@@ -142,5 +145,17 @@
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
   }
+}
+
+#About .AboutMain::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: #cbe4f978;
+  position: absolute;
+  overflow: hidden;
+  -webkit-transform: skew(-70.5deg);
+          transform: skew(-70.5deg);
+  z-index: -50;
 }
 /*# sourceMappingURL=about.css.map */

@@ -1,17 +1,49 @@
 import Loadable from 'react-loadable'
 
 import BodyMainLandingPage from "./juet/LandingPage/bodyMain.jsx";
-import AboutMain from './juet/About/AboutMain'
-// import FacultyDepartmentProfile from './juet/faculty/FacultyListDepartmentWise'
-import AdmissionHome from './juet/Admissions/AdmissionMain'
-import AdmissionProcedure from './juet/Admissions/AdmissionProcedure'
-import FeeStructure from './juet/Admissions/FeeStructure'
-import EducationLoan from './juet/Admissions/EducationLoan'
-import AdmissionIntake from './juet/Admissions/AdmissionIntake'
-import FeeInstruction from "./juet/Admissions/FeeInstruction";
-import Scholarship from './juet/Admissions/Scholarship'
-
 import {LoadingView} from './juet/LoadingView/Loading'
+
+const AdmissionHome_Async = Loadable({
+    loader:() => import('./juet/Admissions/AdmissionMain'),
+    loading:LoadingView
+})
+
+const AdmissionProcedure_Async = Loadable({
+    loader:() => import('./juet/Admissions/AdmissionProcedure'),
+    loading:LoadingView
+})
+
+const FeeInstruction_Async = Loadable({
+    loader:() => import('./juet/Admissions/FeeInstruction'),
+    loading:LoadingView
+})
+
+const Scholarship_Async = Loadable({
+    loader:() => import('./juet/Admissions/Scholarship'),
+    loading:LoadingView
+})
+
+const FeeStructure_Async = Loadable({
+    loader:() => import('./juet/Admissions/FeeStructure'),
+    loading:LoadingView
+})
+
+const AdmissionIntake_Async = Loadable({
+    loader:() => import('./juet/Admissions/AdmissionIntake'),
+    loading:LoadingView
+})
+
+const EducationLoan_Async = Loadable({
+    loader:() => import('./juet/Admissions/EducationLoan'),
+    loading:LoadingView
+})
+
+
+
+const AboutMain_Async = Loadable({
+    loader:() => import('./juet/About/AboutMain'),
+    loading:LoadingView
+}) 
 
 const FacultyListAll_Async = Loadable({
     loader:() => import('./juet/faculty/FacultyListAll'),
@@ -31,7 +63,7 @@ export const routes = [
     },
     {
         path: "/About",
-        component: AboutMain,
+        component: AboutMain_Async,
         exact: true
     },
     {
@@ -51,37 +83,37 @@ export const routes = [
     // },
     {
         path:"/admissions",
-        component:AdmissionHome,
+        component:AdmissionHome_Async,
         exact:true,
     },
     {
         path:"/admissions/Procedure",
-        component:AdmissionProcedure,
+        component:AdmissionProcedure_Async,
         exact:true,
     },
     {
         path:"/admissions/EDULoan",
-        component:EducationLoan,
+        component:EducationLoan_Async,
         exact:true,
     },
     {
         path:"/admissions/Fees",
-        component:FeeStructure,
+        component:FeeStructure_Async,
         exact:true,
     },
     {
         path:"/admissions/FeeInstruction",
-        component:FeeInstruction,
+        component:FeeInstruction_Async,
         exact:true,
     },
     {
         path:"/admissions/Intake",
-        component:AdmissionIntake,
+        component:AdmissionIntake_Async,
         exact:true,
     },
     {
         path:"/admissions/Scholarship",
-        component:Scholarship,
+        component:Scholarship_Async,
         exact:true,
     }
 

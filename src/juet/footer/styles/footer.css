@@ -16,7 +16,8 @@
 {
     color: white;
     cursor: initial;
-    width: 20em;
+    font-size: 0.56rem;
+    width: 100%;
 }
 .ImportantDisclosures ul li:nth-child(1):hover,.ImportantLinks ul li:nth-child(1):hover,.ContactInfo ul li:nth-child(1):hover
 {
