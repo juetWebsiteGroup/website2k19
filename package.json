@@ -10,10 +10,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "dev": "webpack-dev-server --hot --inline --mode=development ",
-    "build-dev": "webpack --mode=development",
-    "build": "webpack --mode=production",
-    "build-server": "webpack --mode=production --config webpack.Server.js"
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --hot --inline --mode=development ",
+    "build-dev": "cross-env NODE_ENV=development webpack --mode=development",
+    "build": "cross-env NODE_ENV=production webpack --mode=production",
+    "build-server": "cross-env NODE_ENV=production webpack --mode=production --config webpack.Server.js"
   },
   "browserslist": [
     "last 2 version",
@@ -29,9 +29,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@types/antd": "^1.0.0",
+    "antd": "^3.13.5",
     "axios": "^0.18.0",
     "compression": "^1.7.3",
     "cors": "^2.8.5",
+    "cross-env": "^5.2.0",
     "dotenv": "^6.2.0",
     "dotenv-webpack": "^1.6.0",
     "ejs": "^2.6.1",
@@ -43,6 +46,8 @@
     "imagemin-webpack": "^4.1.0",
     "isomorphic-fetch": "^2.2.1",
     "jquery": "^3.3.1",
+    "less": "^3.9.0",
+    "less-loader": "^4.1.0",
     "lru-cache": "^5.1.1",
     "morgan": "^1.9.1",
     "mysql": "^2.16.0",
@@ -73,6 +78,7 @@
     "autoprefixer": "^9.4.3",
     "babel-cli": "^6.26.0",
     "babel-loader": "^8.0.4",
+    "babel-plugin-import": "^1.11.0",
     "clean-webpack-plugin": "^1.0.0",
     "css-loader": "^2.1.0",
     "cssnano": "^4.1.8",

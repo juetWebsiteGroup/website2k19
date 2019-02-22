@@ -7,10 +7,10 @@ class NavBarPackage extends Component{
     render()
     {
         return (
-            <div>
+            <>
             <FirstNavbar />
             <SecondNavbar />
-            </div>
+            </>
         )
     }
 }

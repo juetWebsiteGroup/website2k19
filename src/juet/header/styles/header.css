@@ -8,7 +8,7 @@
 :root
 {
     --background: whitesmoke;
-    --PatternBackground:url(/static/images/bg6.jpg);
+    --PatternBackground:url(~Images/bg6.jpg);
 }
 @keyframes fade
 {

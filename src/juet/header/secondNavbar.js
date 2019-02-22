@@ -142,7 +142,7 @@ class SecondNavbar extends Component {
                <label htmlFor = "nav_toggle" title="Click to Show Menu" className="nav_button"><div className="outer_shape"><div className="inner_shape"></div>
                </div></label>
             <div className={`${this.state.Classes}`} >
-                <span><img src="/static/images/final_header_grey_txt.png" alt="JUET" className="college_logo" /></span>
+                <span><img src='/static/images/final_header_grey_txt.png' alt="JUET" className="college_logo" /></span>
                 <nav>
                     <ul className="NavUL">
                         <li><Link to='/'>Home</Link></li>

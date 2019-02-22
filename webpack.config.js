@@ -55,6 +55,11 @@ var devConfig = {
             }
         ]
     },
+    resolve:{
+      alias:{
+        Images:path.join(__dirname,'/static/images/')
+      }
+    },
     plugins:[
         new webpack.DefinePlugin({
             __isBrowser__:'true'
@@ -106,10 +111,14 @@ var browserConfig = {
                 use:'babel-loader'
             },
             {
+              test:/\.(less)$/,
+              use:['less-loader','style-loader','css-loader']
+            },
+            {
                
                     test: /\.(sa|sc|c)ss$/,
                     use: [
-                    MiniCssExtractPlugin.loader,'css-loader',
+                    MiniCssExtractPlugin.loader,'css-loader','sass-loader',
                     {loader:'postcss-loader',
                      options:{sourceMap:true,ident:'postcss',plugins:[require('autoprefixer')()]}
                     }
@@ -136,6 +145,11 @@ var browserConfig = {
           new OptimizeCSSAssetsPlugin({})
         ]
       },
+      resolve:{
+        alias:{
+          Images:path.join(__dirname,'/static/images/')
+        }
+       },
     plugins:[
             new ReactLoadablePlugin({
               filename: './build/react-loadable.json',
