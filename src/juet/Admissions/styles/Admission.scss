@@ -201,6 +201,7 @@
            .__card
            {
                width: 100%;
+               max-width: 350px;
                padding: 0.3em;
                display: flex;
                justify-content: flex-start;
@@ -656,9 +657,18 @@
            @include AlignCenter;
            flex-direction: row;
            margin-left: 2em;
+           a
+           {
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 5em;
+           }
             img
             {
-                @include responsive_image(20%);
+                @include responsive_image(100%);
             
             }
             .Headerline
@@ -720,8 +730,8 @@
                     position: relative;
                     img
                     {
-                        all:unset;
-                        width: 16% !important;
+                        all: unset;
+                        width: 90%!important;
                     }
                     .TitleHeader
                     {
