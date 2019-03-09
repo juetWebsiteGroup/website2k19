@@ -29,7 +29,7 @@ export default class FeeStructure extends React.Component
        render()
        {
         return (
-            <>
+            <div>
              <AdmissionUpperLook UpperTitle={`"Bringing Together Talented and Innovative Minds".`} />
                 <div className="Admission__MainWindow">
                 <AdmissionInfoLook MainTitle={`Academic Fee Structure - ${new Date().getFullYear()}`}>
@@ -52,7 +52,7 @@ export default class FeeStructure extends React.Component
                       })}
                       
                           <tr>
-                              <td colSpan={5}><h4>Hostel Charges {this.state.FeesData.IndianStudent.Hostel.Fee} INR {this.state.FeesData.IndianStudent.Hostel.isFood_Laundry ? "(Including Food,Laundry,etc..)" : "(Including Food etc..)"}</h4></td>
+                              <td colSpan={5}><h4>Hostel Charges {this.state.FeesData.IndianStudent.Hostel.Fee} Per Semester {this.state.FeesData.IndianStudent.Hostel.isFood_Laundry ? "(Including Food,Laundry,etc..)" : "(Including Food etc..)"}</h4></td>
                               </tr>
                               <tr>
                               <td colSpan={5}><h4>*Refundable</h4></td>
@@ -87,7 +87,7 @@ export default class FeeStructure extends React.Component
                 </AdmissionInfoLook>
                 <QuickAccess/>
                 </div>
-            </>
+            </div>
         )
        }    
 }

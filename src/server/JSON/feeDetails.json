@@ -18,11 +18,6 @@
                             "TuitionFee":"17000 INR",
                             "DevelopmentFee":"3000 INR",
                             "CautionMoney":"5000 INR"
-                        },{
-                            "CourseName":"Ph.D. (Sponsored Candidate)",
-                            "TuitionFee":"20000 INR",
-                            "DevelopmentFee":null,
-                            "CautionMoney":"5000 INR"
                         },
                         {
                             "CourseName":"B.Sc./B.Sc. (Hons.)",
@@ -32,13 +27,13 @@
                         },
                         {
                             "CourseName":"M.Sc.",
-                            "TuitionFee":"78500 INR",
+                            "TuitionFee":"20000 INR",
                             "DevelopmentFee":null,
                             "CautionMoney":"5000 INR"
                         }
                         ],
                 "Hostel":{
-                         "Fee":"52500",
+                         "Fee":": 52500 INR",
                          "isFood_Laundry":true
                      }
                     },
@@ -51,7 +46,7 @@
                     }
                  ],
             "Hostel":{
-                    "Fee":"2000 USD",
+                    "Fee":": 2000 USD",
                     "isFood_Laundry":true
                 }
             }                   

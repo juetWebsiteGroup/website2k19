@@ -64,7 +64,7 @@ class AdmissionHome extends Component {
                 <AdmissionInfoLook MainTitle={`Programmes Offered - ${new Date().getFullYear()}`} >
                 {this.props.Programmes.AdmissionProgrammes ? <div><ProgrammesOfferedAdmission DataObj={this.props.Programmes.AdmissionProgrammes.BTech} />
                 <ProgrammesOfferedAdmission DataObj={this.props.Programmes.AdmissionProgrammes.MTech} />
-				   <ProgrammesOfferedAdmission DataObj={this.props.Programmes.AdmissionProgrammes.PhD} />
+				   {/* <ProgrammesOfferedAdmission DataObj={this.props.Programmes.AdmissionProgrammes.PhD} /> */}
 				   <ProgrammesOfferedAdmission DataObj={this.props.Programmes.AdmissionProgrammes.BSc} />
                 </div>
                 : <LoadingView /> } 

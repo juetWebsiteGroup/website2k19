@@ -3,7 +3,7 @@ import Ionicon from 'react-ionicons';
 
 export const AdmissionFooter = (props) => {
     return (
-        <footer id="Admission__Footer">
+        <section id="Admission__Footer">
         <div className="container">
             <div className="socialLinksFooter">
                     <span title="Facebook">
@@ -19,6 +19,6 @@ export const AdmissionFooter = (props) => {
             <p>&copy; copyright 2019 Jaypee University of Engineering and Technology, Guna</p>
             <p>New Website 2019 update coming soon.</p>
         </div>
-      </footer>
+      </section>
     )
 }

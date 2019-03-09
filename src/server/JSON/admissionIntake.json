@@ -13,10 +13,12 @@
                 "Title":"M.Tech Programme",
                 "IntakeProgramme":[
                                     {"id":"CHE","branch":"Chemical Engineering","Total":5,"JEE":null,"Board":null},
-                                    {"id":"CE","branch":"Civil Engineering","Total":10,"JEE":null,"Board":null},
+                                    {"id":"CE","branch":"Civil Engineering (Environmental Engineering)","Total":5,"JEE":null,"Board":null},
+									{"id":"CE","branch":"Civil Engineering (Structural Engineering)","Total":5,"JEE":null,"Board":null},
                                     {"id":"CSE","branch":"Computer Science & Engineering","Total":10,"JEE":null,"Board":null},
                                     {"id":"ECE","branch":"Electronics & Communication Engineering","Total":10,"JEE":null,"Board":null},
-                                    {"id":"MEC","branch":"Mechanical Engineering","Total":10,"JEE":null,"Board":null}
+                                    {"id":"MEC","branch":"Mechanical Engineering (Manufacturing Technology)","Total":10,"JEE":null,"Board":null}
+									
                                   ]
             },
     "PhD":{

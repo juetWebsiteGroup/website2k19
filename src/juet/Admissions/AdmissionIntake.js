@@ -65,7 +65,7 @@ export default class AdmissionIntake extends React.Component
        render()
        {
         return (
-            <>
+            <div>
              <AdmissionUpperLook UpperTitle={`"Bringing Together Talented and Innovative Minds".`} />
                 <div className="Admission__MainWindow">
                 <AdmissionInfoLook MainTitle={`Admission Intake - ${new Date().getFullYear()}`}>
@@ -98,7 +98,7 @@ export default class AdmissionIntake extends React.Component
                 </AdmissionInfoLook>
                 <QuickAccess/>
                 </div>
-            </>
+            </div>
         )
        }    
 }

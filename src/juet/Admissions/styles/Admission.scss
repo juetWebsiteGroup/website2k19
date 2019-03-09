@@ -1,817 +1,725 @@
-@import '../../common_sass/common';
+@import "../../common_sass/common";
 
-@keyframes GLOW 
-{
-    from{
-           opacity: 0.55;
-    }
-    to{
-        opacity: 1;
-    }
+@keyframes GLOW {
+	from {
+		opacity: 0.55;
+	}
+	to {
+		opacity: 1;
+	}
 }
-.Admission__Upper
-{
-    width: 100%;
-    height: 60vh;
-    background: url(/static/images/students.jpg) no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-origin: padding-box;
-    background-position-x: center;
-    background-position-y:-20vh;
-    color:white;
+.Admission__Upper {
+	width: 100%;
+	height: 60vh;
+	background: url(/static/images/students_1.jpg) no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-origin: padding-box;
+	background-position-x: center;
+	background-position-y: -23vh;
+	color: white;
 
-    .container
-    {
-        background: rgba(1,1,1,0.45);
-        height: inherit;
-        position: relative;
-        @include gridMaker(repeat(auto-fit,minmax(250px,1fr)),auto-fit,1em);
-        label
-        {
-            padding: 1em;
-            position: absolute;
-            bottom: 14%;
-            left:2%;
-            h1
-            {
-                font-size:4.5vmin;
-                font-family:'Playfair Display', sans-serif;
-                font-weight: bolder;
-                text-transform: capitalize;
-                letter-spacing: 1.5px;
-                color: azure;
-                font-style: italic;
-                animation: GLOW 3s cubic-bezier(0.215, 0.610, 0.355, 1) 0s infinite;
-            }
-        }
-        .Admission__news
-        {
-            background: rgba(7,39,64,.65);
-            width: 30vw;
-            position: absolute;
-            right: 0;
-            border-radius: 0.2em;
-            box-shadow:1px 1px 10px 0px white;
-            top:25%;
-            @include AlignCenter;
-            height: 30vh;
-            box-sizing: border-box;
-            ul
-            {
-                list-style: none;
-                padding:1em;
-                width: 100%;
-                position: relative;
-                margin-left: 1em;
-                li
-                {
-                    margin-bottom: 1.5vh;
-                    width: 70%;
-                    text-align: left;
-                    padding: 0.3em;
-                    font-size: 2.3vmin;
-                    cursor: pointer;
-                    border-radius: 0.3em;
-                    letter-spacing: 0.6px;
-                    transition: all cubic-bezier(0.215, 0.610, 0.355, 1) 0.43s;
-                    a
-                    {
-                        color: inherit;
-                        text-decoration: none;
-                    }
+	.container {
+		background: rgba(1, 1, 1, 0.45);
+		height: inherit;
+		position: relative;
+		@include gridMaker(repeat(auto-fit, minmax(250px, 1fr)), auto-fit, 1em);
+		label {
+			padding: 1em;
+			position: absolute;
+			bottom: 14%;
+			left: 2%;
+			h1 {
+				font-size: 4.5vmin;
+				font-family: "Playfair Display", sans-serif;
+				font-weight: bolder;
+				text-transform: capitalize;
+				letter-spacing: 1.5px;
+				color: azure;
+				font-style: italic;
+				animation: GLOW 3s cubic-bezier(0.215, 0.61, 0.355, 1) 0s infinite;
+			}
+		}
+		.Admission__news {
+			background: rgba(7, 39, 64, 0.65);
+			width: 30vw;
+			position: absolute;
+			right: 0;
+			border-radius: 0.2em;
+			box-shadow: 1px 1px 10px 0px white;
+			top: 25%;
+			@include AlignCenter;
+			height: 30vh;
+			box-sizing: border-box;
+			ul {
+				list-style: none;
+				padding: 1em;
+				width: 100%;
+				position: relative;
+				margin-left: 1em;
+				li {
+					margin-bottom: 1.5vh;
+					width: 70%;
+					text-align: left;
+					padding: 0.3em;
+					font-size: 2.3vmin;
+					cursor: pointer;
+					border-radius: 0.3em;
+					letter-spacing: 0.6px;
+					transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.43s;
+					a {
+						color: inherit;
+						text-decoration: none;
+					}
 
-                    &:hover
-                    {
-                        background: #b11131;
-                        padding-left: 0.6em;
-                        transition: all cubic-bezier(0.215, 0.610, 0.355, 1) 0.43s;
-                    }
-                }
-            }
+					&:hover {
+						background: #b11131;
+						padding-left: 0.6em;
+						transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.43s;
+					}
+				}
+			}
 
-            @media screen and (max-width:768px) {
-                &
-                {
-                        position: initial;
-                        margin-bottom: 5em;
-                        width: 65vw;
+			@media screen and (max-width: 768px) {
+				& {
+					position: initial;
+					margin-bottom: 5em;
+					width: 65vw;
 
-                        ul
-                        {
-                            li
-                            {
-                                font-size: 3vmin;
-                            }
-                        }
-                }
-            }
-        }
+					ul {
+						li {
+							font-size: 3vmin;
+						}
+					}
+				}
+			}
+		}
 
-        @media screen and (max-width:768px) {
-            &
-            {
-              @include AlignCenter;
-              
-            }
-        }
-    }
+		@media screen and (max-width: 768px) {
+			& {
+				@include AlignCenter;
+			}
+		}
+	}
 }
 
-@media screen and (max-width:1098px)
-{
-    .Admission__Upper
-    {
-        background-position-x: center;
-        background-position-y: -10vh;
-    }
+@media screen and (max-width: 1098px) {
+	.Admission__Upper {
+		background-position-x: center;
+		background-position-y: -10vh;
+	}
 }
-.Admission__MainWindow
-{
-   background: #F9F9F9;
-   padding: 2em;
-   box-sizing: content-box;
-   @include gridMaker(3.5fr 1fr,minmax(1fr,200px),0.33em);
-  
-   .Admission__InfoWindow
-   {
-       display: flex;
-       flex-direction: column;
-       justify-content: flex-start;
-       padding: 0.6em;
-       width: 100%;
-       h1
-       {
-           color:#182C61;
-           text-align: left;
-           font-size: 5.5vmin;
-           padding: 0 0 0.5em 0;
-           font-family: 'Abel',sans-serif;
-           letter-spacing: 0.88px;
-       }
-       .line
-       {
-           padding: 0.03rem;
-           background: lightgray;
-           width: 100%;
-           margin-bottom: 1em;
-       }
-       .SubTitle
-       {
-           margin-left:0.5em;
-           font-size: 5vmin;
-           color:#3a8ac0;
-           text-align: left;
-           width: 100%;
-           font-family: 'Abel',sans-serif;
-       }
-       .EducationLoan
-       {
-           width: 100%;
-           p
-           {
-             text-align: justify;
-             font-family: 'Abel',sans-serif;
-             color:#4e4e4e;
-             letter-spacing: 0.6px;
-             font-weight: bold;
-             font-size:0.99rem;
-             margin-bottom: 1.5em;
-           }
-           .__EducationLoanOtherInfo
-           {
-               h3
-               {
-                   color: #182C61;
-                   margin-bottom: 0.8em;
-                   text-transform: capitalize;
-                   line-height: 28px;
-                   text-align: left;
-               }
-           }
-       }
-       .AdmissionApplication
-       {
-           width:100%;
-           overflow: hidden;
-           padding: 1em;
-           background: inherit;
-           box-sizing: border-box;
-           @include gridMaker(repeat(3,1fr),minmax(400px,1fr),2.5em);
-           .__card
-           {
-               width: 100%;
-               max-width: 350px;
-               padding: 0.3em;
-               display: flex;
-               justify-content: flex-start;
-               align-items: flex-start;
-               flex-direction: column;
-               background: white;
-               overflow: hidden;
-               position: relative;
-               border:0.01em solid lightgray;
-            //    box-shadow:1px 5px 16px 2px #818181;
-              
-               .__cardImage
-                {
-                    width: 100%;
-                    position: relative;
-                    height: 10em;
-                    overflow: hidden;
-                    position: relative;
-                    background: rgba(1,1,1,0.5);
-                    img
-                    {
-                        @include responsive_image(100%);
-                        transform: scale(1,1);
-                        height: 100%;
-                        cursor: pointer;
-                        filter: blur(0.5px) brightness(80%);
-                        transition: transform cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.44s,filter cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.44s;
-                    &:hover
-                    {
-                        transform: scale(1.2,1.2);
-                        filter: blur(0px) brightness(100%);
-                        transition: transform cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.44s,filter cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.44s;
-                    }
-                    }
-                }
-               
-                .__cardTitle
-                {
-                  margin-top: 0.5em;
-                  font-size: 1.2rem;
-                  font-weight: bold;
-                  color: #2b46b4;
-                  padding: 0.5em;
-                  letter-spacing: 0.59px;
-                  font-family: 'Alegreya Sans',sans-serif;
-                  text-align: left;
-                }
-                .__cardDetails
-                {
-                    height: 18vh;
-                    width: 95%;
-                    overflow-y: scroll;
-                    ul
-                    {
-                        list-style: none;
-                        padding: 1em;
-                        li, li a
-                        {
-                            font-family: 'Abel',sans-serif;
-                            margin-bottom: 0.55em;
-                            font-weight: bold;
-                            font-size: 0.92rem;
-                            text-decoration: none;
-                            color: #7f8c8d;
-                            letter-spacing: 0.6px;
-                            cursor: pointer;
+.Admission__MainWindow {
+	background: #f9f9f9;
+	padding: 2em;
+	box-sizing: content-box;
+	@include gridMaker(3.5fr 1fr, minmax(1fr, 200px), 0.33em);
 
-                            &:hover
-                            {
-                               color: crimson;
-                            }
-                            
-                        }
-                    }
-                
-                }
-                .__cardButton
-                {
-                    padding:0.8em;
-                    position: absolute;
-                    right: 0;
-                    left: 0;
-                    z-index: 20;
-                    bottom: 0.3em;
-                    width: 100%;
-                    text-align: center;
-                    background: linear-gradient(180deg,#479ed8,#094e7c);
-                    color:white;
-                    letter-spacing: 0.6px;
-                    font-weight: bold;
-                    cursor: pointer;
-                    box-sizing: border-box;
-                    border-radius: 0.1em;
-                    transform: scale(0.9,0.9);
-                    transition: transform cubic-bezier(0.445, 0.05, 0.55, 0.95) 0.44s;
-                    a
-                    {
-                        text-decoration: none;
-                        color:inherit;
-                    }
-                    &:hover
-                    {
-                        transform: scale(0.95,0.95);
-                        transition: transform cubic-bezier(0.445, 0.05, 0.55, 0.95) 0.44s;
-                        background: linear-gradient(180deg,#1c8648,#096e35);
-                    }
-                }
-           }
-           @media screen and (max-width:801px) and (min-width:610px) {
-               &
-               {
-                   display: grid;
-                   grid-template-columns: repeat(2,1fr);
-               }
-           }
-           @media screen and (max-width:609px){
-            &
-            {
-                display: grid;
-                grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
-            }
-        }
-       }
-      .Fees
-      {
-        @include AlignCenter;
-        flex-direction: column;
-        .FeeTable
-        {
-          border:1px solid #ccc;
-          table-layout: fixed;
-          border-collapse: collapse;
-          width: 100%;
-          margin-bottom:1em;
-          box-shadow: 2px 5px 14px 3px #ccc;
-          thead
-          {
-            overflow: hidden;
+	.Admission__InfoWindow {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		padding: 0.6em;
+		width: 100%;
+		h1 {
+			color: #182c61;
+			text-align: left;
+			font-size: 5.5vmin;
+			padding: 0 0 0.5em 0;
+			font-family: "Abel", sans-serif;
+			letter-spacing: 0.88px;
+		}
+		.line {
+			padding: 0.03rem;
+			background: lightgray;
+			width: 100%;
+			margin-bottom: 1em;
+		}
+		.SubTitle {
+			margin-left: 0.5em;
+			font-size: 5vmin;
+			color: #3a8ac0;
+			text-align: left;
+			width: 100%;
+			font-family: "Abel", sans-serif;
+		}
+		.EducationLoan {
+			width: 100%;
+			p {
+				text-align: justify;
+				font-family: "Abel", sans-serif;
+				color: #4e4e4e;
+				letter-spacing: 0.6px;
+				font-weight: bold;
+				font-size: 0.99rem;
+				margin-bottom: 1.5em;
+			}
+			.__EducationLoanOtherInfo {
+				h3 {
+					color: #182c61;
+					margin-bottom: 0.8em;
+					text-transform: capitalize;
+					line-height: 28px;
+					text-align: left;
+				}
+			}
+		}
+		.AdmissionApplication {
+			width: 100%;
+			overflow: hidden;
+			padding: 1em;
+			background: inherit;
+			box-sizing: border-box;
+			@include gridMaker(repeat(3, 1fr), minmax(400px, 1fr), 2.5em);
+			.__card {
+				width: 100%;
+				max-width: 350px;
+				height: 100%;
+				max-height: 510px;
+				padding: 0.3em;
+				display: flex;
+				justify-content: flex-start;
+				align-items: center;
+				flex-direction: column;
+				background: white;
+				overflow: hidden;
+				position: relative;
+				border: 0.01em solid lightgray;
+				//    box-shadow:1px 5px 16px 2px #818181;
 
-            th
-            {
-                text-align: center;
-                padding: 0.33em;
-                color: white;
-                letter-spacing: 0.66px;
-                font-size: 1.3vmax;
-                font-family: 'Abel',sans-serif;
-                background:linear-gradient(180deg,#479ed8,#094e7c);
-            }
-          }
-         
-          tr,td
-          {
-             border:1px dotted #ccc;
-             padding: 0.5em;
-             font-family: 'Abel',sans-serif;
-             text-align: left;
-             background: white;
+				.__cardImage {
+					width: 100%;
+					position: relative;
+					height: 10em;
+					overflow: hidden;
+					position: relative;
+					background: rgba(1, 1, 1, 0.5);
+					img {
+						@include responsive_image(100%);
+						transform: scale(1, 1);
+						height: 100%;
+						cursor: pointer;
+						filter: blur(0.5px) brightness(80%);
+						transition: transform cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.44s, filter cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.44s;
+						&:hover {
+							transform: scale(1.2, 1.2);
+							filter: blur(0px) brightness(100%);
+							transition: transform cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.44s, filter cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.44s;
+						}
+					}
+				}
 
-             h3
-             {
-                font-family: 'Abel',sans-serif;
-                font-size:0.89rem;
-             }
-             h4
-             {
-                font-size:0.79rem;
-                text-align: left;
-                color:#2b46b4;
-                font-weight: bold;
-             }
-          }
-        }
-      }
-      
-      .Scholarships
-      {
-         display: flex;
-         flex-direction: column;   
-        
-         .container
-         {
-             li
-             {
-                 margin-bottom: 0.5em;
-                 font-weight: bold;
-                 color:#4e4e4e;
-                 font-family: 'Abel',sans-serif;
-                 h3,h4
-                 {
-                     color:#2b46b4;
-                     text-transform: uppercase;
-                     margin-top:0.5em;
-                 }
-                 p
-                 {
-                     text-align: justify;
-                     padding: 0.5em;
-                     font-weight: bold;
-                     margin-bottom: 0.6em;
-                     font-family: 'Abel',sans-serif;
-                 }
-                 ul
-                 {
-                     padding: 0.7em;
+				.__cardTitle {
+					margin-top: 0.5em;
+					font-size: 1.2rem;
+					font-weight: bold;
+					color: #2b46b4;
+					padding: 0.5em;
+					letter-spacing: 0.59px;
+					font-family: "Alegreya Sans", sans-serif;
+					text-align: left;
+				}
+				.__cardDetails {
+					height: 18vh;
+					width: 95%;
+					max-height: 190px;
+					overflow-y: scroll;
+					box-sizing: border-box;
+					padding: 1em;
+					margin-bottom: 3.5em;
+					ul {
+						list-style: none;
 
-                     li
-                     {
-                         margin-bottom: 0.4em;
-                         font-weight: bold;
-                     }
-                 }
-             }
-         }
-      }
+						li,
+						li a {
+							font-family: "Abel", sans-serif;
+							margin-bottom: 0.55em;
+							font-weight: bold;
+							font-size: 0.92rem;
+							text-decoration: none;
+							color: #182c61;
+							letter-spacing: 0.6px;
+							cursor: pointer;
 
-      .Intake
-      {
-          .container
-          {
-              display: flex;
-              flex-direction: column;
-              .OtherIntakeValue
-              {
-                  font-weight: bold;
-                  text-align: left;
-                  margin-bottom: 0.4em;
-              }
+							&:hover {
+								color: crimson;
+							}
+						}
+					}
+					&::-webkit-scrollbar {
+						width: 2.5px;
+						border-radius: 1em;
+					}
 
-              h2
-              {
-                  text-align: left;
-                  color:#2b46b4;
-                  margin-bottom: 0.7em;
-                  font-family: 'Abel',sans-serif;
-              }
+					&::-webkit-scrollbar-track {
+						background: transparent;
+					}
 
-              .IntakeTable
-              {
-                border:1px solid #ccc;
-                table-layout: fixed;
-                border-collapse: collapse;
-                width: 100%;
-                box-shadow: 2px 5px 14px 3px #ccc;
-                margin-bottom: 0.55em;
-                thead
-                {
-                  overflow: hidden;
-      
-                  th
-                  {
-                      text-align: left;
-                      padding: 0.33em;
-                      color: white;
-                      letter-spacing: 0.66px;
-                      font-size: 1.3vmax;
-                      font-family: 'Abel',sans-serif;
-                      background:linear-gradient(180deg,#479ed8,#094e7c);
-                  }
-                }
-               
-                tr,td
-                {
-                   border:1px dotted #ccc;
-                   padding: 0.5em;
-                   font-family: 'Abel',sans-serif;
-                   text-align: left;
-                   background: white;
-                   text-align: left;
-      
-                   h3
-                   {
-                      font-family: 'Abel',sans-serif;
-                      font-size:0.89rem;
-                   }
-                   h4
-                   {
-                      font-size:0.79rem;
-                      text-align: left;
-                      color:#2b46b4;
-                      font-weight: bold;
-                   }
-                }
-              }
-          }
-      }
+					&::-webkit-scrollbar-thumb {
+						background: #b1b1b1;
+					}
 
-      .FeeInstruction
-      {
-          display: flex;
-          flex-direction: column;
+					&::-webkit-scrollbar-thumb:hover {
+						background: #182c61;
+					}
+				}
+				.__cardButton {
+					padding: 0.8em;
+					position: absolute;
+					right: 0;
+					left: 0;
+					z-index: 20;
+					bottom: 0.3em;
+					width: 100%;
+					text-align: center;
+					// background: linear-gradient(180deg, #479ed8, #094e7c);
+					background: radial-gradient(circle farthest-side at center bottom,#009cde,#003087 125%);
+					color: white;
+					letter-spacing: 0.6px;
+					font-weight: bold;
+					cursor: pointer;
+					box-sizing: border-box;
+					border-radius: 0.1em;
+					transform: scale(0.9, 0.9);
+					transition: transform cubic-bezier(0.445, 0.05, 0.55, 0.95) 0.44s;
+					a {
+						text-decoration: none;
+						color: inherit;
+					}
+					&:hover {
+						transform: scale(0.95, 0.95);
+						transition: transform cubic-bezier(0.445, 0.05, 0.55, 0.95) 0.44s;
+						background: linear-gradient(180deg, #1c8648, #096e35);
+					}
+				}
+			}
+			@media screen and (max-width: 801px) and (min-width: 610px) {
+				& {
+					display: grid;
+					grid-template-columns: repeat(2, 1fr);
+				}
+			}
+			@media screen and (max-width: 609px) {
+				& {
+					display: grid;
+					grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+				}
+			}
+		}
+		.Fees {
+			@include AlignCenter;
+			flex-direction: column;
+			.FeeTable {
+				border: 1px solid #ccc;
+				table-layout: fixed;
+				border-collapse: collapse;
+				width: 100%;
+				margin-bottom: 1em;
+				box-shadow: 2px 5px 14px 3px #ccc;
+				thead {
+					overflow: hidden;
 
-          .__Title
-          {
-              color:#2b46b4;
-              font-weight: bold;
-              font-family: "Abel",sans-serif;
-              letter-spacing: 0.55px;
-              margin-bottom: 0.8em;
-          }
+					th {
+						text-align: center;
+						padding: 0.33em;
+						color: white;
+						letter-spacing: 0.66px;
+						font-size: 1.3vmax;
+						font-family: "Abel", sans-serif;
+						background: linear-gradient(180deg, #479ed8, #094e7c);
+					}
+				}
 
-          p
-          {
-              font-family: "Abel",sans-serif;
-              color: #464646;
-              font-size:1.15rem;
-          .__ul1
-          {
-              list-style: none;
-              padding: 1em;
-              margin-top:0.05em;
-              margin-bottom: 0.55em; 
-              li{
-                font-family: "Abel",sans-serif;
-                margin-bottom: 0.1em;
-            }
-          }
-          .__ul2
-          {
-              list-style: circle;
-              padding: 1em;
-              margin-top:0.05em;
-              margin-bottom: 0.55em;
-              
-              li{
-                font-family: "Abel",sans-serif;
-                margin-bottom: 0.1em;
-              }
-          }
-        }
-      }
-       .AdmissionProcedure
-       {
-          ul
-          {
-              list-style: none;
-              li
-              {
-                 h3{
-                    margin-bottom: 0.7em;
-                    color:#2b46b4;
-                 } 
-                  .ProcedurePoints
-                  {
-                      ul{
-                          list-style: none;
-                          padding: 0.5em;
-                          li
-                          {
-                              margin-bottom: 0.66em;
-                              font-size:1rem;
-                              letter-spacing: 0.5px;
-                              font-weight: bold;
-                              color:#4e4e4e;
-                              font-family: 'Abel', sans-serif;
-                          }
-                      }
-                  }
-              }
-          }
-       }
-       p
-       {
-         text-align: justify;
-         line-height: 25px;
-         color: #464646;
-         font-size:0.99rem;
-       }
-   }
-   .Admission__QuickAccess
-   {
-       padding: 1em 1em 1em 1em;
-       display: flex;
-       flex-direction: column;
-       justify-content: flex-start;
-       align-items: flex-start;
-       border-left: 0.06rem solid lightgray;
-       ul
-       {
-           list-style: none;
-           position: relative;
-           li
-           {
-               a
-               {
-                   text-decoration: none;
-                   color: inherit;
-               }
-               &:nth-child(1)
-               {
-                   margin-bottom: 1.2em;
-                   letter-spacing: 1px;
-                   color:#182C61;
-                   width: 100%;
-                   font-size: 3vmin;
-                   padding: 0.2em 0.2em 0.2em 0.5em;
-                   border-left: 0.22em solid #ffa502;
+				tr,
+				td {
+					border: 1px dotted #ccc;
+					padding: 0.5em;
+					font-family: "Abel", sans-serif;
+					text-align: left;
+					background: white;
 
-                   h2
-                   {
-                    font-family: 'Abel',sans-serif;
-                   }
-               }
-              
-               &:not(:nth-child(1))
-               {
-                padding-left: 1em;   
-                margin-bottom: 0.96em;
-                cursor: pointer;
-                font-weight: bold;
-                font-size: 0.89rem;
-                color:#3742fa;
+					h3 {
+						font-family: "Abel", sans-serif;
+						font-size: 0.89rem;
+					}
+					h4 {
+						font-size: 0.79rem;
+						text-align: left;
+						color: #2b46b4;
+						font-weight: bold;
+					}
+				}
+			}
+		}
 
-                &:hover
-                {
-                    color:#e67e22;
-                }
-               }
-           }
+		.Scholarships {
+			display: flex;
+			flex-direction: column;
 
-       }
-   }
-  
- 
+			.container {
+				li {
+					margin-bottom: 0.5em;
+					font-weight: bold;
+					color: #4e4e4e;
+					font-family: "Abel", sans-serif;
+					h3,
+					h4 {
+						color: #2b46b4;
+						text-transform: uppercase;
+						margin-top: 0.5em;
+					}
+					p {
+						text-align: justify;
+						padding: 0.5em;
+						font-weight: bold;
+						margin-bottom: 0.6em;
+						font-family: "Abel", sans-serif;
+					}
+					ul {
+						padding: 0.7em;
+
+						li {
+							margin-bottom: 0.4em;
+							font-weight: bold;
+						}
+					}
+				}
+			}
+		}
+
+		.Intake {
+			.container {
+				display: flex;
+				flex-direction: column;
+				.OtherIntakeValue {
+					font-weight: bold;
+					text-align: left;
+					margin-bottom: 0.4em;
+				}
+
+				h2 {
+					text-align: left;
+					color: #2b46b4;
+					margin-bottom: 0.7em;
+					font-family: "Abel", sans-serif;
+				}
+
+				.IntakeTable {
+					border: 1px solid #ccc;
+					table-layout: fixed;
+					border-collapse: collapse;
+					width: 100%;
+					box-shadow: 2px 5px 14px 3px #ccc;
+					margin-bottom: 0.55em;
+					thead {
+						overflow: hidden;
+
+						th {
+							text-align: left;
+							padding: 0.33em;
+							color: white;
+							letter-spacing: 0.66px;
+							font-size: 1.3vmax;
+							font-family: "Abel", sans-serif;
+							background: linear-gradient(180deg, #479ed8, #094e7c);
+						}
+					}
+
+					tr,
+					td {
+						border: 1px dotted #ccc;
+						padding: 0.5em;
+						font-family: "Abel", sans-serif;
+						text-align: left;
+						background: white;
+						text-align: left;
+
+						h3 {
+							font-family: "Abel", sans-serif;
+							font-size: 0.89rem;
+						}
+						h4 {
+							font-size: 0.79rem;
+							text-align: left;
+							color: #2b46b4;
+							font-weight: bold;
+						}
+					}
+				}
+			}
+		}
+
+		.FeeInstruction {
+			display: flex;
+			flex-direction: column;
+
+			.__Title {
+				color: #2b46b4;
+				font-weight: bold;
+				font-family: "Abel", sans-serif;
+				letter-spacing: 0.55px;
+				margin-bottom: 0.8em;
+			}
+
+			p {
+				font-family: "Abel", sans-serif;
+				color: #464646;
+				font-size: 1.15rem;
+				.__ul1 {
+					list-style: none;
+					padding: 1em;
+					margin-top: 0.05em;
+					margin-bottom: 0.55em;
+					li {
+						font-family: "Abel", sans-serif;
+						margin-bottom: 0.1em;
+					}
+				}
+				.__ul2 {
+					list-style: circle;
+					padding: 1em;
+					margin-top: 0.05em;
+					margin-bottom: 0.55em;
+
+					li {
+						font-family: "Abel", sans-serif;
+						margin-bottom: 0.1em;
+					}
+				}
+			}
+		}
+		.AdmissionProcedure {
+			ul {
+				list-style: none;
+				li {
+					h3 {
+						margin-bottom: 0.7em;
+						color: #2b46b4;
+					}
+					.ProcedurePoints {
+						ul {
+							list-style: none;
+							padding: 0.5em;
+							li {
+								margin-bottom: 0.66em;
+								font-size: 1rem;
+								letter-spacing: 0.5px;
+								font-weight: bold;
+								color: #4e4e4e;
+								font-family: "Abel", sans-serif;
+							}
+						}
+					}
+				}
+			}
+		}
+		p {
+			text-align: justify;
+			line-height: 25px;
+			color: #464646;
+			font-size: 0.99rem;
+		}
+	}
+	.Admission__QuickAccess {
+		padding: 1em 1em 1em 1em;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+		border-left: 0.06rem solid lightgray;
+		ul {
+			list-style: none;
+			position: relative;
+			li {
+				a {
+					text-decoration: none;
+					color: inherit;
+				}
+				&:nth-child(1) {
+					margin-bottom: 1.2em;
+					letter-spacing: 1px;
+					color: #182c61;
+					width: 100%;
+					font-size: 3vmin;
+					padding: 0.2em 0.2em 0.2em 0.5em;
+					border-left: 0.22em solid #ffa502;
+
+					h2 {
+						font-family: "Abel", sans-serif;
+					}
+				}
+
+				&:not(:nth-child(1)) {
+					padding-left: 1em;
+					margin-bottom: 0.96em;
+					cursor: pointer;
+					font-weight: bold;
+					font-size: 0.89rem;
+					color: #3742fa;
+
+					&:hover {
+						color: #e67e22;
+					}
+				}
+			}
+		}
+	}
 }
 
-@media screen and (max-width:777px) {
-    .Admission__MainWindow{
-        display: flex;
-        flex-direction: column-reverse;
-        .Admission__QuickAccess
-        {
-            border:none;
-            display: flex;
-            justify-content: center;
-            align-items: flex-start;
-        }
-    }
+@media screen and (max-width: 777px) {
+	.Admission__MainWindow {
+		display: flex;
+		flex-direction: column-reverse;
+		.Admission__QuickAccess {
+			border: none;
+			display: flex;
+			justify-content: center;
+			align-items: flex-start;
+		}
+	}
 }
 
 /*header*/
 
-#AdmissionsHeader
-{
-    padding: 0.3em;
-    background: transparent;
-    .AdmissionNavbar
-    {
-        @include gridMaker(2fr 4fr,auto-fit,0.4em);
-    
-        .TitleHeader
-        {
-           @include AlignCenter;
-           flex-direction: row;
-           margin-left: 2em;
-           a
-           {
-            text-decoration: none;
-            color: inherit;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 5em;
-           }
-            img
-            {
-                @include responsive_image(100%);
-            
-            }
-            .Headerline
-            {
-                padding: 0.04em;
-                background: #b6b6b6;
-                height: 13vh;
-                margin-left: 1em;
-                letter-spacing: 0.56px;
-            }
-            label
-            {
-                box-sizing: border-box;
-                margin-left: 0.5em;
-                width: 100%;
-                font-size: 2.3vmax;
-                color: #6f6f6f;
-                font-family: 'Playfair Display', serif;
-            }
-        }
-          ul
-          {
-              list-style: none;
-              @include AlignEnd;
-              margin-right: 2em;
-              li
-              {
-                  text-align: center;
-                  font-size: 1.28vmax;
-                  padding: 0.25em;
-                  color: #6f6f6f;
-                  cursor: pointer;
-                  background: inherit;
-                  margin-right: 0.55em;
-                  box-sizing: border-box;
-                  letter-spacing: 0.56px;
-                  border-radius: 0.3em;
-                  transition: background cubic-bezier(0.215, 0.610, 0.355, 1) 0.43s;
-                  a
-                  {
-                      color:inherit;
-                      text-decoration: none;
-                  }
-                  &:hover
-                  {
-                      background: #094e7c;
-                      color: white;
-                      transition: all cubic-bezier(0.215, 0.610, 0.355, 1) 0.43s;
-                  }
-              }
-          }
+#AdmissionsHeader {
+	padding: 0.3em;
+	background: transparent;
+	.AdmissionNavbar {
+		@include gridMaker(2fr 4fr, auto-fit, 0.4em);
 
-          @media screen and (max-width:601px){
-                &
-                {
-                    all:unset;
-                    display: flex;
-                    flex-direction: column;
-                    position: relative;
-                    img
-                    {
-                        all: unset;
-                        width: 90%!important;
-                    }
-                    .TitleHeader
-                    {
-                        @include AlignCenter;
-                        flex-direction: column;
-                        margin: 0 auto;
+		.TitleHeader {
+			@include AlignCenter;
+			flex-direction: row;
+			margin-left: 2em;
+			a {
+				text-decoration: none;
+				color: inherit;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 5em;
+			}
+			img {
+				@include responsive_image(100%);
+			}
+			.Headerline {
+				padding: 0.04em;
+				background: #b6b6b6;
+				height: 13vh;
+				margin-left: 1em;
+				letter-spacing: 0.56px;
+			}
+			label {
+				box-sizing: border-box;
+				margin-left: 0.5em;
+				width: 100%;
+				font-size: 2.3vmax;
+				color: #182c61;
+				font-family: "Playfair Display", serif;
+			}
+		}
+		ul {
+			list-style: none;
+			@include AlignEnd;
+			margin-right: 2em;
+			li {
+				text-align: center;
+				font-size: 1.28vmax;
+				padding: 0.25em;
+				color: #182c61;
+				cursor: pointer;
+				background: inherit;
+				margin-right: 0.55em;
+				box-sizing: border-box;
+				letter-spacing: 0.56px;
+				border-radius: 0.3em;
+				transition: background cubic-bezier(0.215, 0.61, 0.355, 1) 0.43s;
+				a {
+					color: inherit;
+					text-decoration: none;
+				}
+				&:hover {
+					background: #094e7c;
+					color: white;
+					transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.43s;
+				}
+			}
+		}
 
-                        label
-                        {
-                            text-align: center;
-                            font-size:3vmax;
-                            margin:0;
-                        }
-                    }
-                    .Headerline
-                    {
-                        display: none;
-                    }
-                    ul
-                    {
-                        @include AlignCenter;
-                        flex-direction: column;
-                        margin:0 auto;
-                        position: absolute;
-                        padding: 0.3em;
-                        bottom: -8.91em;
-                        background: white;
-                        z-index: 104;
-                        width:100%;
-                        transform: scale(1,0);
-                        li
-                        {
-                            margin-right: 0;
-                            margin-bottom: 1em;
-                            margin-top:1.4em;
-                        }
-                    }
-                }              
-          }
-    }
+		@media screen and (max-width: 601px) {
+			& {
+				all: unset;
+				display: flex;
+				flex-direction: column;
+				position: relative;
+				img {
+					all: unset;
+					width: 90% !important;
+				}
+				.TitleHeader {
+					@include AlignCenter;
+					flex-direction: column;
+					margin: 0 auto;
+
+					label {
+						text-align: center;
+						font-size: 3vmax;
+						margin: 0;
+					}
+				}
+				.Headerline {
+					display: none;
+				}
+				ul {
+					@include AlignCenter;
+					flex-direction: column;
+					margin: 0 auto;
+					position: absolute;
+					padding: 0.3em;
+					bottom: -8.91em;
+					background: white;
+					z-index: 104;
+					width: 100%;
+					transform: scale(1, 0);
+					li {
+						margin-right: 0;
+						margin-bottom: 1em;
+						margin-top: 1.4em;
+					}
+				}
+			}
+		}
+	}
 }
 
+#Admission__Footer {
+	padding: 1em;
+	background: url(/static/images/bg6.jpg);
+	color: white;
+	@include AlignCenterTop;
 
-#Admission__Footer
-{
-      padding: 1em;
-      background:url(/static/images/bg6.jpg);
-      color:white;
-      @include AlignCenterTop;
-      
-      .socialLinksFooter
-      {
-         @include AlignCenter;
-         margin-bottom: 0.6em;
-         span
-         {
-             margin-right: 0.66em;
-             cursor: pointer;
-             a
-             {
-                 color: inherit;
-                 text-decoration: none;
-             }
-         }
-      }
-      p
-      {
-          margin-bottom: 0.7em;
-          text-align: center;
-           
-          &:nth-child(2)
-          {
-              font-size: 14px;
-              width: 100%;
-          }
-          &:nth-child(3)
-          {
-              font-size: 10px;
-          }
-      }
+	.socialLinksFooter {
+		@include AlignCenter;
+		margin-bottom: 0.6em;
+		span {
+			margin-right: 0.66em;
+			cursor: pointer;
+			a {
+				color: inherit;
+				text-decoration: none;
+			}
+		}
+	}
+	p {
+		margin-bottom: 0.7em;
+		text-align: center;
 
-
+		&:nth-child(2) {
+			font-size: 14px;
+			width: 100%;
+		}
+		&:nth-child(3) {
+			font-size: 10px;
+		}
+	}
 }

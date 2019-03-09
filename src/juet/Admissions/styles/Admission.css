@@ -28,12 +28,12 @@
 .Admission__Upper {
   width: 100%;
   height: 60vh;
-  background: url(/static/images/students.jpg) no-repeat;
+  background: url(/static/images/students_1.jpg) no-repeat;
   background-attachment: fixed;
   background-size: cover;
   background-origin: padding-box;
   background-position-x: center;
-  background-position-y: -20vh;
+  background-position-y: -23vh;
   color: white;
 }
 
@@ -58,7 +58,7 @@
 
 .Admission__Upper .container label h1 {
   font-size: 4.5vmin;
-  font-family: 'Playfair Display', sans-serif;
+  font-family: "Playfair Display", sans-serif;
   font-weight: bolder;
   text-transform: capitalize;
   letter-spacing: 1.5px;
@@ -157,7 +157,7 @@
 }
 
 .Admission__MainWindow {
-  background: #F9F9F9;
+  background: #f9f9f9;
   padding: 2em;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
@@ -185,11 +185,11 @@
 }
 
 .Admission__MainWindow .Admission__InfoWindow h1 {
-  color: #182C61;
+  color: #182c61;
   text-align: left;
   font-size: 5.5vmin;
   padding: 0 0 0.5em 0;
-  font-family: 'Abel',sans-serif;
+  font-family: "Abel", sans-serif;
   letter-spacing: 0.88px;
 }
 
@@ -206,7 +206,7 @@
   color: #3a8ac0;
   text-align: left;
   width: 100%;
-  font-family: 'Abel',sans-serif;
+  font-family: "Abel", sans-serif;
 }
 
 .Admission__MainWindow .Admission__InfoWindow .EducationLoan {
@@ -215,7 +215,7 @@
 
 .Admission__MainWindow .Admission__InfoWindow .EducationLoan p {
   text-align: justify;
-  font-family: 'Abel',sans-serif;
+  font-family: "Abel", sans-serif;
   color: #4e4e4e;
   letter-spacing: 0.6px;
   font-weight: bold;
@@ -224,7 +224,7 @@
 }
 
 .Admission__MainWindow .Admission__InfoWindow .EducationLoan .__EducationLoanOtherInfo h3 {
-  color: #182C61;
+  color: #182c61;
   margin-bottom: 0.8em;
   text-transform: capitalize;
   line-height: 28px;
@@ -249,6 +249,8 @@
 .Admission__MainWindow .Admission__InfoWindow .AdmissionApplication .__card {
   width: 100%;
   max-width: 350px;
+  height: 100%;
+  max-height: 510px;
   padding: 0.3em;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -256,9 +258,9 @@
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -311,34 +313,57 @@
   color: #2b46b4;
   padding: 0.5em;
   letter-spacing: 0.59px;
-  font-family: 'Alegreya Sans',sans-serif;
+  font-family: "Alegreya Sans", sans-serif;
   text-align: left;
 }
 
 .Admission__MainWindow .Admission__InfoWindow .AdmissionApplication .__card .__cardDetails {
   height: 18vh;
   width: 95%;
+  max-height: 190px;
   overflow-y: scroll;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 1em;
+  margin-bottom: 3.5em;
 }
 
 .Admission__MainWindow .Admission__InfoWindow .AdmissionApplication .__card .__cardDetails ul {
   list-style: none;
-  padding: 1em;
 }
 
-.Admission__MainWindow .Admission__InfoWindow .AdmissionApplication .__card .__cardDetails ul li, .Admission__MainWindow .Admission__InfoWindow .AdmissionApplication .__card .__cardDetails ul li a {
-  font-family: 'Abel',sans-serif;
+.Admission__MainWindow .Admission__InfoWindow .AdmissionApplication .__card .__cardDetails ul li,
+.Admission__MainWindow .Admission__InfoWindow .AdmissionApplication .__card .__cardDetails ul li a {
+  font-family: "Abel", sans-serif;
   margin-bottom: 0.55em;
   font-weight: bold;
   font-size: 0.92rem;
   text-decoration: none;
-  color: #7f8c8d;
+  color: #182c61;
   letter-spacing: 0.6px;
   cursor: pointer;
 }
 
-.Admission__MainWindow .Admission__InfoWindow .AdmissionApplication .__card .__cardDetails ul li:hover, .Admission__MainWindow .Admission__InfoWindow .AdmissionApplication .__card .__cardDetails ul li a:hover {
+.Admission__MainWindow .Admission__InfoWindow .AdmissionApplication .__card .__cardDetails ul li:hover,
+.Admission__MainWindow .Admission__InfoWindow .AdmissionApplication .__card .__cardDetails ul li a:hover {
   color: crimson;
+}
+
+.Admission__MainWindow .Admission__InfoWindow .AdmissionApplication .__card .__cardDetails::-webkit-scrollbar {
+  width: 2.5px;
+  border-radius: 1em;
+}
+
+.Admission__MainWindow .Admission__InfoWindow .AdmissionApplication .__card .__cardDetails::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.Admission__MainWindow .Admission__InfoWindow .AdmissionApplication .__card .__cardDetails::-webkit-scrollbar-thumb {
+  background: #b1b1b1;
+}
+
+.Admission__MainWindow .Admission__InfoWindow .AdmissionApplication .__card .__cardDetails::-webkit-scrollbar-thumb:hover {
+  background: #182c61;
 }
 
 .Admission__MainWindow .Admission__InfoWindow .AdmissionApplication .__card .__cardButton {
@@ -350,8 +375,7 @@
   bottom: 0.3em;
   width: 100%;
   text-align: center;
-  background: -webkit-gradient(linear, left top, left bottom, from(#479ed8), to(#094e7c));
-  background: linear-gradient(180deg, #479ed8, #094e7c);
+  background: radial-gradient(circle farthest-side at center bottom, #009cde, #003087 125%);
   color: white;
   letter-spacing: 0.6px;
   font-weight: bold;
@@ -437,25 +461,28 @@
   color: white;
   letter-spacing: 0.66px;
   font-size: 1.3vmax;
-  font-family: 'Abel',sans-serif;
+  font-family: "Abel", sans-serif;
   background: -webkit-gradient(linear, left top, left bottom, from(#479ed8), to(#094e7c));
   background: linear-gradient(180deg, #479ed8, #094e7c);
 }
 
-.Admission__MainWindow .Admission__InfoWindow .Fees .FeeTable tr, .Admission__MainWindow .Admission__InfoWindow .Fees .FeeTable td {
+.Admission__MainWindow .Admission__InfoWindow .Fees .FeeTable tr,
+.Admission__MainWindow .Admission__InfoWindow .Fees .FeeTable td {
   border: 1px dotted #ccc;
   padding: 0.5em;
-  font-family: 'Abel',sans-serif;
+  font-family: "Abel", sans-serif;
   text-align: left;
   background: white;
 }
 
-.Admission__MainWindow .Admission__InfoWindow .Fees .FeeTable tr h3, .Admission__MainWindow .Admission__InfoWindow .Fees .FeeTable td h3 {
-  font-family: 'Abel',sans-serif;
+.Admission__MainWindow .Admission__InfoWindow .Fees .FeeTable tr h3,
+.Admission__MainWindow .Admission__InfoWindow .Fees .FeeTable td h3 {
+  font-family: "Abel", sans-serif;
   font-size: 0.89rem;
 }
 
-.Admission__MainWindow .Admission__InfoWindow .Fees .FeeTable tr h4, .Admission__MainWindow .Admission__InfoWindow .Fees .FeeTable td h4 {
+.Admission__MainWindow .Admission__InfoWindow .Fees .FeeTable tr h4,
+.Admission__MainWindow .Admission__InfoWindow .Fees .FeeTable td h4 {
   font-size: 0.79rem;
   text-align: left;
   color: #2b46b4;
@@ -476,10 +503,11 @@
   margin-bottom: 0.5em;
   font-weight: bold;
   color: #4e4e4e;
-  font-family: 'Abel',sans-serif;
+  font-family: "Abel", sans-serif;
 }
 
-.Admission__MainWindow .Admission__InfoWindow .Scholarships .container li h3, .Admission__MainWindow .Admission__InfoWindow .Scholarships .container li h4 {
+.Admission__MainWindow .Admission__InfoWindow .Scholarships .container li h3,
+.Admission__MainWindow .Admission__InfoWindow .Scholarships .container li h4 {
   color: #2b46b4;
   text-transform: uppercase;
   margin-top: 0.5em;
@@ -490,7 +518,7 @@
   padding: 0.5em;
   font-weight: bold;
   margin-bottom: 0.6em;
-  font-family: 'Abel',sans-serif;
+  font-family: "Abel", sans-serif;
 }
 
 .Admission__MainWindow .Admission__InfoWindow .Scholarships .container li ul {
@@ -522,7 +550,7 @@
   text-align: left;
   color: #2b46b4;
   margin-bottom: 0.7em;
-  font-family: 'Abel',sans-serif;
+  font-family: "Abel", sans-serif;
 }
 
 .Admission__MainWindow .Admission__InfoWindow .Intake .container .IntakeTable {
@@ -545,26 +573,29 @@
   color: white;
   letter-spacing: 0.66px;
   font-size: 1.3vmax;
-  font-family: 'Abel',sans-serif;
+  font-family: "Abel", sans-serif;
   background: -webkit-gradient(linear, left top, left bottom, from(#479ed8), to(#094e7c));
   background: linear-gradient(180deg, #479ed8, #094e7c);
 }
 
-.Admission__MainWindow .Admission__InfoWindow .Intake .container .IntakeTable tr, .Admission__MainWindow .Admission__InfoWindow .Intake .container .IntakeTable td {
+.Admission__MainWindow .Admission__InfoWindow .Intake .container .IntakeTable tr,
+.Admission__MainWindow .Admission__InfoWindow .Intake .container .IntakeTable td {
   border: 1px dotted #ccc;
   padding: 0.5em;
-  font-family: 'Abel',sans-serif;
+  font-family: "Abel", sans-serif;
   text-align: left;
   background: white;
   text-align: left;
 }
 
-.Admission__MainWindow .Admission__InfoWindow .Intake .container .IntakeTable tr h3, .Admission__MainWindow .Admission__InfoWindow .Intake .container .IntakeTable td h3 {
-  font-family: 'Abel',sans-serif;
+.Admission__MainWindow .Admission__InfoWindow .Intake .container .IntakeTable tr h3,
+.Admission__MainWindow .Admission__InfoWindow .Intake .container .IntakeTable td h3 {
+  font-family: "Abel", sans-serif;
   font-size: 0.89rem;
 }
 
-.Admission__MainWindow .Admission__InfoWindow .Intake .container .IntakeTable tr h4, .Admission__MainWindow .Admission__InfoWindow .Intake .container .IntakeTable td h4 {
+.Admission__MainWindow .Admission__InfoWindow .Intake .container .IntakeTable tr h4,
+.Admission__MainWindow .Admission__InfoWindow .Intake .container .IntakeTable td h4 {
   font-size: 0.79rem;
   text-align: left;
   color: #2b46b4;
@@ -584,13 +615,13 @@
 .Admission__MainWindow .Admission__InfoWindow .FeeInstruction .__Title {
   color: #2b46b4;
   font-weight: bold;
-  font-family: "Abel",sans-serif;
+  font-family: "Abel", sans-serif;
   letter-spacing: 0.55px;
   margin-bottom: 0.8em;
 }
 
 .Admission__MainWindow .Admission__InfoWindow .FeeInstruction p {
-  font-family: "Abel",sans-serif;
+  font-family: "Abel", sans-serif;
   color: #464646;
   font-size: 1.15rem;
 }
@@ -603,7 +634,7 @@
 }
 
 .Admission__MainWindow .Admission__InfoWindow .FeeInstruction p .__ul1 li {
-  font-family: "Abel",sans-serif;
+  font-family: "Abel", sans-serif;
   margin-bottom: 0.1em;
 }
 
@@ -615,7 +646,7 @@
 }
 
 .Admission__MainWindow .Admission__InfoWindow .FeeInstruction p .__ul2 li {
-  font-family: "Abel",sans-serif;
+  font-family: "Abel", sans-serif;
   margin-bottom: 0.1em;
 }
 
@@ -639,7 +670,7 @@
   letter-spacing: 0.5px;
   font-weight: bold;
   color: #4e4e4e;
-  font-family: 'Abel', sans-serif;
+  font-family: "Abel", sans-serif;
 }
 
 .Admission__MainWindow .Admission__InfoWindow p {
@@ -680,7 +711,7 @@
 .Admission__MainWindow .Admission__QuickAccess ul li:nth-child(1) {
   margin-bottom: 1.2em;
   letter-spacing: 1px;
-  color: #182C61;
+  color: #182c61;
   width: 100%;
   font-size: 3vmin;
   padding: 0.2em 0.2em 0.2em 0.5em;
@@ -688,7 +719,7 @@
 }
 
 .Admission__MainWindow .Admission__QuickAccess ul li:nth-child(1) h2 {
-  font-family: 'Abel',sans-serif;
+  font-family: "Abel", sans-serif;
 }
 
 .Admission__MainWindow .Admission__QuickAccess ul li:not(:nth-child(1)) {
@@ -794,8 +825,8 @@
   margin-left: 0.5em;
   width: 100%;
   font-size: 2.3vmax;
-  color: #6f6f6f;
-  font-family: 'Playfair Display', serif;
+  color: #182c61;
+  font-family: "Playfair Display", serif;
 }
 
 #AdmissionsHeader .AdmissionNavbar ul {
@@ -816,7 +847,7 @@
   text-align: center;
   font-size: 1.28vmax;
   padding: 0.25em;
-  color: #6f6f6f;
+  color: #182c61;
   cursor: pointer;
   background: inherit;
   margin-right: 0.55em;
