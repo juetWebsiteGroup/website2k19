@@ -29,8 +29,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@types/antd": "^1.0.0",
-    "antd": "^3.13.5",
     "axios": "^0.18.0",
     "compression": "^1.7.3",
     "cors": "^2.8.5",
