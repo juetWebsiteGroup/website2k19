@@ -489,6 +489,21 @@
   font-weight: bold;
 }
 
+.Admission__MainWindow .Admission__InfoWindow .Fees .FeeTable tr ul,
+.Admission__MainWindow .Admission__InfoWindow .Fees .FeeTable td ul {
+  list-style: circle;
+  padding: 0.5em;
+  margin-left: 1em;
+}
+
+.Admission__MainWindow .Admission__InfoWindow .Fees .FeeTable tr ul li,
+.Admission__MainWindow .Admission__InfoWindow .Fees .FeeTable td ul li {
+  margin-bottom: 0.4em;
+  font-size: 0.7rem;
+  text-align: left;
+  color: orangered;
+}
+
 .Admission__MainWindow .Admission__InfoWindow .Scholarships {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -981,16 +996,16 @@
 }
 
 #Admission__Footer p {
-  margin-bottom: 0.7em;
+  margin-bottom: 0.5em;
   text-align: center;
 }
 
-#Admission__Footer p:nth-child(2) {
+#Admission__Footer p:nth-child(1) {
   font-size: 14px;
   width: 100%;
 }
 
 #Admission__Footer p:nth-child(3) {
-  font-size: 10px;
+  font-size: 12px;
 }
 /*# sourceMappingURL=Admission.css.map */

@@ -10,7 +10,7 @@ export default class AdmissionUpperLook extends Component {
         <div className="Admission__Upper">
             <div className="container">
                     <label className="Admission__Title">
-                            <h1>{this.props.UpperTitle}</h1>
+                            {/* <h1>{this.props.UpperTitle}</h1> */}
                      </label>
                      <div className="Admission__news">
                      <ul>

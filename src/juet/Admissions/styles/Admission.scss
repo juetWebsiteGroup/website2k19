@@ -348,6 +348,20 @@
 						color: #2b46b4;
 						font-weight: bold;
 					}
+					ul
+					{
+						list-style: circle;
+						padding: 0.5em;
+						margin-left: 1em;
+
+						li
+						{
+							margin-bottom: 0.4em;
+							font-size: 0.7rem;
+							text-align: left;
+							color: orangered;
+						}
+					}
 				}
 			}
 		}
@@ -711,15 +725,15 @@
 		}
 	}
 	p {
-		margin-bottom: 0.7em;
+		margin-bottom: 0.5em;
 		text-align: center;
 
-		&:nth-child(2) {
+		&:nth-child(1) {
 			font-size: 14px;
 			width: 100%;
 		}
 		&:nth-child(3) {
-			font-size: 10px;
+			font-size: 12px;
 		}
 	}
 }

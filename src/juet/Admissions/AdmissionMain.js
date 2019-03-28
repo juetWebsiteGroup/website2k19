@@ -22,12 +22,12 @@ const ProgrammesOfferedAdmission = (props) => {
                        <ul>
                            {data.otherLinks.map((data_links,i)=>{
                                return (
-                                   <li key={i+new Date().toUTCString()}><Link to={data_links.LinkTo}>{data_links.title}</Link></li>
+                                   <li key={i+new Date().toUTCString()}><a target="_blank" href={data_links.LinkTo}>{data_links.title}</a></li>
                                )
                            })}
                        </ul>
                      </div>
-                     <div className="__cardButton"><Link to={props.DataObj.ApplyOnlineLink}>Apply Online</Link></div>
+                     <div className="__cardButton"><a href={data.ApplyOnlineLink}>Apply Online</a></div>
                   </div>
                   )
                       
@@ -58,7 +58,7 @@ class AdmissionHome extends Component {
     return (
         <div id="Admissions">
     
-        <AdmissionUpperLook UpperTitle={`"Bringing Together Talented and Innovative Minds".`} />
+        <AdmissionUpperLook UpperTitle={null} />
          
                 <div className="Admission__MainWindow">
                 <AdmissionInfoLook MainTitle={`Programmes Offered - ${new Date().getFullYear()}`} >

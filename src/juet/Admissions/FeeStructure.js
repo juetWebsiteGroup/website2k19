@@ -34,13 +34,12 @@ export default class FeeStructure extends React.Component
                 <div className="Admission__MainWindow">
                 <AdmissionInfoLook MainTitle={`Academic Fee Structure - ${new Date().getFullYear()}`}>
                  <div className="Fees">
-                    
                  {this.state.FeesData ?  <table className="FeeTable">
                       <thead>
                       <th scope="col" colSpan={2} >Programmes</th>
-                      <th scope="col">Tuition Fee</th>
-                      <th scope="col">Development Fee</th>
-                      <th scope="col">Caution Money (One-Time)*</th>
+                      <th scope="col">Tuition Fee <br/><span style={{fontSize:"1vmax"}}>(Per Semester)</span></th>
+                      <th scope="col">Development Fee <br/><span style={{fontSize:"1vmax"}}> (Per Semester)</span></th>
+                      <th scope="col">Caution Money <br/><span style={{fontSize:"1vmax"}}>(One-Time)*</span></th>
                       </thead>
                       {this.state.FeesData.IndianStudent.Academic.map((data,i)=>{
                           return (<tr key={i}>
@@ -59,6 +58,14 @@ export default class FeeStructure extends React.Component
                               </tr>
                               <tr>
                               <td colSpan={5}><h4>**Free Accommodation for Full Time Ph.D. Scholars</h4></td>
+                              </tr>
+                              <tr>
+                                <td colSpan={5}><h4>Academic fee discount for wards of Defence / Paramilitary forces</h4>
+                                    <ul>
+                                        <li>30% in Tuition and Development Fee</li>
+                                        <li>Additional 5% concession to wards of war widows and PWD (Persons With Disability)</li>
+                                    </ul>
+                                </td>
                               </tr>
                       
                   </table> : <LoadingView />}
