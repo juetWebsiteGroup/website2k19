@@ -5,39 +5,46 @@
 				"SubCategories":
 				[
 					{
-						"quota":"B.Tech. Programme [ JEE Rank Based ]",
+						"quota":"B.Tech. Programme [ JEE Score (Attempt 1&2)/ Rank Based ]",
 						"imagePath":"/static/images/btech.jpg",
 						"otherLinks":
 						[
-                            {"title":"Admission Advertisement","LinkTo":"/static/images/BTechAdmission2019.JPG"},
-							{"title":"Download Offline Application Form","LinkTo":"/"},
-							{"title":"Important Dates","LinkTo":"/"}
-                        ]
+                            {"title":"Download E-Brochure (Part-I)","LinkTo":"/static/2019/Brochure2019P1.pdf"},
+							{"title":"Download E-Brochure(part-II)- Admission Procedure","LinkTo":"/static/2019/SupplAdmsBrochure2019P2.pdf"},
+							{"title":"Download Offline Application Form","LinkTo":"/static/2019/JEEbasedAppl2019.pdf"},
+							{"title":"Important Dates","LinkTo":"/static/2019/JEEImpDates.pdf"}
+							
+							
+						],
+						"ApplyOnlineLink": "https://getadmissions.com/jaypee"
 					},
 					{
-						"quota":"B.Tech. Programme [ 10+2 Merit Based ]",
+						"quota":"B.Tech. Programme [10+2 Marks Based]",
 						"imagePath":"/static/images/BTMerit.jpg",
 						"otherLinks":
 						[
-                            {"title":"Admission Advertisement","LinkTo":""},
-							{"title":"Admission Procedure & Instructions","LinkTo":"/"},
-							{"title":"Download Offline Application Form","LinkTo":"/"},
-							{"title":"Important Dates","LinkTo":"/"}
-                        ]
+                            {"title":"Download E-Brochure","LinkTo":"/static/2019/Brochure2019P1.pdf"},
+							{"title":"Admission Procedure & Instructions","LinkTo":"/static/2019/JUET-BTMarksBasedApplicationProcedure2019.pdf"},
+							{"title":"Download Offline Application Form","LinkTo":"/static/2019/BTPlusTwo2019.pdf"},
+							{"title":"Important Dates","LinkTo":"/static/2019/JUET-MeritBasedImpDates.pdf"}
+					
+					
+						],
+						"ApplyOnlineLink": "https://getadmissions.com/jaypee"
 					},
 					{
-						"quota":"B.Tech. Programme [ Merit Based Lateral Entry in 2nd Year ]",
+						"quota":"B.Tech. Programme [Merit Based Lateral Entry in 2nd Year]",
 						"imagePath":"/static/images/programmes.jpg",
 						"otherLinks":
 						[
-                            {"title":"Admission Advertisement","LinkTo":"/"},
-							{"title":"Admission Procedure & Instructions","LinkTo":"/"},
-							{"title":"Download Offline Application Form","LinkTo":"/"},
-							{"title":"Important Dates","LinkTo":"/"}
-                        ]
+                            {"title":"Download E-Brochure","LinkTo":"/static/2019/Brochure2019P1.pdf"},
+							{"title":"Admission Procedure & Instructions","LinkTo":"/static/2019/LEAdmissionProcess2019.pdf"},
+							{"title":"Download Offline Application Form","LinkTo":"/static/2019/LEAdmissionForm2019.pdf"}
+						
+						],
+						"ApplyOnlineLink": "https://www.juet.ac.in/oc/BTLateral.php"
 					}
-                ],
-				"ApplyOnlineLink":"/"
+                ]
 			},
    
 	"MTech":{
@@ -46,71 +53,67 @@
 				"SubCategories":
 				[
 					{
-						"quota":"M.Tech. Programme [ GATE Score Based ]",
+						"quota":"M.Tech. Programme [GATE Score / PGET Based]",
 						"imagePath":"/static/images/mtech.jpg",
 						"otherLinks":
 						[
-							{"title":"Download E-Brochure","LinkTo":"/"},
-							{"title":"Admission Procedure","LinkTo":"/"},
-							{"title":"Download Application Form","LinkTo":"/"}
-                        ]
+							{"title":"Download E-Brochure","LinkTo":"/static/2019/Brochure2019P1.pdf"},
+							{"title":"Admission Procedure","LinkTo":"/static/2019/JUET-MTechAdmissionProcedure2019.pdf"},
+							{"title":"Download Application Form","LinkTo":"/static/2019/JUET-MTechApplForm2019.pdf"},
+							{"title":"Format & Pattern of PGET","LinkTo":"/static/2019/JUET-PGETFormat2019.pdf"},
+							{"title":"PGET Syllabus -Section-I","LinkTo":"/static/2019/JUET-MTechSyllabusSection-I.pdf"},
+							{"title":"PGET Syllabus -Section-II","LinkTo":"/static/2019/JUET-PGETSyllabus-II.pdf"}
+							
+						],
+						"ApplyOnlineLink": "https://www.juet.ac.in/oc/MTech.php"
 					},
-					{
-						"quota":"M.Tech. Programme [ PGET Based ]",
-						"imagePath":"/static/images/isf.jpg",
-						"otherLinks":
-						[
-							{"title":"Download E-Brochure","LinkTo":"/"},
-							{"title":"Admission Procedure","LinkTo":"/"},
-							{"title":"Download Application Form","LinkTo":"/"},
-							{"title":"Format PGET","LinkTo":"/"},
-							{"title":"PGET Syllabus","LinkTo":"/"}
-                        ]
-					},
-					{	"quota":"Ph.D. Programme [ GATE/ NET/ SLET/ UGC/ CSIR(JRF) Based ]",
+					
+					{	"quota":"Ph.D. Programme [GATE/ NET/ SLET/ UGC/ CSIR(JRF) Based]",
 						"imagePath":"/static/images/rd2.jpg",
 						"otherLinks":
 						[
-							{"title":"Download E-Brochure","LinkTo":"/"},
-							{"title":"Ph.D. Ordinance, Rules & Regulations","LinkTo":"/"},
-							{"title":"Ph.D. Programs","LinkTo":"/"},
-							{"title":"Ph.D. Admission, Test Procedure & Schedule","LinkTo":"/"},
-							{"title":"Download Application Form","LinkTo":"/"},
-							{"title":"Entrance Test Question Paper Format","LinkTo":"/"},
-							{"title":"Ph.D. Entrance Test Exam Syllabi","LinkTo":"/"}
-						]
+							{"title":"Download E-Brochure","LinkTo":"/static/2019/Brochure2019P1.pdf"},
+							{"title":"Ph.D. Programs","LinkTo":"/static/2019/JUET-PhDPrograms2019.pdf"},
+							{"title":"Ph.D. Admission, Test Procedure & Schedule","LinkTo":"/static/2019/JUET-PhDTestProcedure2019.pdf"},
+							{"title":"Download Application Form","LinkTo":"/static/2019/JUET-PhDApplicationForm2019.pdf"},
+							{"title":"Entrance Test Question Paper Format","LinkTo":"/static/2019/JUET-PhDQPaperFormat2019.pdf"},
+							{"title":"Entrance Test Exam Syllabi-Section I","LinkTo":"/static/2019/JUET-PhDSyllabusSection-I.pdf"},
+							{"title":"Entrance Test Exam Syllabi-Section II","LinkTo":"/static/2019/JUET-PhDSyllabusSection-II.pdf"}
+						],
+						"ApplyOnlineLink": "https://www.juet.ac.in/oc/PhD.php"
 					}
-				],
-				"ApplyOnlineLink":"/"
+				]
 			},
 			
-    "PhD":{},
-	
+
     "BSc":{
 				"UpperTitle":"B.Sc.(Hons.)/M.Sc. - Admission",
 				"id":"Sciences",
 				"SubCategories":
 				[
-					{	"quota":"B.Sc.(Hons.) [ Mathematics / Physics / Chemistry ]",
+					{	"quota":"B.Sc.(Hons.) [Mathematics / Physics / Chemistry]",
 						"imagePath":"/static/images/bsc.jpg",
 						"otherLinks":
 						[
-							{"title":"Admission Advertisement","LinkTo":"/"},
-							{"title":"Download Offline Application Form","LinkTo":"/"},
-							{"title":"Important Dates","LinkTo":"/"}
-						]
+							{"title":"Download E-Brochure","LinkTo":"/static/2019/Brochure2019P1.pdf"},
+							{"title":"Admission Advertisement","LinkTo":"/static/2019/FMS-FS-Aadmission-2019.pdf"},
+							{"title":"Download Offline Application Form","LinkTo":"/static/2019/BScMScApplicationForm.pdf"}
+						
+						],
+						"ApplyOnlineLink": "https://www.juet.ac.in/oc/Sciences.php"
 					},
-					{	"quota":"M.Sc. [ Mathematics / Physics / Chemistry ]",
+					{	"quota":"M.Sc. [Mathematics / Physics / Chemistry]",
 						"imagePath":"/static/images/msc.jpg",
 						"otherLinks":
 						[
-						   {"title":"Admission Advertisement","LinkTo":"/"},
-						   {"title":"Download Offline Application Form","LinkTo":"/"},
-						   {"title":"Important Dates","LinkTo":"/"}
-						]
+						   {"title":"Download E-Brochure","LinkTo":"/static/2019/Brochure2019P1.pdf"},
+						   {"title":"Admission Advertisement","LinkTo":"/static/2019/FMS-FS-Aadmission-2019.pdf"},
+						   {"title":"Download Offline Application Form","LinkTo":"/static/2019/BScMScApplicationForm.pdf"}
+						
+						],
+						"ApplyOnlineLink": "https://www.juet.ac.in/oc/Sciences.php"
 					}
-				],
-			"ApplyOnlineLink":"/"
+				]
 		 },
     "MSc":{}
 }

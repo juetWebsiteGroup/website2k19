@@ -3,50 +3,50 @@
                 "Academic":[
                         {
                             "CourseName":"B.Tech",
-                            "TuitionFee":"78500 INR",
-                            "DevelopmentFee":"14000 INR",
-                            "CautionMoney":"10000 INR"
+                            "TuitionFee":"Rs. 78500",
+                            "DevelopmentFee":"Rs. 14000",
+                            "CautionMoney":"Rs. 10000"
                         },
                         {
                             "CourseName":"M.Tech",
-                            "TuitionFee":"40500 INR",
-                            "DevelopmentFee":"7000 INR",
-                            "CautionMoney":"5000 INR"
+                            "TuitionFee":"Rs. 40500",
+                            "DevelopmentFee":"Rs. 7000",
+                            "CautionMoney":"Rs. 5000"
                         },
                         {
                             "CourseName":"Ph.D. (Full-Time)**",
-                            "TuitionFee":"17000 INR",
-                            "DevelopmentFee":"3000 INR",
-                            "CautionMoney":"5000 INR"
+                            "TuitionFee":"Rs. 17000",
+                            "DevelopmentFee":"Rs. 3000",
+                            "CautionMoney":"Rs. 5000"
                         },
                         {
                             "CourseName":"B.Sc./B.Sc. (Hons.)",
-                            "TuitionFee":"20000 INR",
-                            "DevelopmentFee":"5000 INR",
-                            "CautionMoney":"5000 INR"
+                            "TuitionFee":"Rs. 20000",
+                            "DevelopmentFee":"Rs. 5000",
+                            "CautionMoney":"Rs. 5000"
                         },
                         {
                             "CourseName":"M.Sc.",
-                            "TuitionFee":"20000 INR",
+                            "TuitionFee":"Rs. 20000",
                             "DevelopmentFee":null,
-                            "CautionMoney":"5000 INR"
+                            "CautionMoney":"Rs. 5000"
                         }
                         ],
                 "Hostel":{
-                         "Fee":": 52500 INR",
+                         "Fee":": Rs. 52500",
                          "isFood_Laundry":true
                      }
                     },
      "NRIStudent":{
            "Academic":[
                     {
-                    "CourseName":"B.Tech",
+                    "CourseName":"B.Tech (for NRI Student)",
                     "TuitionFee":"4000 USD",
                     "DevelopmentFee":"1000 USD"
                     }
                  ],
             "Hostel":{
-                    "Fee":": 2000 USD",
+                    "Fee":": 2000 USD Per Year",
                     "isFood_Laundry":true
                 }
             }                   
