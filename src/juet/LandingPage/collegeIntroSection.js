@@ -72,8 +72,8 @@ class IntroSection extends Component
          <div className="college_introSection">
              <div className="photosContainer">
                 <SliderItem TextTitle="University Main Entrance@Beautiful Campus" TextContent="Jaypee University of Engineering &amp; Technology, Guna" />
-                <SliderItem TextTitle="D'Equinox 2k19" iconOpt="md-calendar" TextContent="&nbsp; A Cultural Fest by Jaypee University of Engineering &amp; Technology,Guna" />
                  <SliderItem TextTitle="Beautiful Campus &amp; Lush Green Environment" TextContent="Pic Credit: Nameh Dhiman" />
+                 <SliderItem TextTitle="D'Equinox 2k19" iconOpt="md-calendar" TextContent="&nbsp; A Cultural Fest by Jaypee University of Engineering &amp; Technology,Guna" />
                  <SliderItem TextTitle="Lake Point" TextContent="Pic Credit: Nameh Dhiman" />
 
                  {/* <div className="indicatePoints">
@@ -91,9 +91,9 @@ class IntroSection extends Component
                  </div>
                  <div className="StudentRelated" title="Student News">
                      <SliderStudentItem iconOpt="md-calendar" StudentTextToDisplay="Teachers Training Workshop on Python Programming from 05-07th.Apr.19"/>
-                     {/* <SliderStudentItem iconOpt="md-calendar" StudentTextToDisplay="Mozilla AR/VR Workshop on 20th.Oct.18"/>
+                     <SliderStudentItem iconOpt="md-calendar" StudentTextToDisplay="Mozilla AR/VR Workshop on 20th.Oct.18"/>
                      <SliderStudentItem iconOpt="md-calendar" StudentTextToDisplay="Workshop on PHP Programming By CSI from 17-19th.Nov.18"/>
-                     <SliderStudentItem iconOpt="md-calendar" StudentTextToDisplay="Workshop on Arduino Programming By ISF from 17-19th.Dec.18"/> */}
+                     <SliderStudentItem iconOpt="md-calendar" StudentTextToDisplay="Workshop on Arduino Programming By ISF from 17-19th.Dec.18"/>
                   </div>
              </div>
          </div>
