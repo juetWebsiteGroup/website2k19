@@ -6,7 +6,7 @@
     padding: 2em;
     .container
     {
-        @include gridMaker(1fr 1fr 1fr,none,1em);
+        @include gridMaker(1fr 1fr 1fr,none,0em);
         justify-items: center;
         width:85%;
           padding: 2em;

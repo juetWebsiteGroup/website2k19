@@ -19,7 +19,6 @@ import {routes} from '../Routes.jsx'
 import {Provider} from 'react-redux'
 import configureStore from '../redux/configureStore'
 
-
 require('dotenv').config()
 const compression = require('compression')
 import * as faculty from './middlewares/FacultyRecord'
@@ -41,7 +40,11 @@ app.use('/api/admission',admission)
 const juetStore = configureStore({})
 
 app.get("/*",(req,res)=>{
-
+    
+    // if(detect.name ==='chrome')
+    // {
+    //   res.redirect("https://www.juet.ac.in")
+    // }
     const branch = matchRoutes(routes, req.url);
     const promises = branch.map(({route}) => {
       let fetchData = route.component.fetchData;

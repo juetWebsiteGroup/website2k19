@@ -13,7 +13,7 @@
     "dev": "cross-env NODE_ENV=development webpack-dev-server --hot --inline --mode=development ",
     "build-dev": "cross-env NODE_ENV=development webpack --mode=development",
     "build": "cross-env NODE_ENV=production webpack --mode=production",
-    "build-all":"cross-env NODE_ENV=production webpack --mode=production && cross-env NODE_ENV=production webpack --mode=production --config webpack.Server.js",
+    "build-all": "cross-env NODE_ENV=production webpack --mode=production && cross-env NODE_ENV=production webpack --mode=production --config webpack.Server.js",
     "build-server": "cross-env NODE_ENV=production webpack --mode=production --config webpack.Server.js"
   },
   "browserslist": [
@@ -34,6 +34,7 @@
     "compression": "^1.7.3",
     "cors": "^2.8.5",
     "cross-env": "^5.2.0",
+    "detect-browser": "^4.2.0",
     "dotenv": "^6.2.0",
     "dotenv-webpack": "^1.6.0",
     "ejs": "^2.6.1",
