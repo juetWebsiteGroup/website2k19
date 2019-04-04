@@ -73,8 +73,8 @@ class IntroSection extends Component
              <div className="photosContainer">
                 <SliderItem TextTitle="University Main Entrance@Beautiful Campus" TextContent="Jaypee University of Engineering &amp; Technology, Guna" />
                  <SliderItem TextTitle="Beautiful Campus &amp; Lush Green Environment" TextContent="Pic Credit: Nameh Dhiman" />
-                 <SliderItem TextTitle="D'Equinox 2k19" iconOpt="md-calendar" TextContent="&nbsp; A Cultural Fest by Jaypee University of Engineering &amp; Technology,Guna" />
                  <SliderItem TextTitle="Lake Point" TextContent="Pic Credit: Nameh Dhiman" />
+                 <SliderItem TextTitle="D'Equinox 2k19" iconOpt="md-calendar" TextContent="&nbsp; A Cultural Fest by Jaypee University of Engineering &amp; Technology,Guna" />
 
                  {/* <div className="indicatePoints">
                      <span className="point1"></span>
