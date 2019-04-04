@@ -1,7 +1,8 @@
 import React,{ Component } from 'react';
 import IntroSection from './collegeIntroSection';
 import AdmissionNotification from "./AdmissionNotification";
-import AnnouncementsCards from './AnnouncementsCards';
+// import AnnouncementsCards from './AnnouncementsCards';
+import UniversityInfo from './UniversityInfo';
 
 class BodyMainLandingPage extends Component
 {
@@ -11,11 +12,12 @@ class BodyMainLandingPage extends Component
     }
     render(){
         return(
-            <div>
+            <>
             <IntroSection/>
             <AdmissionNotification statusToShow={true}/>
-            <AnnouncementsCards statusToShow={true} />
-            </div>
+            {/* <AnnouncementsCards statusToShow={true} /> */}
+            <UniversityInfo announcementsData={null} awardsAchievementData={null} academicNewsData={null} />
+            </>
         )
     }
 }

@@ -1,0 +1,124 @@
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  scroll-behavior: smooth;
+}
+
+.UniversityInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2em;
+}
+
+.UniversityInfo .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: none;
+  grid-gap: 1em;
+  justify-items: center;
+  width: 85%;
+  padding: 2em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: #f0f0f0de;
+  -webkit-box-shadow: 1px 3px 4px 0px lightgrey;
+          box-shadow: 1px 3px 4px 0px lightgrey;
+}
+
+@media screen and (max-width: 925px) {
+  .UniversityInfo .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-rows: auto-fit;
+    grid-gap: 1em;
+    justify-items: center;
+  }
+}
+
+.UniversityInfo .container .Academic {
+  width: 100%;
+  padding: 0.3em 1em 0.3em 1em;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.UniversityInfo .container .Academic h1 {
+  color: #003a68;
+  text-align: center;
+  padding-bottom: 0.5em;
+}
+
+.UniversityInfo .container .Academic .line {
+  padding: 0.12em;
+  width: 98%;
+  background: goldenrod;
+  margin-bottom: 0.3em;
+}
+
+.UniversityInfo .container .Academic:not(:nth-child(3)) {
+  border-right: 0.1em solid #6f6f6f;
+}
+
+@media screen and (max-width: 625px) {
+  .UniversityInfo .container .Academic:not(:nth-child(3)) {
+    border: none;
+  }
+}
+
+.UniversityInfo .container .Academic ul {
+  list-style: circle;
+  margin-top: 1em;
+  height: 200px;
+  overflow-y: auto;
+}
+
+.UniversityInfo .container .Academic ul li {
+  font-size: 0.78rem;
+  line-height: 21px;
+  margin-bottom: 0.35em;
+  cursor: pointer;
+  text-align: left;
+  width: 95%;
+  color: #6f6f6f;
+  padding: 6px 0 0 3px;
+  position: relative;
+}
+
+.UniversityInfo .container .Academic ul li a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.UniversityInfo .container .Academic ul li:hover {
+  background: lightblue;
+  color: black;
+  border-radius: 0.2em;
+}
+/*# sourceMappingURL=infoSection.css.map */

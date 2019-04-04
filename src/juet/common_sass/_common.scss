@@ -6,6 +6,8 @@
     font-family: 'Lato', sans-serif;
     scroll-behavior: smooth;
 }
+ $themeTextColor:#6f6f6f;
+ $themeTextColorBlue:#003a68;
 @mixin container($pad,$mar,$w,$h) {
     padding: $pad;
     @if $mar {

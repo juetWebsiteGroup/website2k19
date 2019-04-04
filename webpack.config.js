@@ -42,7 +42,7 @@ var devConfig = {
                
                 test: /\.(sa|sc|c)ss$/,
                 use: [
-                MiniCssExtractPlugin.loader,'css-loader',
+                MiniCssExtractPlugin.loader,'css-loader','sass-loader',
                 {loader:'postcss-loader',
                  options:{sourceMap:true,ident:'postcss',plugins:[require('autoprefixer')()]}
                 }
@@ -120,7 +120,7 @@ var browserConfig = {
                     use: [
                     MiniCssExtractPlugin.loader,'css-loader','sass-loader',
                     {loader:'postcss-loader',
-                     options:{sourceMap:true,ident:'postcss',plugins:[require('autoprefixer')()]}
+                     options:{modules:true,sourceMap:true,ident:'postcss',plugins:[require('autoprefixer')()]}
                     }
                     ],
               }
