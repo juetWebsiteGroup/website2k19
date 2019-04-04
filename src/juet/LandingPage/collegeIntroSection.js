@@ -78,18 +78,18 @@ nextImage = (whereTo) => {
         }
     })
     }
-    else
-    {
-        if(newImageIndex > this.state.sliderImageData.length - 1)
-        {
-           newImageIndex = 0;
-        }
-        this.setState((prevState)=>{
-            return {
-                  sliderImageDataProperty:prevState.sliderImageData[newImageIndex]
-            }
-        })
-    }
+    // else
+    // {
+    //     // if(newImageIndex > this.state.sliderImageData.length - 1)
+    //     // {
+    //     //    newImageIndex = 0;
+    //     // }
+    //     // this.setState((prevState)=>{
+    //     //     return {
+    //     //           sliderImageDataProperty:prevState.sliderImageData[newImageIndex]
+    //     //     }
+    //     // })
+    // }
    
 }
  render()
