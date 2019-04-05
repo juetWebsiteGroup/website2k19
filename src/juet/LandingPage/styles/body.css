@@ -210,7 +210,6 @@
     background-position-x: center;
     max-width: 100%;
     display: grid;
-    background-size: cover;
     background-clip: padding-box;
     align-items: flex-end;
     transition: transform cubic-bezier(0.645, 0.045, 0.355, 1) 1s;

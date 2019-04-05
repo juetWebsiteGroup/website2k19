@@ -120,7 +120,7 @@ componentDidUpdate()
                        iconMember = <Ionicon color="#ffffff" icon={data.iconOpt} fontSize="0.95rem"></Ionicon>
                     }
                     return (
-                        <div key={data.id} className={`item image_${data.index}`} style={{transform:`translateX(-${this.state.sliderImageDataProperty.index*(100)}%)`,background:`url(${data.image}) no-repeat`}}><div className="TextContainer">
+                        <div key={data.id} className={`item image_${data.index}`} style={{transform:`translateX(-${this.state.sliderImageDataProperty.index*(100)}%)`,background:`url(${data.image}) no-repeat`,backgroundSize:"cover",}}><div className="TextContainer">
                         <p className="TextTitle">{data.TextTitle}</p>
                         <p className="TextContent">{iconMember}&nbsp;&nbsp;{data.TextContent}</p>
                         </div>
