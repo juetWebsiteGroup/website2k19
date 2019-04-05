@@ -266,6 +266,10 @@
 {
     background: skyblue;
 }
+.point.active
+{
+    background: skyblue;
+}
 
 .StudentRelated
 {

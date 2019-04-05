@@ -68,16 +68,14 @@ constructor(props)
  componentDidMount()
  {
      this.setState({sliderImageDataProperty:this.state.sliderImageData[0]})
+
  }
 nextImage = (whereTo) => {
-    var newImageIndex = this.state.sliderImageDataProperty.index + 1;
-     if(whereTo){ 
-         this.setState((prevState)=>{
-        return {
-              sliderImageDataProperty:prevState.sliderImageData[whereTo]
-        }
-    })
-    }
+    //var newImageIndex = this.state.sliderImageDataProperty.index + 1;
+     if(whereTo >= 0 && typeof(whereTo) === 'number'){
+        event.target.className = "point active";  
+        this.setState({sliderImageDataProperty:this.state.sliderImageData[whereTo]})
+    } 
     // else
     // {
     //     // if(newImageIndex > this.state.sliderImageData.length - 1)
@@ -90,6 +88,23 @@ nextImage = (whereTo) => {
     //     //     }
     //     // })
     // }
+   
+}
+
+// autoImageSlide = () => {
+//     var newImageIndex = this.state.sliderImageDataProperty.index + 1;
+//         if(newImageIndex > this.state.sliderImageData.length - 1)
+//         {
+//            newImageIndex = 0;
+//         }
+//         this.setState((prevState)=>{
+//             return {
+//                   sliderImageDataProperty:prevState.sliderImageData[newImageIndex]
+//             }
+//         })
+// }
+componentDidUpdate()
+{
    
 }
  render()
@@ -114,7 +129,7 @@ nextImage = (whereTo) => {
                 })}
                  </SliderItem>
                  <div className="indicatePoints">
-                 {this.state.sliderImageDataProperty && this.state.sliderImageData.map((data)=>(<span onClick={()=>this.nextImage(data.index)} className="point"></span>))}
+                 {this.state.sliderImageDataProperty && this.state.sliderImageData.map((data,i)=>(<a ref={`ImagePoint_${i}`} onClick={()=>this.nextImage(i)} className="point"></a>))}
                  </div>
              </div>
              <div className="LatestHappenings">
