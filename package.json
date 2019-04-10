@@ -55,6 +55,8 @@
     "query-string-parser": "^0.2.1",
     "react": "^16.8.1",
     "react-dom": "^16.8.1",
+    "react-facebook": "^8.0.4",
+    "react-gmaps": "^1.9.0",
     "react-ionicons": "^2.1.6",
     "react-loadable": "^5.5.0",
     "react-redux": "^6.0.0",

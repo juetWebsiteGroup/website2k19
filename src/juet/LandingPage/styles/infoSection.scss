@@ -1,85 +1,74 @@
-@import '../../common_sass/_common';
+@import "../../common_sass/_common";
 
-.UniversityInfo
-{
-    @include AlignCenter;
-    padding: 2em;
-    .container
-    {
-        @include gridMaker(1fr 1fr 1fr,none,0em);
-        justify-items: center;
-        width:85%;
-          padding: 2em;
-          box-sizing: border-box;
-          background: #f0f0f0de;
-          box-shadow: 1px 3px 4px 0px lightgrey;
-          @media screen and (max-width:925px) {
-                  &{
-                    @include gridMaker(repeat(auto-fit,minmax(200px,1fr)),auto-fit,1em);
-                    justify-items: center;
-                  }
-        }
-          .Academic
-          {
-              width: 100%;
-              padding: 0.3em 1em 0.3em 1em;
-              box-sizing: inherit;
-              @include AlignCenter;
-              flex-direction: column;
-              h1
-              {
-                  color:$themeTextColorBlue;
-                  text-align: center;
-                  padding-bottom: 0.5em;
-              }
-              .line
-              {
-                  padding: 0.12em;
-                  width: 98%;
-                  background: goldenrod;
-                  margin-bottom: 0.3em;
-              }
-              &:not(:nth-child(3))
-              {
-                  border-right: 0.1em solid $themeTextColor;
+.UniversityInfo {
+	@include AlignCenter;
+	padding: 2em;
+	.container {
+		@include gridMaker(1fr 1fr 1fr, none, 0em);
+		justify-items: center;
+		width: 85%;
+		padding: 2em;
+		box-sizing: border-box;
+		background: $themeBgColor;
+		box-shadow: 1px 3px 4px 0px lightgrey;
+		@media screen and (max-width: 925px) {
+			& {
+				@include gridMaker(repeat(auto-fit, minmax(200px, 1fr)), auto-fit, 1em);
+				justify-items: center;
+			}
+		}
+		.Academic {
+			width: 100%;
+			padding: 0.3em 1em 0.3em 1em;
+			box-sizing: inherit;
+			@include AlignCenter;
+			flex-direction: column;
+			h3 {
+				color: $themeTextColorBlue;
+				text-align: center;
+				padding-bottom: 0.5em;
+			}
+			.line {
+				padding: 0.12em;
+				width: 98%;
+				background: goldenrod;
+				margin-bottom: 0.3em;
+			}
+			&:not(:nth-child(3)) {
+				border-right: 0.1em solid $themeTextColor;
 
-                  @media screen and (max-width:625px) {
-                      &{
-                          border:none;
-                      }
-                  }
-              }
-              ul
-              {
-                  list-style: circle;
-                  margin-top: 1em;
-                  height: 200px;
-                  overflow-y:auto; 
-                  li
-                  {
-                      font-size: 0.78rem;
-                      line-height: 21px;
-                      margin-bottom: 0.35em;
-                      cursor: pointer;
-                      text-align: left;
-                      width: 95%;
-                      color:$themeTextColor;
-                      padding: 6px 0 0 3px;
-                      position: relative;
-                      a
-                      {
-                          color:inherit;
-                          text-decoration: none;
-                      }
-                      &:hover
-                      {
-                          background: lightblue;
-                          color:black;
-                          border-radius: 0.2em;
-                      }
-                    
-                  }
-              }
-          }
-    }
+				@media screen and (max-width: 625px) {
+					& {
+						border: none;
+					}
+				}
+			}
+			ul {
+				list-style: circle;
+				margin-top: 1em;
+				height: 200px;
+				overflow-y: auto;
+				li {
+					font-size: 0.78rem;
+					line-height: 21px;
+					margin-bottom: 0.35em;
+					cursor: pointer;
+					text-align: left;
+					width: 95%;
+					color: $themeTextColor;
+					padding: 6px 0 0 3px;
+					position: relative;
+					a {
+						color: inherit;
+						text-decoration: none;
+					}
+					&:hover {
+						background: lightblue;
+						color: black;
+						border-radius: 0.2em;
+					}
+				}
+			}
+		}
+	}
 }
