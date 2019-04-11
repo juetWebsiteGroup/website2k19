@@ -1,0 +1,103 @@
+@import "../../common_sass/_common";
+
+.StudentClubs {
+  @include gridMaker(2fr 1fr, none, 1em);
+  margin: 0 auto;
+  justify-items: center;
+  padding: 2em 8% 2em 8%;
+  box-sizing: border-box;
+  background: $themeBgColor;
+  box-shadow: 1px 3px 4px 0px lightgrey;
+  .StudentClubs__mainView {
+    width: 100%;
+    .clubMainView {
+      img {
+        width: 90%;
+        max-width: 95%;
+        height: 40vh;
+        max-height: 600px;
+      }
+    }
+  }
+  .StudentClubs__container {
+    @include gridMaker(1fr 1fr 1fr, none, 1em);
+    align-items: center;
+    justify-items: center;
+    justify-content: flex-start;
+    position: relative;
+    header {
+      position: absolute;
+      width: 100%;
+      top: -1em;
+      h1 {
+        text-align: center;
+        color: $themeTextColorBlue;
+      }
+      .line {
+        width: 100%;
+        margin-top: 0.8em;
+        padding: 0.15em;
+        background: goldenrod;
+      }
+    }
+    .club_Card {
+      overflow: hidden;
+      width: 100%;
+      .club_container {
+        .club_photo {
+          height: 150px;
+          width: 150px;
+          border-radius: 0.3em;
+          overflow: hidden;
+          border: 0.2em solid transparent;
+          cursor: pointer;
+          transition: border cubic-bezier(0.165, 0.84, 0.44, 1) 0.4s;
+          &:hover {
+            border: 0.2em solid gold;
+            transition: border cubic-bezier(0.165, 0.84, 0.44, 1) 0.4s;
+          }
+        }
+      }
+      .club_name {
+        text-align: center;
+        margin-top: 0.45em;
+        font-size: 0.78rem;
+        width: 100%;
+        letter-spacing: 1px;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  @media screen and (max-width: 928px) {
+    & {
+      @include gridMaker(none, none, 2em);
+      justify-items: center;
+      align-items: center;
+      margin: 0 auto;
+
+      .clubMainView {
+        img {
+          width: 100% !important;
+          max-width: 100% !important;
+        }
+      }
+
+      .StudentClubs__container {
+        .club_Card {
+          margin-top: 60%;
+          width: 100%;
+          .club_container {
+            .club_photo {
+              width: 50vw;
+              height: 50vw;
+              max-height: 80px;
+              max-width: 80px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
