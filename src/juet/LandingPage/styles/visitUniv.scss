@@ -1,26 +1,25 @@
 @import "../../common_sass/_common";
 
 .visitUniversityContainer {
-	@include gridMaker(repeat(auto-fit, minmax(250px, 1fr)), none, 1em);
-	justify-items: center;
-	width: 100%;
-	padding: 2em 4em 2em 4em;
-	box-sizing: border-box;
-	background: $themeBgColor;
-	box-shadow: 1px 3px 4px 0px lightgrey;
+  @include gridMaker(repeat(auto-fit, minmax(250px, 1fr)), none, 1em);
+  justify-items: center;
+  width: 100%;
+  padding: 2em 4em 2em 4em;
+  box-sizing: border-box;
+  background: $themeBgColor;
+  box-shadow: 1px 3px 4px 0px lightgrey;
 
-	.gmap,
-	.fbpage {
-		height: 50vh;
-		margin-right: 1em;
-		max-height: 400px;
-	}
+  .gmap,
+  .fbpage {
+    height: 50vh;
+    max-height: 400px;
+  }
 }
 
 .fb-page {
-	iframe,
-	span {
-		height: 50vh !important;
-		box-shadow: 1px 3px 4px 0px lightgrey;
-	}
+  iframe,
+  span {
+    height: 50vh !important;
+    box-shadow: 1px 3px 4px 0px lightgrey;
+  }
 }

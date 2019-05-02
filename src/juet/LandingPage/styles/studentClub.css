@@ -30,11 +30,72 @@
   width: 100%;
 }
 
+.StudentClubs .StudentClubs__mainView .clubMainView {
+  position: relative;
+}
+
+.StudentClubs .StudentClubs__mainView .clubMainView .clubDetails {
+  position: absolute;
+  top: 0;
+  width: 90%;
+  height: 40vh;
+  max-height: 600px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  z-index: 100;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: scale(1, 0);
+          transform: scale(1, 0);
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  -webkit-transition: -webkit-transform cubic-bezier(0.445, 0.05, 0.55, 0.95) 0.4s;
+  transition: -webkit-transform cubic-bezier(0.445, 0.05, 0.55, 0.95) 0.4s;
+  transition: transform cubic-bezier(0.445, 0.05, 0.55, 0.95) 0.4s;
+  transition: transform cubic-bezier(0.445, 0.05, 0.55, 0.95) 0.4s, -webkit-transform cubic-bezier(0.445, 0.05, 0.55, 0.95) 0.4s;
+  background: rgba(0, 0, 0, 0.35);
+}
+
+.StudentClubs .StudentClubs__mainView .clubMainView .clubDetails a {
+  background: crimson;
+  color: white;
+  padding: 0.8em;
+  text-align: center;
+  border-radius: 0.25em;
+  letter-spacing: 0.45px;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 0.789rem;
+}
+
 .StudentClubs .StudentClubs__mainView .clubMainView img {
   width: 90%;
   max-width: 95%;
   height: 40vh;
+  cursor: pointer;
+  z-index: 2;
   max-height: 600px;
+}
+
+.StudentClubs .StudentClubs__mainView .clubMainView:hover > .clubDetails {
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+  -webkit-transition: -webkit-transform cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.4s;
+  transition: -webkit-transform cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.4s;
+  transition: transform cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.4s;
+  transition: transform cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.4s, -webkit-transform cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.4s;
+}
+
+.StudentClubs .StudentClubs__mainView .clubMainView:hover > img {
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
 }
 
 .StudentClubs .StudentClubs__container {

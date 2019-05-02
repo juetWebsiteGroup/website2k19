@@ -23,6 +23,9 @@ const ClubCardView = props => {
 const ClubMainView = props => {
   return (
     <div className='clubMainView'>
+      <div className='clubDetails'>
+        <a href={props.displayClub.clubPageLink}>Visit Website</a>
+      </div>
       <img src={props.displayClub.clubPic} alt={props.displayClub.clubName} />
     </div>
   );
