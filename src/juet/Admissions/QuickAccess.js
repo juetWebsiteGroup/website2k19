@@ -15,6 +15,7 @@ export default class QuickAccess extends React.Component
                 <li><Link to="/admissions/Scholarship">Scholarships</Link></li>
                 <li><Link to="/admissions/EDULoan">Education Loan</Link></li>
                 <li><Link to="/admissions/Fees">Fee Structure</Link></li>
+				<li><a href="/static/2019/FeeConcession.pdf">Reservation/Fee Concession for Armed Forces/PMF</a></li>
                 <li><Link to="/admissions/FeeInstruction">Fee Instruction</Link></li>
             </ul>
         </div>

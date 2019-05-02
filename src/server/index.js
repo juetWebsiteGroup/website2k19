@@ -1,9 +1,8 @@
 import express from "express";
-
+import path from "path";
 import Loadable from "react-loadable";
 import { getBundles } from "react-loadable/webpack";
 import stats from "../../build/react-loadable.json";
-import path from "path";
 import cors from "cors";
 import morgan from "morgan";
 import helmet from "helmet";
@@ -23,6 +22,8 @@ require("dotenv").config();
 const compression = require("compression");
 import * as faculty from "./middlewares/FacultyRecord";
 import * as admission from "./middlewares/Admission";
+import * as admCounter from "./middlewares/VisitorCount";
+
 const app = express();
 
 app.set("view engine", "ejs");
@@ -36,20 +37,15 @@ app.use("/juet", express.static("build", { maxage: "604800" }));
 app.use("/static", express.static("static", { maxage: "2592000000" }));
 app.use("/api/faculty", faculty);
 app.use("/api/admission", admission);
-
+app.use("/api/counter", admCounter);
 const juetStore = configureStore({});
 
 app.get("/*", (req, res) => {
-  // if(detect.name ==='chrome')
-  // {
-  //   res.redirect("https://www.juet.ac.in")
-  // }
   const branch = matchRoutes(routes, req.url);
   const promises = branch.map(({ route }) => {
     let fetchData = route.component.fetchData;
     return fetchData instanceof Function ? fetchData(juetStore) : Promise.resolve(null);
   });
-
   return Promise.all(promises).then(data => {
     const context = {};
     let modules = [];

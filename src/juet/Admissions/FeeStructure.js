@@ -60,7 +60,7 @@ export default class FeeStructure extends React.Component
                               <td colSpan={5}><h4>**Free Accommodation for Full Time Ph.D. Scholars</h4></td>
                               </tr>
                               <tr>
-                                <td colSpan={5}><h4>Academic fee discount for wards of Defence / Paramilitary forces</h4>
+                                <td colSpan={5}><h4>Academic fee discount for wards of Defence / Paramilitary forces (For B.Tech. Programme Only)</h4>
                                     <ul>
                                         <li>30% in Tuition and Development Fee</li>
                                         <li>Additional 5% concession to wards of war widows and PWD (Persons With Disability)</li>
