@@ -11,11 +11,11 @@ export default class AdmissionUpperLook extends Component {
           <label className='Admission__Title'>{/* <h1>{this.props.UpperTitle}</h1> */}</label>
           <div className='Admission__news'>
             <ul>
-              <li className='newActive'>
-                <a href='https://www.juet.ac.in/TandP/Placement2019.php' target='_blank'>
+			{/* <li className='newActive'>
+                <a href='https://webkiosk.juet.ac.in/Counselling/Views/Online/Counsplustwo.jsp' target='_blank'>
                   B.Tech. Online Counselling (10+2 Marks Based)-2019
                 </a>
-              </li>
+			</li>  */}
               <li>
                 <a href='https://www.juet.ac.in/TandP/Placement2019.php' target='_blank'>
                   Placements 2019

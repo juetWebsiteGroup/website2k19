@@ -32,7 +32,6 @@
 .newActive {
   -webkit-animation: GLOW 1s cubic-bezier(0.215, 0.61, 0.355, 1) 0.1ms infinite;
           animation: GLOW 1s cubic-bezier(0.215, 0.61, 0.355, 1) 0.1ms infinite;
-  font-weight: bold;
 }
 
 .Admission__Upper {
@@ -124,9 +123,9 @@
 
 .Admission__Upper .container .Admission__news ul li {
   margin-bottom: 1.5vh;
-  width: 95%;
+  width: 90%;
   text-align: left;
-  padding: 0.5em;
+  padding: 0.3em;
   font-size: 2vmin;
   line-height: 20px;
   cursor: pointer;

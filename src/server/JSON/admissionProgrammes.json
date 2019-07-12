@@ -11,7 +11,7 @@
 						[
                             {"title":"Download E-Brochure (Part-I)","LinkTo":"/static/2019/Brochure2019P1.pdf"},
 							{"title":"Download E-Brochure(part-II)- Admission Procedure","LinkTo":"/static/2019/SupplAdmsBrochure2019P2.pdf"},
-							{"title":"View Your Application Status","LinkTo":"http://www.jiit.ac.in:8080/JEECounselling2018/Views/AieeeStatus.jsp"},
+							{"title":"View Your Application Status","LinkTo":"http://erp.jiit.ac.in:8080/JEECounselling2018/Views/AieeeStatus.jsp"},
 							{"title":"Download Offline Application Form","LinkTo":"/static/2019/JEEbasedAppl2019.pdf"},
 							{"title":"Important Dates","LinkTo":"/static/2019/JEEImpDates.pdf"}
 							
