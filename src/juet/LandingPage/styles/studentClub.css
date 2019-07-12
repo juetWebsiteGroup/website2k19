@@ -76,6 +76,9 @@
 }
 
 .StudentClubs .StudentClubs__mainView .clubMainView img {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 90%;
   max-width: 95%;
   height: 40vh;
@@ -101,8 +104,8 @@
 .StudentClubs .StudentClubs__container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-columns: 1.5fr 1.5fr 1.5fr;
+      grid-template-columns: 1.5fr 1.5fr 1.5fr;
   grid-auto-rows: none;
   grid-gap: 1em;
   -webkit-box-align: center;
@@ -135,12 +138,14 @@
 
 .StudentClubs .StudentClubs__container .club_Card {
   overflow: hidden;
-  width: 100%;
+  width: 140px;
 }
 
 .StudentClubs .StudentClubs__container .club_Card .club_container .club_photo {
-  height: 150px;
-  width: 150px;
+  height: 140px;
+  width: 100%;
+  -o-object-fit: center;
+     object-fit: center;
   border-radius: 0.3em;
   overflow: hidden;
   border: 0.2em solid transparent;
@@ -178,6 +183,9 @@
         -ms-flex-align: center;
             align-items: center;
     margin: 0 auto;
+  }
+  .StudentClubs .clubMainView .clubDetails {
+    width: 100% !important;
   }
   .StudentClubs .clubMainView img {
     width: 100% !important;

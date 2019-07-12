@@ -20,10 +20,10 @@ import configureStore from "../redux/configureStore";
 
 require("dotenv").config();
 const compression = require("compression");
-//import * as faculty from './middlewares/FacultyRecord'
+import * as faculty from "./middlewares/FacultyRecord";
 import * as admission from "./middlewares/Admission";
 import * as admCounter from "./middlewares/VisitorCount";
-
+import * as uinfo from "./middlewares/UniversityInfo";
 const app = express();
 
 app.set("view engine", "ejs");
@@ -35,9 +35,10 @@ app.use(express.static("build", { maxage: "0" }));
 app.use(express.static("views", { maxage: "31536000" }));
 app.use("/juet", express.static("build", { maxage: "604800" }));
 app.use("/static", express.static("static", { maxage: "2592000000" }));
-//app.use('/api/faculty',faculty)
+app.use("/api/faculty", faculty);
 app.use("/api/admission", admission);
 app.use("/api/counter", admCounter);
+app.use("/api/uinfo", uinfo);
 const juetStore = configureStore({});
 
 app.get("/*", (req, res) => {

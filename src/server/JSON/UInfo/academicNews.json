@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "title": "JAYPEE - UF Linkage: 8th Semester at University of Florida, Gainesville, USA",
+    "link": "",
+    "imageLink": "",
+    "status": true,
+    "isNew": true
+  },
+  {
+    "id": 2,
+    "title": "CGPA to Equivalent Percentage Formula",
+    "link": "",
+    "imageLink": "",
+    "status": true,
+    "isNew": false
+  },
+  {
+    "id": 3,
+    "title": "Fee Intimation Odd Semester (July - December) 2019",
+    "link": "",
+    "imageLink": "",
+    "status": true,
+    "isNew": false
+  },
+  {
+    "id": 4,
+    "title": "WebKiosk Login for Parents",
+    "link": "",
+    "imageLink": "",
+    "status": true,
+    "isNew": false
+  }
+]

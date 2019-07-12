@@ -1,36 +1,47 @@
 import React from "react";
 import "./styles/infoSection.css";
 
-const InfoSection = props => {
-	return (
-		<div className='Academic'>
-			<h3>{props.title}</h3>
-			<div className='line' />
-			<ul>
-				<li>Anti-Ragging Undertaking, Medical Fitness Certificate Proforma</li>
-				<li>Anti-Ragging Undertaking, Medical Fitness Certificate Proforma</li>
-				<li>Anti-Ragging Undertaking, Medical Fitness Certificate Proforma</li>
-			</ul>
-		</div>
-	);
+const InfoSection = ({ data, title }) => {
+  return (
+    <div className='Academic'>
+      <h3>{title}</h3>
+      <div className='line' />
+      <ul>
+        {data &&
+          data.map((obj, i) => {
+            if (obj.status) {
+              return (
+                <li key={i}>
+                  {obj.isNew ? (
+                    <a style={{ color: "orangered" }} href={obj.link}>
+                      {obj.title}
+                    </a>
+                  ) : (
+                    <a href={obj.link}>{obj.title}</a>
+                  )}
+                </li>
+              );
+            }
+          })}
+      </ul>
+    </div>
+  );
 };
 
 export default class UniversityInfo extends React.Component {
-	constructor(props) {
-		super(props);
-
-		this.state = {};
-	}
-	render() {
-		return (
-			<section className='UniversityInfo'>
-				<div className='container'>
-					{/*academic News Component */}
-					<InfoSection title='Academic News' />
-					<InfoSection title='Announcements' />
-					<InfoSection title='Awards &amp; Achievements' />
-				</div>
-			</section>
-		);
-	}
+  constructor(props) {
+    super(props);
+  }
+  render() {
+    return (
+      <section className='UniversityInfo'>
+        <div className='container'>
+          {/*academic News Component */}
+          <InfoSection title='Academic News' data={this.props.academicNewsData} />
+          <InfoSection title='Announcements' data={this.props.announcementsData} />
+          <InfoSection title='Awards &amp; Achievements' data={this.props.awardsAchievementData} />
+        </div>
+      </section>
+    );
+  }
 }

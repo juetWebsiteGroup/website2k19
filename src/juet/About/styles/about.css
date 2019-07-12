@@ -41,7 +41,7 @@
 }
 
 #About .AboutMain .AboutusContainer h2 {
-  font-family: 'Abel',sans-serif;
+  font-family: "Abel", sans-serif;
   color: #182c61;
   text-align: left;
   font-size: 5.5vmin;
@@ -51,7 +51,7 @@
 #About .AboutMain .AboutusContainer p {
   margin: 0.5em 0 0.5em 0;
   text-align: justify;
-  font-family: 'Abel',sans-serif;
+  font-family: "Abel", sans-serif;
   line-height: 28px;
   color: #4e4e4e;
   font-weight: 700;
@@ -65,7 +65,7 @@
 }
 
 #About .AboutMain .AboutusContainer ul li {
-  font-family: 'Abel',sans-serif;
+  font-family: "Abel", sans-serif;
   font-weight: 700;
   margin-bottom: 0.5em;
   text-align: left;
@@ -87,15 +87,15 @@
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  border-left: .06rem solid #d3d3d3;
+  border-left: 0.06rem solid #d3d3d3;
 }
 
 #About .AboutMain .About__QuickAccess h3 {
   font-size: 3.5vmin;
-  font-family: 'Abel',sans-serif;
+  font-family: "Abel", sans-serif;
   color: #182c61;
-  padding: .2em .2em .2em .5em;
-  border-left: .22em solid #ffa502;
+  padding: 0.2em 0.2em 0.2em 0.5em;
+  border-left: 0.22em solid #ffa502;
   margin-bottom: 0.3em;
 }
 
@@ -107,10 +107,10 @@
 
 #About .AboutMain .About__QuickAccess ul li {
   padding-left: 1em;
-  margin-bottom: .96em;
+  margin-bottom: 0.96em;
   cursor: pointer;
   font-weight: 700;
-  font-size: .89rem;
+  font-size: 0.89rem;
   color: #3742fa;
 }
 
@@ -150,7 +150,7 @@
 }
 
 #About .AboutMain::after {
-  content: '';
+  content: "";
   width: 100%;
   height: 100%;
   background: #cbe4f978;
