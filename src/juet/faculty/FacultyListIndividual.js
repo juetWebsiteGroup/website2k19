@@ -1,57 +1,64 @@
-import React,{Component} from 'react';
+import React, { Component } from "react";
+import { bindActionCreators } from "redux";
+import { connect } from "react-redux";
+import { facultyIndividual } from "../../redux/actions/FACULTY/fetchFaculty";
 
-import 'isomorphic-fetch';
+import "isomorphic-fetch";
 
-const DisplayIndividualFaculty = (props)=>{
-    return( <div>
-        <ul style={{display:'grid',gridTemplateColumns:'1fr',gridGap:'1em'}}>
-            {props.record.map((d)=>{
-                return (
-                    <li key={d.id}><img title={d.name} src={'/static/'+d.image.toString()}  alt={d.name.toString()} style={{width:"30%",maxWidth:"100%"}} />{d.name}</li>
-                )
-            })}
-        </ul>
-    </div>)
-
+const DisplayIndividualFaculty = props => {
+  return (
+    <div>
+      <ul style={{ display: "grid", gridTemplateColumns: "1fr", gridGap: "1em" }}>
+        {props.record.map(d => {
+          return (
+            <li key={d.id}>
+              <img
+                title={d.name}
+                src={"/static/" + d.image.toString()}
+                alt={d.name.toString()}
+                style={{ width: "30%", maxWidth: "100%" }}
+              />
+              {d.name}
+            </li>
+          );
+        })}
+      </ul>
+    </div>
+  );
 };
 
-class FacultyIndividualProfile extends Component
-{
-    constructor(props)
-    {
-        super(props);
-        this.state = {
-            faculty_data:[],
-            isLoading:true,
-            status:'',
-            whichDepartment:props.itsDepartment,
-            FacultyID:props.itsID,
-            liveStatus:props.liveStatus
-        }
+class FacultyIndividualProfile extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      FacultyID: props.match.params.id,
+      liveStatus: true
+    };
+  }
+  componentDidMount() {
+    this.props.facultyIndividual(this.state.FacultyID);
+  }
+  render() {
+    if (this.state.liveStatus) {
+      return <DisplayIndividualFaculty record={this.props.facultyData} />;
+    } else {
+      return <h2>You are not Authorized to See the Content, Please Contact to WebMaster admin.</h2>;
     }
-    componentDidMount() {
-        fetch(`/api/faculty/${encodeURI(this.state.whichDepartment+'/'+this.state.FacultyID)}`)
-            .then((res)=>{
-                this.setState({faculty_data:res.data,isLoading:false,status:res.data.status})
-            })
-
-    }
-    render()
-    {
-
-        if(this.state.liveStatus)
-        {
-            return(
-                <DisplayIndividualFaculty record={this.state.faculty_data}/>
-            )
-        }
-        else
-        {
-            return (
-                <h2>You are not Authorized to See the Content, Please Contact to WebMaster admin.</h2>
-            )
-        }
-    }
-
+  }
 }
-export default FacultyIndividualProfile;
+
+export default connect(
+  state => {
+    return {
+      facultyData: state.facultyStore.fetchedData_OF_FACULTY
+    };
+  },
+  dispatch => {
+    return bindActionCreators(
+      {
+        facultyIndividual
+      },
+      dispatch
+    );
+  }
+)(FacultyIndividualProfile);

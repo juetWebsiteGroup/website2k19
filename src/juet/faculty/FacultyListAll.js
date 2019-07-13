@@ -44,7 +44,7 @@ class DisplayFaculty extends Component {
                 </div>
                 <div className='facultyBriefButton'>
                   <div className='BriefButton'>
-                    <Link to={`/juet/faculty/true/${d.department}/${d.id}`}>Brief Profile</Link>
+                    <Link to={`/faculty/profile/${d.id}`}>Brief Profile</Link>
                   </div>
                 </div>
               </div>

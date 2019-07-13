@@ -16,7 +16,8 @@ const { InjectManifest, GenerateSW } = require("workbox-webpack-plugin");
 var devConfig = {
   entry: ["./src/browser/index.jsx"],
   output: {
-    // path:path.resolve(__dirname,'Devbuild'),
+    path: path.resolve(__dirname, "Devbuild"),
+    publicPath: "/",
     filename: "juetDevbundle.js"
   },
   mode: "development",
@@ -24,7 +25,7 @@ var devConfig = {
   devServer: {
     compress: true,
     port: 4000,
-    // publicPath: "/",
+
     // contentBase: "./Devbuild",
     historyApiFallback: true
   },

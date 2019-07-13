@@ -10,22 +10,19 @@ con.connect(err => {
     console.log("SQL SERVER Connected");
   }
 });
-router.get("/:dept/:id", (req, res) => {
-  const Individual_Faculty_req = { dept: req.params.dept, id: req.params.id };
+router.get("/profile/:id", (req, res) => {
+  const Individual_Faculty_req = { id: req.params.id };
   const Fetched_data = new Array();
-  if (!Individual_Faculty_req.dept && !Individual_Faculty_req.id) {
+  if (!Individual_Faculty_req.id) {
     res.send(404);
   } else {
-    con.query(
-      `SELECT * from faculty where department='${Individual_Faculty_req.dept}' and  id='${Individual_Faculty_req.id}'`,
-      (err, rows) => {
-        if (err) throw err;
-        rows.forEach(data => {
-          Fetched_data.push(data);
-        });
-        res.send(Fetched_data);
-      }
-    );
+    con.query(`SELECT * from faculty where id='${Individual_Faculty_req.id}'`, (err, rows) => {
+      if (err) throw err;
+      rows.forEach(data => {
+        Fetched_data.push(data);
+      });
+      res.send(Fetched_data);
+    });
   }
 });
 

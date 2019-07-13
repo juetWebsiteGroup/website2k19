@@ -18,3 +18,19 @@ export const facultyAll = () => {
       });
   };
 };
+
+export const facultyIndividual = fid => {
+  return dispatch => {
+    fetch(`${process.env.FETCH_URL}/api/faculty/profile/${encodeURI(fid)}`)
+      .then(res => {
+        return res.json();
+      })
+      .then(data => {
+        dispatch({
+          type: GET_FACULTY_INDIVIDUAL,
+          data: data,
+          isLoading: false
+        });
+      });
+  };
+};
