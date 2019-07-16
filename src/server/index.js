@@ -43,9 +43,9 @@ const juetStore = configureStore({});
 
 app.get("/*", (req, res) => {
   const branch = matchRoutes(routes, req.url);
-  const promises = branch.map(({ route }) => {
+  const promises = branch.map(({ route, match }) => {
     let fetchData = route.component.fetchData;
-    return fetchData instanceof Function ? fetchData(juetStore) : Promise.resolve(null);
+    return fetchData instanceof Function ? fetchData(juetStore, match) : Promise.resolve(null);
   });
   return Promise.all(promises).then(data => {
     const context = {};

@@ -57,8 +57,8 @@ class DisplayFaculty extends Component {
 }
 
 class FacultyListAll extends Component {
-  static fetchData(store) {
-    return store.dispatch(facultyAll());
+  static fetchData({ dispatch }, match) {
+    return [dispatch(facultyAll())];
   }
   constructor(props) {
     super(props);
@@ -69,7 +69,7 @@ class FacultyListAll extends Component {
   }
 
   componentWillMount() {
-    this.props.onFetchFacultyAll();
+    this.props.facultyAll();
   }
   componentDidMount() {
     document.title = "Faculties@JUET,Guna";
@@ -104,9 +104,12 @@ const MapStateToProps = state => {
 };
 
 const MapDispatchToProps = dispatch => {
-  return {
-    onFetchFacultyAll: () => dispatch(facultyAll())
-  };
+  return bindActionCreators(
+    {
+      facultyAll
+    },
+    dispatch
+  );
 };
 export default connect(
   MapStateToProps,

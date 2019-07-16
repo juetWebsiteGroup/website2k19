@@ -1,4 +1,4 @@
-import { createStore, applyMiddleware, combineReducers } from "redux";
+import { createStore, applyMiddleware, combineReducers, compose } from "redux";
 import thunk from "redux-thunk";
 import logger from "redux-logger";
 
@@ -12,6 +12,6 @@ const rootReducer = combineReducers({
   UInfoStore: uinfoReducer
 });
 
-const configureStore = initialState => createStore(rootReducer, initialState, applyMiddleware(thunk, logger));
+const configureStore = initialState => createStore(rootReducer, initialState, compose(applyMiddleware(thunk, logger)));
 
 export default configureStore;

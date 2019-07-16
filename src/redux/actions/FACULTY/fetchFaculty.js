@@ -34,3 +34,19 @@ export const facultyIndividual = fid => {
       });
   };
 };
+
+export const facultyDepartmentWise = deptid => {
+  return dispatch => {
+    fetch(`${process.env.FETCH_URL}/api/faculty/${encodeURI(deptid)}`)
+      .then(res => {
+        return res.json();
+      })
+      .then(data => {
+        dispatch({
+          type: GET_FACULTY_INDIVIDUAL,
+          data: data,
+          isLoading: false
+        });
+      });
+  };
+};

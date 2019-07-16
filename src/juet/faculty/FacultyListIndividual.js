@@ -28,15 +28,17 @@ const DisplayIndividualFaculty = props => {
 };
 
 class FacultyIndividualProfile extends Component {
+  static fetchData({ dispatch }, match) {
+    return [dispatch(facultyIndividual(match.params.id))];
+  }
   constructor(props) {
     super(props);
     this.state = {
-      FacultyID: props.match.params.id,
       liveStatus: true
     };
   }
-  componentDidMount() {
-    this.props.facultyIndividual(this.state.FacultyID);
+  componentWillMount() {
+    this.props.facultyIndividual(this.props.match.params.id);
   }
   render() {
     if (this.state.liveStatus) {
