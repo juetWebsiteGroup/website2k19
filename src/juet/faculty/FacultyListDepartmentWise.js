@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import fetch from "isomorphic-fetch";
 import { Link } from "react-router-dom";
-import "./styles/faculty.css";
+import "./styles/faculty.scss";
 const DisplayDepartmentFaculties = props => {
   return (
     <div>

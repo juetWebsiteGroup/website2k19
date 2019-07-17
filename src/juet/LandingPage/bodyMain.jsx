@@ -11,7 +11,7 @@ import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
 import { uinfo_Awards, uinfo_AcademicNews, uinfo_Announcements } from "../../redux/actions/MainPage/uinfo";
 
-import "./styles/VideoStyles.css";
+import "./styles/VideoStyles.scss";
 
 const UniversityVideoPage = () => {
   return (

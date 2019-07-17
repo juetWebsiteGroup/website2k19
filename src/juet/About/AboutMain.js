@@ -1,21 +1,22 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { AboutUpperLook } from "./AboutUpperLook";
-import { QuickAccess } from "./QuickAccess";
 
-import "./styles/about.css";
+import { QuickAccess } from "../../containers/QuickAccess/index";
+import { QuickAccessItems } from "./QuickAccessItems";
+import { InnerPageContainer } from "../../containers/InnerPageContainer/index";
+
+import "./styles/about.scss";
 
 const Aboutus = props => {
   return <div className='AboutusContainer'>{props.children}</div>;
 };
 
-export default class AboutMain extends React.Component {
+export default class AboutMain extends React.PureComponent {
   render() {
     return (
       <section id='About'>
         {/* <AboutUpperLook Title="About University" /> */}
 
-        <div className='AboutMain'>
+        <InnerPageContainer>
           <Aboutus>
             <h2>About us</h2>
             <div className='line' />
@@ -72,9 +73,8 @@ export default class AboutMain extends React.Component {
               Research in emerging areas of technology is a major thrust and is leveraged for all academic pursuits.
             </p>
           </Aboutus>
-
-          <QuickAccess />
-        </div>
+          <QuickAccess linkItems={QuickAccessItems} Title={"QuickAccess"} />
+        </InnerPageContainer>
       </section>
     );
   }

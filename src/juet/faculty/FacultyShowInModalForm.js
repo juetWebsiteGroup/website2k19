@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./styles/facultyBox.css";
+import "./styles/facultyBox.scss";
 import "isomorphic-fetch";
 import { Link } from "react-router-dom";
 

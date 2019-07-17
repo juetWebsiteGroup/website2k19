@@ -1,5 +1,5 @@
 import React from "react";
-import "./styles/infoSection.css";
+import "./styles/infoSection.scss";
 
 const InfoSection = ({ data, title }) => {
   return (

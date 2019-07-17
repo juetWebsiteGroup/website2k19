@@ -32,12 +32,13 @@ var serverConfig = {
         loader: "url-loader"
       },
       {
-        test: /\.css$/,
+        test: /\.(sa|sc|c)ss$/,
         use: [
           {
             loader: "postcss-loader",
             options: { sourceMap: true, ident: "postcss", plugins: [require("autoprefixer")()] }
-          }
+          },
+          "sass-loader"
         ]
       },
       {

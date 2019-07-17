@@ -1,5 +1,5 @@
 import React from "react";
-import "./styles/studentClub.css";
+import "./styles/studentClub.scss";
 
 const ClubCardView = props => {
   return (

@@ -1,56 +1,63 @@
 *,
 *::after,
 *::before {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: "Lato", sans-serif;
-	scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  scroll-behavior: smooth;
 }
 $themeTextColor: #6f6f6f;
 $themeTextColorBlue: #003a68;
 $themeBgColor: #f0f0f0de;
 @mixin container($pad, $mar, $w, $h) {
-	padding: $pad;
-	@if $mar {
-		margin: $mar;
-	}
-	width: $w;
-	height: $h;
+  padding: $pad;
+  @if $mar {
+    margin: $mar;
+  }
+  width: $w;
+  height: $h;
+}
+
+@mixin LineMaker($width, $pad, $color, $bottomMargin) {
+  padding: $pad;
+  width: $width;
+  background: $color;
+  margin-bottom: $bottomMargin;
 }
 
 @mixin gridMaker($template_col, $template_rows, $grid_gap) {
-	display: grid;
-	grid-template-columns: $template_col;
-	grid-auto-rows: $template_rows;
-	grid-gap: $grid_gap;
+  display: grid;
+  grid-template-columns: $template_col;
+  grid-auto-rows: $template_rows;
+  grid-gap: $grid_gap;
 }
 
 @mixin responsive_image($width) {
-	width: $width;
-	max-width: 100%;
+  width: $width;
+  max-width: 100%;
 }
 
 @mixin AlignCenter {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @mixin AlignCenterTop {
-	display: flex;
-	justify-content: center;
-	align-items: flex-start;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 @mixin AlignCenterEnd {
-	display: flex;
-	justify-content: center;
-	align-items: flex-end;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }
 
 @mixin AlignEnd {
-	display: flex;
-	justify-content: flex-end;
-	align-items: center;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }

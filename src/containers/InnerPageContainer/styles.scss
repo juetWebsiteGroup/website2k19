@@ -1,0 +1,28 @@
+@import "../../juet/common_sass/common";
+
+.InnerPageMain {
+  @include gridMaker(3.5fr 1fr, minmax(200px, 1fr), 1em);
+  background: #f9f9f9;
+  padding: 2em;
+  position: relative;
+  overflow: hidden;
+  z-index: 100;
+
+  @media screen and (max-width: 777px) {
+    & {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+  }
+
+  &::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #cbe4f978;
+    position: absolute;
+    overflow: hidden;
+    transform: skew(-70.5deg);
+    z-index: -50;
+  }
+}

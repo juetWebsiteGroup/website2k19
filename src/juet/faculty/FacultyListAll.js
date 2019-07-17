@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import "./styles/faculty.css";
+import "./styles/faculty.scss";
 import { connect } from "react-redux";
 import { facultyAll } from "../../redux/actions/FACULTY/fetchFaculty";
 import { LoadingView } from "../LoadingView/Loading";

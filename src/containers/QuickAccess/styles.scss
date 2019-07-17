@@ -1,0 +1,56 @@
+@import "../../juet/common_sass/common";
+
+.QuickAccessContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1em 1em 1em;
+  align-items: flex-start;
+  justify-content: flex-start;
+  border-left: 0.06rem solid #d3d3d3;
+
+  .line {
+    @include LineMaker(99%, 0.03, #d3d3d3, 1em);
+  }
+
+  h3 {
+    font-size: 3.5vmin;
+    font-family: "Abel", sans-serif;
+    color: #182c61;
+    padding: 0.2em 0.2em 0.2em 0.5em;
+    border-left: 0.22em solid #ffa502;
+    margin-bottom: 0.3em;
+  }
+
+  ul {
+    list-style: none;
+    box-sizing: border-box;
+
+    li {
+      padding-left: 1em;
+      margin-bottom: 0.96em;
+      cursor: pointer;
+      font-weight: 700;
+      font-size: 0.89rem;
+      color: #3742fa;
+
+      & {
+        a {
+          text-decoration: none;
+          color: inherit;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 777px) {
+    & {
+      border: none;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+
+      h3 {
+        font-size: 4.2vmin;
+      }
+    }
+  }
+}

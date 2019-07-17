@@ -43,11 +43,30 @@ var devConfig = {
         test: /\.(sa|sc|c)ss$/,
         use: [
           MiniCssExtractPlugin.loader,
-          "css-loader",
+          {
+            loader: "css-loader",
+            options: {
+              localIdentName: "[hash:8]"
+            }
+          },
           "sass-loader",
           { loader: "postcss-loader", options: { sourceMap: true, ident: "postcss", plugins: [require("autoprefixer")()] } }
         ]
       },
+      // {
+      //   test: /\.less$/,
+      //   use: [
+      //     { loader: "style-loader" },
+      //     { loader: "css-loader" },
+      //     {
+      //       loader: "less-loader",
+      //       options: {
+      //         modifyVars: themeVariables,
+      //         javascriptEnabled: true
+      //       }
+      //     }
+      //   ]
+      // },
       {
         test: /\.(js|jsx)$/,
         exclude: /(node_modules)/,
@@ -110,17 +129,32 @@ var browserConfig = {
         exclude: /(node_modules)/,
         use: "babel-loader"
       },
-      {
-        test: /\.(less)$/,
-        use: ["less-loader", "style-loader", "css-loader"]
-      },
+      // {
+      //   test: /\.less$/,
+      //   use: [
+      //     { loader: "style-loader" },
+      //     { loader: "css-loader" },
+      //     {
+      //       loader: "less-loader",
+      //       options: {
+      //         modifyVars: themeVariables,
+      //         javascriptEnabled: true
+      //       }
+      //     }
+      //   ]
+      // },
       {
         test: /\.(sa|sc|c)ss$/,
         use: [
           MiniCssExtractPlugin.loader,
-          "css-loader",
+          {
+            loader: "css-loader",
+            options: {
+              localIdentName: "[hash:8]"
+            }
+          },
           "sass-loader",
-          { loader: "postcss-loader", options: { modules: true, sourceMap: true, ident: "postcss", plugins: [require("autoprefixer")()] } }
+          { loader: "postcss-loader", options: { sourceMap: true, ident: "postcss", plugins: [require("autoprefixer")()] } }
         ]
       }
     ]
