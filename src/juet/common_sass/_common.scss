@@ -7,6 +7,22 @@
   font-family: "Lato", sans-serif;
   scroll-behavior: smooth;
 }
+
+b {
+  font-family: "Abel", sans-serif;
+  color: #003a68;
+  font-weight: bolder;
+}
+
+p {
+  margin: 0.5em 0 0.5em 0;
+  text-align: justify;
+  font-family: "Abel", sans-serif;
+  line-height: 28px;
+  color: #4e4e4e;
+  font-weight: 700;
+}
+
 $themeTextColor: #6f6f6f;
 $themeTextColorBlue: #003a68;
 $themeBgColor: #f0f0f0de;

@@ -43,6 +43,16 @@ const AboutMain_Async = Loadable({
   loading: LoadingView
 });
 
+const MissionVision_Async = Loadable({
+  loader: () => import("./juet/About/MissionVision"),
+  loading: LoadingView
+});
+
+const JPGroup_Async = Loadable({
+  loader: () => import("./juet/About/JPGroup"),
+  loading: LoadingView
+});
+
 const FacultyListAll_Async = Loadable({
   loader: () => import("./juet/faculty/FacultyListAll"),
   loading: LoadingView
@@ -71,11 +81,19 @@ export const routes = [
       return null;
     }
   },
-
   {
     path: "/About",
     component: AboutMain_Async,
     exact: true
+  },
+  {
+    path: "/MissionVision",
+    component: MissionVision_Async,
+    exact: true
+  },
+  {
+    path: "/JPGroup",
+    component: JPGroup_Async
   },
   {
     path: "/faculty",

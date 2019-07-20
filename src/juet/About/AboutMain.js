@@ -73,7 +73,7 @@ export default class AboutMain extends React.PureComponent {
               Research in emerging areas of technology is a major thrust and is leveraged for all academic pursuits.
             </p>
           </Aboutus>
-          <QuickAccess linkItems={QuickAccessItems} Title={"QuickAccess"} />
+          <QuickAccess linkItems={QuickAccessItems} Title={"Quick Access"} />
         </InnerPageContainer>
       </section>
     );

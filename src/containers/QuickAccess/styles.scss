@@ -9,7 +9,7 @@
   border-left: 0.06rem solid #d3d3d3;
 
   .line {
-    @include LineMaker(99%, 0.03, #d3d3d3, 1em);
+    @include LineMaker(99%, 0.03em, #d3d3d3, 1em);
   }
 
   h3 {
