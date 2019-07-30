@@ -9,8 +9,6 @@ import { AdmissionFooter } from "./juet/Admissions/tempAdm/AdmissionFooter";
 import { routes } from "./Routes.jsx";
 import "./juet/LandingPage/styles/body.css";
 
-import LazyLoad from "react-lazyload";
-
 import { ErrorPageNotFound } from "./juet/NotFound/NotFound.jsx";
 class IndexRender extends React.PureComponent {
   constructor(props) {
@@ -30,9 +28,8 @@ class IndexRender extends React.PureComponent {
           <Route component={ErrorPageNotFound} />
         </Switch>
         {/* <AdmissionFooter /> */}
-        <LazyLoad once>
-          <FooterMake />
-        </LazyLoad>
+
+        <FooterMake />
       </div>
     );
   }
