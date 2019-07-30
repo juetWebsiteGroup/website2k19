@@ -1,7 +1,7 @@
 @import "../../common_sass/common";
 
 .AlliancesContainer {
-  width: 90%;
+  width: 100%;
   overflow: hidden;
   padding: 1em;
   background: white;
@@ -70,6 +70,59 @@
             width: 80%;
           }
         }
+      }
+    }
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(10%);
+  }
+  100% {
+    transform: translateX(-100vw);
+  }
+}
+.placementContainer {
+  width: 100%;
+  overflow: hidden;
+  padding: 1em;
+  background: white;
+  border: 1px solid none;
+  border-radius: 0.3em;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 5px 4px 5px 0px #dadadab5;
+
+  .Heading {
+    @include AlignCenter;
+    flex-direction: column;
+    h1 {
+      font-size: 1.3rem;
+      text-align: center;
+      margin-bottom: 0.5em;
+      color: $themeTextColorBlue;
+    }
+
+    .line {
+      @include LineMaker(90%, 0.12em, goldenrod, 1em);
+    }
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    li {
+      margin-right: 1.2em;
+      float: left;
+      animation: marquee 20s linear infinite;
+      img {
+        max-width: 100vw;
+        height: 50px;
       }
     }
   }

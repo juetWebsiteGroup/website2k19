@@ -5,6 +5,7 @@ import logo3 from "../../../static/images/UON.jpg";
 import logo4 from "../../../static/images/cbri-logo.jpg";
 import { InnerPageContainer } from "../../containers/InnerPageContainer/index";
 
+import { CompanyLogos } from "./placementsCompany";
 import "./styles/placementalliance.scss";
 
 const Alliance = props => {
@@ -54,7 +55,23 @@ export default class PlacementsAlliance extends React.Component {
         <>
           <Alliance />
         </>
-        <div>Placements</div>
+        <>
+          <div className='placementContainer'>
+            <div className='Heading'>
+              <h1>Top Recruiters</h1>
+              <div className='line' />
+            </div>
+            <ul>
+              {CompanyLogos.map((obj, i) => {
+                return (
+                  <li key={i} title={obj.company}>
+                    <img src={obj.logo} alt={obj.company} />
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+        </>
       </InnerPageContainer>
     );
   }
