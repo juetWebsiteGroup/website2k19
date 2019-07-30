@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {Link} from 'react-router-dom'
 import $ from 'jquery'
 
+import LazyLoad from 'react-lazyload'
 const RenderSubNavMoreOptions = (props) =>{
     if(props.renderData.length===0)
     {
@@ -142,7 +143,11 @@ class SecondNavbar extends Component {
                <label htmlFor = "nav_toggle" title="Click to Show Menu" className="nav_button"><div className="outer_shape"><div className="inner_shape"></div>
                </div></label>
             <div className={`${this.state.Classes}`} >
-                <span><img src='/static/images/final_header_grey_txt.png' alt="JUET" className="college_logo" /></span>
+                <span>
+                    <LazyLoad once>
+                    <img src='/static/images/final_header_grey_txt.png' alt="JUET" className="college_logo" />
+                    </LazyLoad>
+                  </span>
                 <nav>
                     <ul className="NavUL">
                         <li><Link to='/'>Home</Link></li>
@@ -203,8 +208,12 @@ class SecondNavbar extends Component {
                                 </ul>
                                 <ul className="SubNavOptionsUL">
                                     <li><h1>NAAC Accredition &amp; Ranking</h1><br/><span className="line"></span></li>
-                                    <li><img title="NAAC Accredition A Grade Certified" src="/static/images/naac-A.jpg"
-                                             style={{"width":"100px","height":"100px"}} /></li>
+                                    <li>
+                                        <LazyLoad once>
+                                        <img title="NAAC Accredition A Grade Certified" src="/static/images/naac-A.jpg"
+                                             style={{"width":"100px","height":"100px"}} />
+                                        </LazyLoad>
+                                        </li>
                                     <li>Know More >></li>
                                 </ul>
                                 <ul className="SubNavOptionsUL">
@@ -228,7 +237,10 @@ class SecondNavbar extends Component {
                             <div className="SubNavOptions">
                                 <ul className="SubNavOptionsUL">
                                     <li><h1>Programmes Offered</h1><br/><span className="line"></span></li>
+                                    <LazyLoad once>
                                     <img src="/static/images/Programmes.jpg" style={{"maxWidth":"100%","width":"100%"}}/>
+                                    </LazyLoad>
+                                   
                                     {
                                         this.state.dataContainerSubOptions.Academics.ProgrammesOffered.map((data) => {
                                             return(
@@ -239,7 +251,11 @@ class SecondNavbar extends Component {
                                 </ul>
                                 <ul className="SubNavOptionsUL">
                                     <li><h1>Philosophy of Teaching</h1><br/><span className="line"></span></li>
-                                    <figure><img src="/static/images/btech.jpg" style={{"maxWidth":"100%","width":"100%"}}/>
+                                    <figure>
+                                        <LazyLoad once>
+                                        <img src="/static/images/btech.jpg" style={{"maxWidth":"100%","width":"100%"}}/>
+                                        </LazyLoad>
+                                       
                                     </figure>
                                     {
                                         this.state.dataContainerSubOptions.Academics.PhilosophyOfTeaching.map((data) => {
