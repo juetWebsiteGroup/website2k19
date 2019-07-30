@@ -1,0 +1,76 @@
+@import "../../common_sass/common";
+
+.AlliancesContainer {
+  width: 90%;
+  overflow: hidden;
+  padding: 1em;
+  background: white;
+  border: 1px solid none;
+  border-radius: 0.3em;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 5px 4px 5px 0px #dadadab5;
+
+  .Heading {
+    @include AlignCenter;
+    flex-direction: column;
+    h1 {
+      font-size: 1.3rem;
+      text-align: center;
+      margin-bottom: 0.5em;
+      color: $themeTextColorBlue;
+    }
+
+    .line {
+      @include LineMaker(90%, 0.12em, goldenrod, 1em);
+    }
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    li {
+      margin-right: 1em;
+      @include AlignCenter;
+      .AllianceItem {
+        width: 80%;
+        height: 100%;
+        @include AlignCenter;
+        flex-direction: column;
+        img {
+          width: 95%;
+          height: 50px;
+          object-fit: contain;
+          max-width: 100%;
+        }
+        a {
+          text-decoration: none;
+          color: $themeTextColorBlue;
+          font-weight: bold;
+          letter-spacing: 0.44px;
+          padding-top: 1em;
+          text-align: center;
+          font-size: 0.6rem;
+          &:hover {
+            color: black;
+          }
+        }
+      }
+    }
+    @media screen and (max-width: 650px) {
+      & {
+        flex-direction: column !important;
+        li {
+          margin-bottom: 1em;
+          padding-top: 0.5em;
+          .AllianceItem > img {
+            width: 80%;
+          }
+        }
+      }
+    }
+  }
+}

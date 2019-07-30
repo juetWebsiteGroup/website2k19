@@ -20,12 +20,7 @@
       letter-spacing: 0.8px;
     }
     p {
-      margin: 0.5em 0 0.5em 0;
-      text-align: justify;
-      font-family: "Abel", sans-serif;
-      line-height: 28px;
-      color: #4e4e4e;
-      font-weight: 700;
+      @include para-default;
     }
 
     ul {
@@ -70,12 +65,7 @@
       font-size: 5.5vmin;
     }
     p {
-      margin: 0.5em 0 0.5em 0;
-      text-align: justify;
-      font-family: "Abel", sans-serif;
-      line-height: 28px;
-      color: #4e4e4e;
-      font-weight: 700;
+      @include para-default;
     }
   }
 }
@@ -102,6 +92,10 @@
       font-size: 5.5vmin;
     }
 
+    p {
+      @include para-default;
+    }
+
     .button {
       padding: 0.35em;
       text-align: center;
@@ -112,4 +106,8 @@
       border-radius: 0.2em;
     }
   }
+}
+
+.check {
+  color: red;
 }

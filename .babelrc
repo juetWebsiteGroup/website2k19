@@ -2,6 +2,7 @@
   "presets": ["@babel/preset-react", "@babel/preset-env"],
   "plugins": [
     // ["import", { "libraryName": "antd", "libraryDirectory": "es", "style": "css" }],
+    ["react-css-modules"],
     [
       "@babel/plugin-proposal-class-properties",
       {
@@ -14,6 +15,7 @@
   "env": {
     "production": {
       "plugins": [
+        ["react-css-modules"],
         [
           "css-modules-transform",
           {
