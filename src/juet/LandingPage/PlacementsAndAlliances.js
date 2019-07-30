@@ -5,6 +5,8 @@ import logo3 from "../../../static/images/UON.jpg";
 import logo4 from "../../../static/images/cbri-logo.jpg";
 import { InnerPageContainer } from "../../containers/InnerPageContainer/index";
 
+import Lazyload from "react-lazyload";
+
 import { CompanyLogos } from "./placementsCompany";
 import "./styles/placementalliance.scss";
 
@@ -18,25 +20,33 @@ const Alliance = props => {
       <ul>
         <li>
           <div className='AllianceItem'>
-            <img src={logo} />
+            <Lazyload once>
+              <img src={logo} />
+            </Lazyload>
             <a href='/'>MOU Between The University of Florida & JUET, Guna.</a>
           </div>
         </li>
         <li>
           <div className='AllianceItem'>
-            <img src={logo2} />
+            <Lazyload once>
+              <img src={logo2} />
+            </Lazyload>
             <a href='/'>General Memerandum of Understanding Between the Alliance of A universities (A-4U) of Spain & JUET, Guna.</a>
           </div>
         </li>
         <li>
           <div className='AllianceItem'>
-            <img src={logo3} />
+            <Lazyload once>
+              <img src={logo3} />
+            </Lazyload>
             <a href='/'>MOU Between University of Nebraska at OMAHA, USA & JUET, Guna.</a>
           </div>
         </li>
         <li>
           <div className='AllianceItem'>
-            <img src={logo4} />
+            <Lazyload once>
+              <img src={logo4} />
+            </Lazyload>
             <a href='/'>
               MOU Between JUET, Guna and Council of Scientific and Industrial Research (CSIR) through Central Building Research Institute
               (CSIR-CBRI), Roorkee.
@@ -65,7 +75,9 @@ export default class PlacementsAlliance extends React.Component {
               {CompanyLogos.map((obj, i) => {
                 return (
                   <li key={i} title={obj.company}>
-                    <img src={obj.logo} alt={obj.company} />
+                    <Lazyload once>
+                      <img src={obj.logo} src={obj.logo} alt={obj.company} />
+                    </Lazyload>
                   </li>
                 );
               })}

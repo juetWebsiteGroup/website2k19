@@ -11,6 +11,7 @@ import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
 import { uinfo_Awards, uinfo_AcademicNews, uinfo_Announcements } from "../../redux/actions/MainPage/uinfo";
 
+import Lazyload from "react-lazyload";
 import "./styles/VideoStyles.scss";
 
 const UniversityVideoPage = () => {
@@ -53,9 +54,14 @@ class BodyMainLandingPage extends Component {
         />
 
         <PlacementsAlliance />
-        <StudentClubs />
+        <Lazyload once>
+          <StudentClubs />
+        </Lazyload>
+
         <UniversityVideoPage />
-        <VisitUniversity />
+        <Lazyload once>
+          <VisitUniversity />
+        </Lazyload>
       </>
     );
   }

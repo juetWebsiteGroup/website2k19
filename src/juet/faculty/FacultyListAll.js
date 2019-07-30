@@ -6,6 +6,8 @@ import { facultyAll } from "../../redux/actions/FACULTY/fetchFaculty";
 import { LoadingView } from "../LoadingView/Loading";
 import { bindActionCreators } from "redux";
 
+import LazyLoad from "react-lazyload";
+
 class DisplayFaculty extends Component {
   constructor(props) {
     super(props);
@@ -18,37 +20,41 @@ class DisplayFaculty extends Component {
       <section id='faculty'>
         {this.props.record.map(d => {
           return (
-            <div key={`${d.id}@${d.department.toString().trim()}`}>
-              <div className='facultyContainer'>
-                <div className='facultyPhotoContainer'>
-                  <img title={d.name} src={"/static/" + d.image.toString()} alt={d.name.toString()} className='facultyImage' />
-                  <div className='facultyNameTag'>{d.name.toString()}</div>
-                  <div className='facultyDesignationTag'>{d.designation}</div>
-                </div>
-                <div className='facultyMainInfoContainer' id={encodeURI(`${d.id}${d.department.toString().trim()}`)}>
-                  <div className='facultyUpperInfo'>
-                    <ul>
-                      <li>
-                        Email-id: <span className='UpperInfoData'>{d.email}</span>
-                      </li>
-                      <li>
-                        Contact: <span className='UpperInfoData'>{d.contact}</span>
-                      </li>
-                    </ul>
+            <LazyLoad once>
+              <div key={`${d.id}@${d.department.toString().trim()}`}>
+                <div className='facultyContainer'>
+                  <div className='facultyPhotoContainer'>
+                    <LazyLoad once>
+                      <img title={d.name} src={"/static/" + d.image.toString()} alt={d.name.toString()} className='facultyImage' />
+                    </LazyLoad>
+                    <div className='facultyNameTag'>{d.name.toString()}</div>
+                    <div className='facultyDesignationTag'>{d.designation}</div>
                   </div>
-                  <div className='facultyLowerInfo'>
-                    <p>{`${Buffer.from(d.biography)
-                      .toString("utf8")
-                      .substr(0, 350)}....`}</p>
+                  <div className='facultyMainInfoContainer' id={encodeURI(`${d.id}${d.department.toString().trim()}`)}>
+                    <div className='facultyUpperInfo'>
+                      <ul>
+                        <li>
+                          Email-id: <span className='UpperInfoData'>{d.email}</span>
+                        </li>
+                        <li>
+                          Contact: <span className='UpperInfoData'>{d.contact}</span>
+                        </li>
+                      </ul>
+                    </div>
+                    <div className='facultyLowerInfo'>
+                      <p>{`${Buffer.from(d.biography)
+                        .toString("utf8")
+                        .substr(0, 350)}....`}</p>
+                    </div>
                   </div>
-                </div>
-                <div className='facultyBriefButton'>
-                  <div className='BriefButton'>
-                    <Link to={`/faculty/profile/${d.id}`}>Brief Profile</Link>
+                  <div className='facultyBriefButton'>
+                    <div className='BriefButton'>
+                      <Link to={`/faculty/profile/${d.id}`}>Brief Profile</Link>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
+            </LazyLoad>
           );
         })}
       </section>
@@ -86,6 +92,7 @@ class FacultyListAll extends Component {
               <div className='facultyBackground'>
                 <div className='facultyHeadingTag' />
               </div>
+
               <DisplayFaculty record={this.props.faculty.fetchedData_OF_FACULTY} />
             </div>
           )}
