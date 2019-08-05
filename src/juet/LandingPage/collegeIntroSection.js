@@ -1,5 +1,8 @@
 import React, { Component } from "react";
-import Ionicon from "react-ionicons";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCalendarPlus } from "@fortawesome/free-regular-svg-icons";
+import { faTrophy } from "@fortawesome/free-solid-svg-icons";
 
 import LazyLoad from "react-lazyload";
 
@@ -13,7 +16,7 @@ const SliderAcademicItem = props => {
   TextData.push(props);
   return TextData.map(data => {
     if (data.iconOpt) {
-      iconMember = <Ionicon color='#ffffff' icon={data.iconOpt} fontSize='2rem' />;
+      iconMember = <FontAwesomeIcon color='#ffffff' icon={data.iconOpt} style={{ fontSize: "2rem" }} />;
     }
     return (
       <div className='AdminItem1'>
@@ -35,7 +38,7 @@ const SliderStudentItem = props => {
   TextData.push(props);
   return TextData.map(data => {
     if (data.iconOpt) {
-      iconMember = <Ionicon color='#ffffff' icon={data.iconOpt} fontSize='2rem' />;
+      iconMember = <FontAwesomeIcon color='#ffffff' icon={data.iconOpt} style={{ fontSize: "2rem" }} />;
     }
     return (
       <div className='StudentItem1'>
@@ -61,7 +64,7 @@ class IntroSection extends Component {
           image: "/static/images/g2_d.jpg",
           TextTitle: "D'Equinox 2k19",
           TextContent: "A Cultural Fest by Jaypee University of Engineering & Technology,Guna",
-          iconOpt: "md-calendar"
+          iconOpt: faCalendarPlus
         },
         {
           id: "2",
@@ -139,7 +142,7 @@ class IntroSection extends Component {
             {this.state.sliderImageDataProperty &&
               this.state.sliderImageData.map(data => {
                 if (data.iconOpt) {
-                  iconMember = <Ionicon color='#ffffff' icon={data.iconOpt} fontSize='0.95rem' />;
+                  iconMember = <FontAwesomeIcon color='#ffffff' icon={data.iconOpt} style={{ fontSize: "0.95rem" }} />;
                 }
                 return (
                   <LazyLoad once>
@@ -172,22 +175,25 @@ class IntroSection extends Component {
         <div className='LatestHappenings'>
           <LazyLoad once>
             <div className='AdminRelated' title='Academics News'>
-              <SliderAcademicItem iconOpt='md-trophy' AdminTextToDisplay='NIRF - Ranking 150-200 Accredited With Grade A by NAAC' />
-              <SliderAcademicItem iconOpt='md-trophy' AdminTextToDisplay='NIRF - Ranking 150-200 Accredited With Grade A by NAAC' />
-              <SliderAcademicItem iconOpt='md-trophy' AdminTextToDisplay='NIRF - Ranking 150-200 Accredited With Grade A by NAAC' />
-              <SliderAcademicItem iconOpt='md-trophy' AdminTextToDisplay='NIRF - Ranking 150-200 Accredited With Grade A by NAAC' />
+              <SliderAcademicItem iconOpt={faTrophy} AdminTextToDisplay='NIRF - Ranking 150-200 Accredited With Grade A by NAAC' />
+              <SliderAcademicItem iconOpt={faTrophy} AdminTextToDisplay='NIRF - Ranking 150-200 Accredited With Grade A by NAAC' />
+              <SliderAcademicItem iconOpt={faTrophy} AdminTextToDisplay='NIRF - Ranking 150-200 Accredited With Grade A by NAAC' />
+              <SliderAcademicItem iconOpt={faTrophy} AdminTextToDisplay='NIRF - Ranking 150-200 Accredited With Grade A by NAAC' />
             </div>
           </LazyLoad>
 
           <div className='StudentRelated' title='Student News'>
             <LazyLoad once>
               <SliderStudentItem
-                iconOpt='md-calendar'
+                iconOpt={faCalendarPlus}
                 StudentTextToDisplay='Teachers Training Workshop on Python Programming from 05-07th.Apr.19'
               />
-              <SliderStudentItem iconOpt='md-calendar' StudentTextToDisplay='Mozilla AR/VR Workshop on 20th.Oct.18' />
-              <SliderStudentItem iconOpt='md-calendar' StudentTextToDisplay='Workshop on PHP Programming By CSI from 17-19th.Nov.18' />
-              <SliderStudentItem iconOpt='md-calendar' StudentTextToDisplay='Workshop on Arduino Programming By ISF from 17-19th.Dec.18' />
+              <SliderStudentItem iconOpt={faCalendarPlus} StudentTextToDisplay='Mozilla AR/VR Workshop on 20th.Oct.18' />
+              <SliderStudentItem iconOpt={faCalendarPlus} StudentTextToDisplay='Workshop on PHP Programming By CSI from 17-19th.Nov.18' />
+              <SliderStudentItem
+                iconOpt={faCalendarPlus}
+                StudentTextToDisplay='Workshop on Arduino Programming By ISF from 17-19th.Dec.18'
+              />
             </LazyLoad>
           </div>
         </div>

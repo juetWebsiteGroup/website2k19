@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 
-import Ionicon from "react-ionicons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFacebookSquare, faLinkedin, faTwitterSquare, faYoutubeSquare } from "@fortawesome/free-brands-svg-icons";
 
 class FirstNavbar extends Component {
   constructor(props) {
@@ -44,16 +45,16 @@ class FirstNavbar extends Component {
           <nav>{this.get_UpperNavList()}</nav>
           <ul className='social_links'>
             <li title='Facebook'>
-              <Ionicon color='#ffffff' fontSize='2.21rem' icon='logo-facebook' />
+              <FontAwesomeIcon color='#ffffff' style={{ fontSize: "1.8rem" }} icon={faFacebookSquare} />
             </li>
             <li title='Twitter'>
-              <Ionicon color='#ffffff' fontSize='2.21rem' icon='logo-twitter' />
+              <FontAwesomeIcon color='#ffffff' style={{ fontSize: "1.8rem" }} icon={faTwitterSquare} />
             </li>
             <li title='YouTube'>
-              <Ionicon color='#ffffff' fontSize='2.21rem' icon='logo-youtube' />
+              <FontAwesomeIcon color='#ffffff' style={{ fontSize: "1.8rem" }} icon={faYoutubeSquare} />
             </li>
             <li title='LinkedIn'>
-              <Ionicon color='#ffffff' fontSize='2.21rem' icon='logo-linkedin' />
+              <FontAwesomeIcon color='#ffffff' style={{ fontSize: "1.8rem" }} icon={faLinkedin} />
             </li>
           </ul>
         </header>

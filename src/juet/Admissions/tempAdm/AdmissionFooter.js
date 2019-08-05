@@ -1,5 +1,7 @@
 import React from "react";
-import Ionicon from "react-ionicons";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFacebookSquare, faLinkedin, faTwitterSquare, faYoutubeSquare } from "@fortawesome/free-brands-svg-icons";
 
 export const AdmissionFooter = props => {
   return (
@@ -9,17 +11,17 @@ export const AdmissionFooter = props => {
         <div className='socialLinksFooter'>
           <span title='Facebook'>
             <a href='https://www.facebook.com/JaypeeUniversityGuna/'>
-              <Ionicon color='#ffffff' fontSize='2rem' icon='logo-facebook' />
+              <FontAwesomeIcon color='#ffffff' style={{ fontSize: "2rem" }} icon={faFacebookSquare} />
             </a>
           </span>
           <span title='YouTube'>
             <a href='https://www.youtube.com/channel/UCGZys7YYR7DAFDg0TcXxY4A'>
-              <Ionicon color='#ffffff' fontSize='2rem' icon='logo-youtube' />
+              <FontAwesomeIcon color='#ffffff' style={{ fontSize: "2rem" }} icon={faYoutubeSquare} />
             </a>
           </span>
           <span title='Linked-In'>
             <a href=''>
-              <Ionicon color='#ffffff' fontSize='2rem' icon='logo-linkedin' />
+              <FontAwesomeIcon color='#ffffff' style={{ fontSize: "2rem" }} icon={faLinkedin} />
             </a>
           </span>
         </div>
